@@ -168,9 +168,9 @@ instructor intended. It can be:
 - a process step, such as calibrating graders
 
 Say "No edit needed" or "Already fixed in the current definition" when that's
-the honest answer. Don't recommend grade changes
-yourself. If a past offering was clearly unequal, state the effect in points and
-leave the decision to the instructor.
+the honest answer. Don't recommend grade changes yourself. If a past offering
+was clearly unequal, state the effect in points and leave the decision to the
+instructor.
 
 ## Report
 
