@@ -14,7 +14,8 @@ Use the first option that's available, and say which one you used.
    - Write results straight to a file with psql's `-o`, for example
      `-- -X -q --csv -v ON_ERROR_STOP=1 -f /abs/query.sql -o /abs/result.csv`.
      This keeps connection log lines, which can include a staff email, out of
-     saved results.
+     saved results. Use one query per file with `-o`, and send stderr to
+     `/dev/null` rather than into the results folder.
    - Run long queries with a generous timeout.
    - If sign-in is needed, start it and let the instructor complete the browser
      step. Never ask for credentials or write access.

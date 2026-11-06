@@ -61,6 +61,8 @@ them. When you must anonymize graders, say so once and call them "grader A",
 1. Identify the course and assessment. Look for a course design guide or earlier
    reports, and use any goals you find, such as intended time or difficulty.
 2. Choose the offerings:
+   - **The offering the instructor means.** Read relative terms like "last fall"
+     as the most recent completed term with that name, and say so.
    - **The current definition.** Fixes apply here. Check whether it has already
      been given; missing data doesn't mean it hasn't run. If you can't tell, ask
      or state your assumption.
@@ -106,8 +108,9 @@ Then add the evidence that a given candidate needs:
 - **Time pressure:** the share of students finishing near the time limit.
   Medians hide this when most students run to the end.
 - **Effect on students:** points out of the assessment total that students who
-  drew an alternative lost or gained, compared with the average of the other
-  alternatives for that question.
+  drew an alternative lost or gained, compared with students who drew the other
+  alternatives for that question. When the alternatives fall into two clear
+  groups, compare the groups.
 
 ## 3. Find candidates, then rule out other explanations
 
@@ -174,7 +177,9 @@ Label each finding's confidence:
 - **Predicted:** found in the source only, with no student data yet.
 - **Unexplained:** the gap is real, but no cause was found.
 
-For Predicted and Unexplained findings, name the data that would settle it. Add a
+If the predicted mistake accounts for only a small share of wrong answers, say
+so; the cause can still be Likely, but don't overstate it. For Predicted and
+Unexplained findings, name the data that would settle it. Add a
 few words when strength varies, for example: "Likely; reversed in one term."
 
 ## 5. Recommend edits
@@ -204,8 +209,9 @@ the other files.
 Make the report easy to scan. Use tables and charts for numbers, and write
 findings as ideas: what about the question causes the problem, in plain words.
 Use measures a reader understands without explanation, such as mean score, share
-with full credit, minutes, and points out of the total. If you need anything less
-familiar, define it in one sentence where it first appears.
+with full credit, minutes, and points out of the total. Label table columns in
+words ("points gained or lost, out of 100"), not symbols or abbreviations. If you
+need anything less familiar, define it in one sentence where it first appears.
 
 Use these sections, adapting them to the assessment:
 
@@ -251,14 +257,15 @@ staff and test instances excluded).>
 ```
 
 The bottom line, summary table, and chart should give the picture in a minute.
-Keep each finding short, and order findings by effect on students: how many were
+Keep each finding under about 150 words, and order findings by effect on students: how many were
 affected and by how much. Most reports have three to six findings. Merge related
 minor ones, and move small issues to "Checked, no change needed". Put longer
 method notes in an optional `details.md`.
 
 ## Before handing off
 
-- Recompute the numbers each finding uses from the saved data.
+- Recompute the numbers each finding uses from the saved data, including ranges
+  and claims like "in every offering".
 - Confirm each finding cites a source or is marked Unexplained.
 - Confirm the step 3 explanations were ruled out for each finding.
 - Confirm no saved file contains student identifiers or per-student rows.
