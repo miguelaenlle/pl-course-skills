@@ -16,3 +16,5 @@ frontmatter, usable by Claude Code and Codex.
 - [`docs/assessment-skill-plan.md`](docs/assessment-skill-plan.md): what CS 357's
   agent-written reports contain, where `improve-assessment` falls short, and the
   proposed split into smaller skills.
+- [`evals/cs357-gold-findings.md`](evals/cs357-gold-findings.md): findings from the
+  CS 357 reports, used to score replays of the investigation skill.
