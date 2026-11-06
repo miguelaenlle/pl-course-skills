@@ -96,7 +96,9 @@ def summarize(name: str, values: list, show: bool) -> str:
         nonfinite = len(numbers) - len(finite)
         if finite:
             parts.append(f"range {min(finite):.6g} to {max(finite):.6g}")
-        zeros = sum(1 for x in finite if abs(x) < 1e-12)
+        scale = max((abs(x) for x in finite), default=0.0)
+        tolerance = max(1e-12, 1e-9 * scale)
+        zeros = sum(1 for x in finite if abs(x) <= tolerance)
         if zeros:
             parts.append(f"{zeros} zero values ({100 * zeros / len(numbers):.0f}%)")
         if nonfinite:

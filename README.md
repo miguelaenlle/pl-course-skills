@@ -28,3 +28,5 @@ frontmatter, usable by Claude Code and Codex.
   CS 357 reports, used to score replays of `diagnose-assessment-issues`.
 - [`evals/diagnose-test-log.md`](evals/diagnose-test-log.md): test rounds, what
   changed after each, and known limits.
+- [`evals/author-test-log.md`](evals/author-test-log.md): authoring tests, what
+  changed after them, and known limits.

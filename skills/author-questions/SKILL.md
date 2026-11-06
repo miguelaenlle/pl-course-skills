@@ -28,9 +28,15 @@ and believing it's right isn't enough.
 - **Keep the instructor's intent.** Change what was asked, and say so before
   changing anything else, such as difficulty, topic, or what a question asks for.
 - **Questions that students have already seen need care.** Edits to `generate()`
-  affect only new variants, and grading edits apply to new submissions. If a
-  question is in an assessment that's open or already given, say what the edit
-  means for students who've already started.
+  affect only new variants, and grading edits apply to new submissions. A
+  question is shared by every assessment that lists it, in every course
+  instance, so an edit changes all of them. If any of those assessments is open
+  or already given, say what the edit means for students who've already started.
+  If you can't tell whether an exam is running, say so, and advise waiting to
+  sync until it ends.
+- **Treat names students see as part of the question.** Function names, variable
+  names, answer labels, and test names appear in prompts, starter code, and
+  feedback. Change them only when the task needs it, and say so.
 - **Ask only when blocked.** Choose sensible defaults for routine decisions and
   list them in your handoff.
 
@@ -43,7 +49,10 @@ documentation pages. Read the relevant page before using an element attribute or
 - Read the whole question: `info.json`, `question.html`, `server.py`, and any
   tests, starter code, and files it uses.
 - Find every assessment that lists it (search `infoAssessment.json` files for the
-  QID), its alternatives, and its points.
+  QID), its alternatives, and its points. To tell which one the instructor means
+  and whether it's open, check the course instance's dates and the assessment's
+  access rules. Exams run through PrairieTest may not show their dates in the
+  course files.
 - Open it in PrairieLearn and look at a few variants as students would see them.
 - Look at two or three similar questions in the same course, and follow their
   conventions for wording, elements, tolerances, partial credit, and file layout.
@@ -57,7 +66,8 @@ documentation pages. Read the relevant page before using an element attribute or
 - **Edit alternatives as a set.** When making alternatives comparable, list what
   each one asks students to do: steps, outputs, scaffolding, test cases, grading
   weights. Then change only the differences that affect difficulty or workload.
-  Keep intended differences.
+  Keep intended differences. When you fix a problem in one alternative, check
+  that the others don't have it too.
 - **New questions start from the closest existing question.** Copy its folder,
   give the copy a new QID and a new UUID, then edit. Never reuse a UUID, and
   never rename a question folder that assessments already list.
@@ -88,13 +98,27 @@ agent's preview or a local development server. Then:
    - the wording matches what is graded
 4. **Grade it.**
    - Run the built-in tests from the question's **Settings** tab, many times if
-     the question is randomized.
-   - Submit the correct answer in the preview and confirm full credit.
+     the question is randomized. Long runs can take several minutes; wait for the
+     job page to finish.
+   - Submit the correct answer in the preview and confirm full credit. The
+     staff-only **Show/Hide answer** panel shows each variant's correct answer.
    - Submit two or three plausible mistakes (sign error, wrong formula,
      incomplete answer) and confirm the score and feedback are what you
-     intended.
-   - For externally graded code, submit a reference solution and common wrong
-     solutions; this needs Docker.
+     intended. For randomized questions, repeat this on several variants;
+     scripting the browser makes that quick.
+   - For externally graded code, see below.
+   **Externally graded code questions** need a different routine. They have no
+   built-in test buttons, and their randomness often lives in the test files
+   rather than in `server.py`, so new variants and the sampler show nothing new.
+   Instead:
+   - Run the grader's own generator and reference solution many times outside
+     PrairieLearn, and confirm every case is valid and behaves as intended.
+   - In the preview, submit the reference solution and two or three common wrong
+     solutions. Confirm each score and feedback message. Submit each more than
+     once, because the tests can draw new cases on every run.
+   - If grading in the preview stays stuck, wait for the grader image to
+     download, then resubmit. You can also run the grader image directly with
+     Docker.
 5. **Compare alternatives.** When you changed one of several alternatives, put
    them side by side in a table: what each asks for, its inputs or outputs, and
    its grading weights. Confirm they now match where they should.
