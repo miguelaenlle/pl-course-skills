@@ -6,6 +6,10 @@ frontmatter, usable by Claude Code and Codex.
 
 ## Skills
 
+- [`diagnose-assessment-issues`](skills/diagnose-assessment-issues/SKILL.md):
+  find alternatives that aren't comparable, questions that miss their time or
+  difficulty targets, and grading problems, explain each from the question
+  source, and recommend edits. Read-only.
 - [`improve-assessment`](skills/improve-assessment/SKILL.md): investigate past
   results, prototype question changes with instructor feedback, then finalize an
   assessment locally. Copied unchanged from the course-agent worktree
@@ -17,4 +21,4 @@ frontmatter, usable by Claude Code and Codex.
   agent-written reports contain, where `improve-assessment` falls short, and the
   proposed split into smaller skills.
 - [`evals/cs357-gold-findings.md`](evals/cs357-gold-findings.md): findings from the
-  CS 357 reports, used to score replays of the investigation skill.
+  CS 357 reports, used to score replays of `diagnose-assessment-issues`.

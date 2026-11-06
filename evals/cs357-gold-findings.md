@@ -1,7 +1,7 @@
 # CS 357 gold findings (replay eval set)
 
 Gold findings come from `PrairieLearn/pl-cs357` `reports/` at `0c4c9ea`. Use them to score
-`investigate-assessment` replays (see [`docs/assessment-skill-plan.md`](../docs/assessment-skill-plan.md) §4).
+`diagnose-assessment-issues` replays (see [`docs/assessment-skill-plan.md`](../docs/assessment-skill-plan.md) §4).
 Type numbers refer to the insight types in that document.
 
 Replay setup: a copy of the course **without `reports/`**, and data limited to offerings

@@ -12,7 +12,7 @@ November 5, 2026. Sources read:
 - **CS 357's real asset is the reports, not the skills.** Its two skills cover Code Studio notebooks. The quiz work happens through ad-hoc agent sessions that leave a per-quiz report in `reports/`. Each report works as an evidence base, a design brief, a prototype log and a validation record in one document.
 - **The value of those reports is a cause found in the question source for every outcome difference.** The statistics are a short, fixed set of seven metrics. The insight comes from reading the question and its grader to explain *why* two alternatives behaved differently. That is the semantic, context-aware part to generalize.
 - **Our skill is mostly process and safety rules.** It has almost no guidance on *what to look for*. Its main evidence source is "the previous quiz", while CS 357 uses *prior offerings of the same quiz*. Its 300–500-word report squeezes out the per-pool evidence that makes CS 357's reports useful.
-- **Plan:** split it into three skills (`investigate-assessment`, `prototype-questions`, `assemble-assessment`). They share a structured per-assessment design log and reference files: an insight checklist, a confounder checklist, query templates and data-access options. Evaluate by replaying CS 357 Quiz 2–5 against a gold list of findings (see [`evals/cs357-gold-findings.md`](../evals/cs357-gold-findings.md)), then test on a second course.
+- **Plan:** split it into three skills (`diagnose-assessment-issues`, `prototype-questions`, `assemble-assessment`). They share a structured per-assessment design log and reference files: an insight checklist, a confounder checklist, query templates and data-access options. Evaluate by replaying CS 357 Quiz 2–5 against a gold list of findings (see [`evals/cs357-gold-findings.md`](../evals/cs357-gold-findings.md)), then test on a second course.
 
 ---
 
@@ -119,7 +119,7 @@ The CS 357 professor's own skills are a good structural model: two narrow skills
 
 ```
 skills/
-  investigate-assessment/SKILL.md     # evidence → report → questions for instructor
+  diagnose-assessment-issues/SKILL.md     # evidence → report → questions for instructor
   prototype-questions/SKILL.md        # brief → one prototype → validate → review → matched variants
   assemble-assessment/SKILL.md        # slots, points, practice, time budget, local test, "measure next"
   _shared/                            # referenced, not triggered
@@ -131,7 +131,7 @@ skills/
     queries/component-pass-rates.sql
 ```
 
-| | `investigate-assessment` | `prototype-questions` | `assemble-assessment` |
+| | `diagnose-assessment-issues` | `prototype-questions` | `assemble-assessment` |
 | --- | --- | --- | --- |
 | **Trigger** | "How did Quiz 4 go?", "Improve Quiz 6", "Was variant B harder?" | "Draft a question for slot 2", "Make two variants of X", "Review this question" (absorbs `review-question`) | "Put Quiz 6 together", "Update the practice quiz" |
 | **Modes** | *Before an offering*: history of the same assessment across terms. *After an offering*: alternatives within this term, plus an optional instructor-specified model, as in the linsys comparison. | Single prototype; variant expansion; review only | — |
@@ -160,7 +160,7 @@ Status: evidence ✓ · brief ✓ · prototypes 2/2 reviewed · assembled ✗
 ## Findings                 ← finding cards (below), newest stage first
 ## Brief                    ← instructor's words, dated
 ## Decisions                ← dated one-liners: "11-03 keep 42 pts; no retry change"
-## Measure next offering    ← feeds next investigate run
+## Measure next offering    ← feeds next diagnose run
 ## Evidence                 ← links: query.sql, stats.csv, per-pool tables, validation scripts
 ```
 
@@ -223,7 +223,7 @@ Save the matrix as `validate_<qid>.py` next to the design log, as CS 357 does.
 
 ## 4. Evaluation plan
 
-**Step 1: format and recall parity with CS 357 (replay).** For each of Quiz 2–5, run `investigate-assessment` against prior-offering data only (≤ Spring 2026), with no access to the existing report. Score it against the gold findings in [`evals/cs357-gold-findings.md`](../evals/cs357-gold-findings.md):
+**Step 1: format and recall parity with CS 357 (replay).** For each of Quiz 2–5, run `diagnose-assessment-issues` against prior-offering data only (≤ Spring 2026), with no access to the existing report. Score it against the gold findings in [`evals/cs357-gold-findings.md`](../evals/cs357-gold-findings.md):
 
 | Metric | Target |
 | --- | --- |
@@ -247,7 +247,7 @@ The existing reports have to be hidden during the replay: copy the course withou
 ## 5. Suggested order of work
 
 1. Write `_shared/` (lenses, confounders, query templates, design-log template), since all three skills depend on it.
-2. `investigate-assessment` + replay eval on Quiz 2–5 (step 1). Iterate until recall is acceptable.
+2. `diagnose-assessment-issues` + replay eval on Quiz 2–5 (step 1). Iterate until recall is acceptable.
 3. `prototype-questions` (fold in `review-question`), then `assemble-assessment`.
 4. Second-course test.
 5. Product follow-up: aggregate-statistics tool for the course agent (§3.5).
