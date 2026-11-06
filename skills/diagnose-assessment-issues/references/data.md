@@ -47,7 +47,7 @@ soft-deleted rows (`deleted_at IS NULL`).
 
 | Table | Use |
 | --- | --- |
-| `zones`, `alternative_groups`, `assessment_questions`, `questions` | Structure. A slot is identified by `zones.number` plus `alternative_groups.number`; these line up across offerings, while database IDs don't. |
+| `zones`, `alternative_groups`, `assessment_questions`, `questions` | Structure. PrairieLearn numbers questions as `alternative_groups.number`, plus `.assessment_questions.number_in_alternative_group` when there are alternatives (for example `6` or `6.2`). The starting query builds this label; use it in the report. These numbers line up across offerings when the structure is unchanged, while database IDs don't. |
 | `assessment_instances` | One per student per assessment. Use `include_in_statistics` to drop staff and test instances. `date` gives the start time, which you need for checking assignment by day. |
 | `instance_questions` | One per assigned question: `score_perc`, `first_submission_score`, `max_submission_score`, `number_attempts`, `duration`, `used_for_grade`. |
 | `variants`, `submissions` | `submissions` links to `variants`, which link to `instance_questions`. `submissions` holds `score`, `partial_scores` (per input), `feedback` (external-grader results in `feedback->'results'->'tests'`, each with `name`, `points`, `max_points`, `message`), and `submitted_answer`. `variants` holds `params` and `true_answer`. |
@@ -106,7 +106,13 @@ WITH iq AS (
 SELECT
   ci.short_name AS offering,
   z.number AS zone,
-  ag.number AS slot,
+  z.title AS zone_title,
+  CASE
+    WHEN (SELECT COUNT(*) FROM assessment_questions AS x
+          WHERE x.alternative_group_id = ag.id AND x.deleted_at IS NULL) = 1
+      THEN ag.number::text
+    ELSE ag.number || '.' || aq.number_in_alternative_group
+  END AS question_number,
   q.qid,
   aq.max_points,
   COUNT(*) AS n_assigned,
@@ -131,8 +137,9 @@ WHERE ci.course_id = :course_id
   AND a.tid = :'assessment_tid'
   AND aq.max_points > 0
   AND COALESCE(iq.used_for_grade, true)
-GROUP BY ci.id, ci.short_name, z.number, ag.number, q.qid, aq.max_points
-ORDER BY ci.id, zone, slot, q.qid;
+GROUP BY ci.id, ci.short_name, z.number, z.title, ag.id, ag.number, aq.id,
+  aq.number_in_alternative_group, q.qid, aq.max_points
+ORDER BY ci.id, z.number, ag.number, aq.number_in_alternative_group;
 ```
 
 Run it with `-v course_id=<id> -v assessment_tid=<tid>`. For manually graded

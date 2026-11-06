@@ -35,6 +35,27 @@ grader, or assessment setup causes it, or say plainly that you couldn't.
 [references/data.md](references/data.md) covers data access, PrairieLearn
 tables, starting queries, and known data quirks.
 
+## Use PrairieLearn's terms
+
+Use the terms instructors see in PrairieLearn and its documentation, and don't
+invent labels:
+
+- [Concepts](https://docs.prairielearn.com/concepts/): course, course instance,
+  assessment, question, variant.
+- [Assessment configuration](https://docs.prairielearn.com/assessment/configuration/):
+  zones, question alternatives, `numberChoose`, `bestQuestions`, points lists,
+  assessment instances.
+- [Manual grading](https://docs.prairielearn.com/manualGrading/): rubrics and
+  rubric items.
+
+The docs call each entry in a zone's question list a *slot*. A slot with
+alternatives gives each student one (or `numberChoose`) of them. Refer to a
+question by its QID and by the number shown on the assessment's
+**Questions** page, for example "question 6.2 (`OhareTrackComputeR`)".
+Alternatives share the first number. Name course instances as PrairieLearn shows
+them. When you must anonymize graders, say so once and call them "grader A",
+"grader B", and so on.
+
 ## 1. Establish scope
 
 1. Identify the course and assessment. Look for a course design guide or earlier
@@ -84,9 +105,9 @@ Then add the evidence that a given candidate needs:
   wrong formula, or match a worked example.
 - **Time pressure:** the share of students finishing near the time limit.
   Medians hide this when most students run to the end.
-- **Effect on students:** points out of the assessment total that a student loses
-  because of what they drew. For each slot, take the drawn alternative's mean
-  minus the slot's mean, add these up for each student, and report the spread.
+- **Effect on students:** points out of the assessment total that students who
+  drew an alternative lost or gained, compared with the average of the other
+  alternatives for that question.
 
 ## 3. Find candidates, then rule out other explanations
 
@@ -174,41 +195,66 @@ instructor.
 
 ## Report
 
-Write `report.md` for the instructor. Put per-offering tables, method notes, and
-smaller checks in `details.md` next to it. Save queries and aggregate results
-alongside both. Use the folder the instructor names, or the course's existing
-location for reports. Otherwise, use a new folder outside the course repository.
-If you can't write the report files, return their text, and still save the
-queries and results.
+Write `report.md` for the instructor, and save the queries, aggregate results,
+and charts next to it. Use the folder the instructor names, or the course's
+existing location for reports. Otherwise, use a new folder outside the course
+repository. If you can't write the report file, return its text, and still save
+the other files.
+
+Make the report easy to scan. Use tables and charts for numbers, and write
+findings as ideas: what about the question causes the problem, in plain words.
+Use measures a reader understands without explanation, such as mean score, share
+with full credit, minutes, and points out of the total. If you need anything less
+familiar, define it in one sentence where it first appears.
+
+Use these sections, adapting them to the assessment:
 
 ```markdown
 # <Assessment>: diagnosis
-<date> · <offerings analyzed> · <data source>
+<date> · <course instances analyzed> · <data source>
 
 ## Bottom line
 <Up to five bullets, most important first: what to change and why.>
 
+## Scope
+<A table of the offerings analyzed: course instance, dates, number of students,
+and anything that changes how to read them (structure changes, manual grading,
+retakes). Then what was included and excluded, in a few bullets.>
+
+## Results at a glance
+<A summary table with one row per question in the main offering analyzed:
+number, QID, points, number of students, mean score, full credit, no submission,
+median minutes. Group alternatives together. Follow it with a chart
+(references/plot_questions.py draws one from the starting query's output).>
+
 ## Findings
-### <Short claim, naming the slot and questions>
-<One small table or two sentences of numbers, each with its offering and n.>
-**Why:** <cause, with file path> (or "Unexplained: …")
+### <The idea, in a sentence: "6.5 needs the chain rule; 6.3 and 6.4 don't">
+<A small table or two sentences of evidence, each number with its course
+instance and n.>
+**Why:** <cause in the source, with file path> (or "Unexplained: …")
 **Confidence:** <label>
 **Effect:** <points out of the assessment total, and for whom>
-**Edit:** <concrete change, or "No edit needed">
+**Edit:** <concrete change, "No edit needed", or "Already fixed">
 
 ## Checked, no change needed
-<One line each: pools that are well matched, gaps judged to be noise.>
+<One line each: alternatives that are well matched, gaps judged to be noise.>
 
 ## Questions for the instructor
 <Only decisions you can't make. Omit the section if there are none.>
+
+## Metric definitions
+<A short table defining each measure used, and the filters applied (for example,
+staff and test instances excluded).>
+
+## Files
+<The queries, results, and charts saved with the report, one line each.>
 ```
 
-Keep `report.md` to about 800 words. Order findings by effect on students: how
-many were affected and by how much. Most reports have three to six findings;
-merge related minor ones, and move small issues to the "Checked" list or to
-`details.md`. Write in plain language, without statistics jargon. Scope,
-exclusions, and data caveats go at the top of `details.md`, with a one-line
-pointer in the report.
+The bottom line, summary table, and chart should give the picture in a minute.
+Keep each finding short, and order findings by effect on students: how many were
+affected and by how much. Most reports have three to six findings. Merge related
+minor ones, and move small issues to "Checked, no change needed". Put longer
+method notes in an optional `details.md`.
 
 ## Before handing off
 
