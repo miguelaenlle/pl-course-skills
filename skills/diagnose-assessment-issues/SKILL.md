@@ -6,7 +6,7 @@ description: >-
   questions that take far longer than intended, grading that distorts scores, and
   unclear prompts. Use for requests such as "How did Quiz 4 go?", "Were the
   variants fair?", or "What should we fix in Quiz 6 before next term?" Produces a
-  short report with recommended edits; does not edit questions.
+  short report with recommended edits; does not edit questions or grades.
 ---
 
 # Diagnose assessment issues
@@ -21,14 +21,16 @@ question, grader, or assessment setup causes it, or say plainly that you couldn'
 ## Boundaries
 
 - **Read-only.** Don't edit course files, change grades, or write to any
-  database. Recommend edits; the instructor decides.
+  database. The skill ends with the report. If the instructor then asks for an
+  edit, treat it as a new task under the course's normal editing workflow. Grade
+  changes stay with the instructor; point them to PrairieLearn's score tools.
 - **Aggregate data only.** Never save or show student names, UIDs, emails, or
   per-student rows. To understand mistakes, count patterns across many
   submissions instead of reading individual ones. Refer to graders as G1, G2,
   and so on.
 - **Ask only when blocked.** If you can't tell which course or assessment is
   meant, ask one question and recommend an answer. Otherwise make reasonable
-  choices and record them in the report.
+  choices and state them in the report.
 
 [references/data.md](references/data.md) covers data access, PrairieLearn
 tables, starting queries, and known data quirks.
@@ -36,15 +38,19 @@ tables, starting queries, and known data quirks.
 ## 1. Establish scope
 
 1. Identify the course and assessment. Look for a course design guide or earlier
-   reports, and use any conventions you find, such as intended time per question
-   or target difficulty.
+   reports, and use any goals you find, such as intended time per question or
+   target difficulty.
 2. Choose the offerings:
-   - **The assessment as it's currently defined.** Fixes apply here, so check
-     whether its questions changed since the offering being asked about.
+   - **The current definition.** Fixes apply here. Check whether it has already
+     been given. Missing data doesn't mean it hasn't run, so if you can't tell,
+     ask or state your assumption.
    - **Past offerings of the same assessment.** Match by assessment ID or title,
-     and confirm they cover the same material by checking question overlap.
-   - **Neighboring assessments** only for signals that cut across topics, such as
-     total time pressure.
+     and confirm they cover the same material by checking question overlap. If
+     several course instances match a term (for example, another campus), use the
+     one with data and say so.
+   - **Other assessments in the same course,** for comparison only. They show
+     whether a pattern is specific to this assessment, for example whether every
+     quiz got longer.
 3. Record each offering's structure. These all change how numbers should be read:
    - which questions compete for the same slot
    - points and retry schedules
@@ -67,13 +73,15 @@ For each question in each offering, compute:
 Show alternatives in the same slot side by side, with their sample sizes. Keep
 offerings separate; pool them only when their definitions are identical.
 
-Then add finer-grained evidence where it helps explain a gap:
+Then add the evidence that a given candidate needs:
 
 - **Per part:** test results, per-input credit, rubric items, or option choices
   show which step students lose points on.
 - **By generated parameters:** shows whether some random instances are harder.
 - **Common wrong answers:** for example, the share of answers that are off by a
   sign, use the wrong formula, or match a worked example.
+- **Time pressure:** the share of students who finish near the time limit.
+  Medians hide this when most students run to the end.
 - **Effect on students:** points out of the assessment total that a student loses
   because of what they drew. For "choose N of M" pools, compare the combinations
   students drew.
@@ -86,21 +94,26 @@ Candidates worth explaining:
   or non-submission, especially when the gap repeats across offerings.
 - **Similar scores that hide a workload difference.**
 - **Questions far from the intended time or difficulty.** With no stated target,
-  compare against the question the item replaced and the assessment's total time.
-- **Shifts between offerings** for the same question.
+  compare against the question the item replaced and against other slots worth
+  the same points.
+- **Shifts between offerings** for the same question or the whole assessment.
 - **Grading that differs** between alternatives or between graders.
 
 Before you believe a candidate, rule out explanations that have nothing to do
 with the question:
 
-- small samples
-- alternatives that weren't assigned at random, for example a different
-  question on different exam days
-- students choosing which questions to attempt
-- different groups of students: retakes, sections, separate versions
-- overrides or blanket credit
-- question edits between offerings
-- time measurements that include idle time
+- **Small samples.**
+- **Non-random assignment.** For example, a different alternative on different
+  exam days. Check assignment by date. Without dates, compare each
+  alternative's count with an even split.
+- **Students choosing** which questions to attempt.
+- **A stronger or weaker group of students.** Compare scores on the questions
+  that didn't change between offerings.
+- **Score changes by staff,** including partial bumps, not only full credit.
+- **Question edits between offerings.** Without source history, compare old
+  grader messages or parameter formats with the current source.
+- **Course-wide changes,** such as a new format added to every quiz.
+- **Time measurements that include idle time.**
 
 A gap that reverses between offerings, with no explanation, is weak evidence.
 Report the pair as unstable rather than calling one variant harder.
@@ -121,25 +134,33 @@ on the subject and question type. Frequent causes:
   those taught
 - generated parameters that produce harder or degenerate instances
 
-Test the explanation against the finer-grained evidence. Does the step you suspect
+Alternatives may differ on purpose, and a question may be hard on purpose. The
+standard is **comparable difficulty and workload for everyone who could draw the
+slot**, not identical questions. If a difference looks intentional, keep it, and
+frame the problem as an unfair draw.
+
+Test the explanation against the evidence from step 2. Does the step you suspect
 have the lowest success rate? Do the wrong answers match the predicted mistake?
 
 Label each finding's confidence:
 
 - **Observed:** the data shows it directly.
 - **Likely:** the source and data support a cause, but haven't proven it.
-- **Unexplained:** the gap is real, but no cause was found. Say what would settle
-  it.
+- **Predicted:** found in the source only, with no student data yet.
+- **Unexplained:** the gap is real, but no cause was found.
 
-Add a few words to the label when strength varies, for example: "Likely; reversed
-in one term."
+For Predicted and Unexplained findings, name the specific data that would settle
+it. Add a few words to the label when strength varies, for example: "Likely;
+reversed in one term."
 
 ## 5. Recommend edits
 
-Give each finding the smallest change that addresses its cause. It can be:
+Give each finding the smallest change that fixes the problem and keeps what the
+instructor intended. It can be:
 
 - a question file
-- an assessment setting
+- an assessment setting, for example moving a question to another slot or giving
+  everyone the hard question
 - a rubric in PrairieLearn
 - a process step, such as calibrating graders
 
@@ -153,7 +174,8 @@ Write `report.md` for the instructor. Put per-offering tables, method notes, and
 smaller checks in `details.md` next to it. Save queries and aggregate results
 alongside both. Use the folder the instructor names, or the course's existing
 location for reports. Otherwise, use a new folder outside the course repository.
-If you can't write files, return the report text instead.
+If you can't write the report files, return their text, and still save the
+queries and results.
 
 ```markdown
 # <Assessment>: diagnosis
@@ -178,9 +200,11 @@ If you can't write files, return the report text instead.
 ```
 
 Keep `report.md` to about 800 words. Order findings by effect on students: how
-many were affected and by how much. Most reports have three to six findings.
-Write in plain language, without statistics jargon. Scope, exclusions, and data
-caveats go at the top of `details.md`, with a one-line pointer in the report.
+many were affected and by how much. Most reports have three to six findings;
+merge related minor ones, and move small issues to the "Checked" list or to
+`details.md`. Write in plain language, without statistics jargon. Scope,
+exclusions, and data caveats go at the top of `details.md`, with a one-line
+pointer in the report.
 
 ## Before handing off
 
