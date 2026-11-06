@@ -257,10 +257,10 @@ staff and test instances excluded).>
 ```
 
 The bottom line, summary table, and chart should give the picture in a minute.
-Keep each finding under about 150 words, and order findings by effect on students: how many were
-affected and by how much. Most reports have three to six findings. Merge related
-minor ones, and move small issues to "Checked, no change needed". Put longer
-method notes in an optional `details.md`.
+Keep each finding under about 150 words, and order findings by effect on
+students: how many were affected and by how much. Most reports have three to six
+findings. Merge related minor ones, and move small issues to "Checked, no change
+needed". Put longer method notes in an optional `details.md`.
 
 ## Before handing off
 
