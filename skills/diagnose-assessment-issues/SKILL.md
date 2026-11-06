@@ -14,9 +14,9 @@ description: >-
 When you're done, the instructor should know **which questions to change, how,
 and why**, after about five minutes of reading. Every claim must hold up.
 
-Statistics tell you where to look. The question source tells you why. A
-difference between two numbers isn't a finding until you can point to what in the
-question, grader, or assessment setup causes it, or say plainly that you couldn't.
+Statistics tell you where to look. The question source tells you why. A gap
+between two numbers isn't a finding until you can point to what in the question,
+grader, or assessment setup causes it, or say plainly that you couldn't.
 
 ## Boundaries
 
@@ -38,16 +38,16 @@ tables, starting queries, and known data quirks.
 ## 1. Establish scope
 
 1. Identify the course and assessment. Look for a course design guide or earlier
-   reports, and use any goals you find, such as intended time per question or
-   target difficulty.
+   reports, and use any goals you find, such as intended time or difficulty.
 2. Choose the offerings:
    - **The current definition.** Fixes apply here. Check whether it has already
-     been given. Missing data doesn't mean it hasn't run, so if you can't tell,
-     ask or state your assumption.
-   - **Past offerings of the same assessment.** Match by assessment ID or title,
-     and confirm they cover the same material by checking question overlap. If
-     several course instances match a term (for example, another campus), use the
-     one with data and say so.
+     been given; missing data doesn't mean it hasn't run. If you can't tell, ask
+     or state your assumption.
+   - **Past offerings of the same assessment.** Focus on the most recent ones
+     with the same questions, and use older ones to check whether a pattern is
+     stable. Confirm they match by comparing questions, not just names. If
+     several course instances match a term, such as another campus, use the one
+     with data and say so.
    - **Other assessments in the same course,** for comparison only. They show
      whether a pattern is specific to this assessment, for example whether every
      quiz got longer.
@@ -71,20 +71,22 @@ For each question in each offering, compute:
 - share with no submission
 
 Show alternatives in the same slot side by side, with their sample sizes. Keep
-offerings separate; pool them only when their definitions are identical.
+offerings separate; pool them only when their definitions are identical. When
+students get many attempts at full value, first-submission scores and attempt
+counts mean little; use per-part results on the best submission instead.
 
 Then add the evidence that a given candidate needs:
 
 - **Per part:** test results, per-input credit, rubric items, or option choices
   show which step students lose points on.
 - **By generated parameters:** shows whether some random instances are harder.
-- **Common wrong answers:** for example, the share of answers that are off by a
-  sign, use the wrong formula, or match a worked example.
-- **Time pressure:** the share of students who finish near the time limit.
+- **Common wrong answers:** for example, answers that are off by a sign, use the
+  wrong formula, or match a worked example.
+- **Time pressure:** the share of students finishing near the time limit.
   Medians hide this when most students run to the end.
 - **Effect on students:** points out of the assessment total that a student loses
-  because of what they drew. For "choose N of M" pools, compare the combinations
-  students drew.
+  because of what they drew. For each slot, take the drawn alternative's mean
+  minus the slot's mean, add these up for each student, and report the spread.
 
 ## 3. Find candidates, then rule out other explanations
 
@@ -94,9 +96,9 @@ Candidates worth explaining:
   or non-submission, especially when the gap repeats across offerings.
 - **Similar scores that hide a workload difference.**
 - **Questions far from the intended time or difficulty.** With no stated target,
-  compare against the question the item replaced and against other slots worth
-  the same points.
-- **Shifts between offerings** for the same question or the whole assessment.
+  compare against the question the item replaced and other slots worth the same
+  points.
+- **Shifts between offerings,** for one question or the whole assessment.
 - **Grading that differs** between alternatives or between graders.
 
 Before you believe a candidate, rule out explanations that have nothing to do
@@ -107,11 +109,12 @@ with the question:
   exam days. Check assignment by date. Without dates, compare each
   alternative's count with an even split.
 - **Students choosing** which questions to attempt.
-- **A stronger or weaker group of students.** Compare scores on the questions
-  that didn't change between offerings.
+- **Stronger or weaker groups,** across terms or across exam days. Compare
+  scores on questions that didn't change.
 - **Score changes by staff,** including partial bumps, not only full credit.
-- **Question edits between offerings.** Without source history, compare old
-  grader messages or parameter formats with the current source.
+- **Question edits between offerings.** Without source history, recompute stored
+  answers from old variant parameters with the current code, or compare old
+  grader messages with the current grader.
 - **Course-wide changes,** such as a new format added to every quiz.
 - **Time measurements that include idle time.**
 
@@ -139,8 +142,9 @@ standard is **comparable difficulty and workload for everyone who could draw the
 slot**, not identical questions. If a difference looks intentional, keep it, and
 frame the problem as an unfair draw.
 
-Test the explanation against the evidence from step 2. Does the step you suspect
-have the lowest success rate? Do the wrong answers match the predicted mistake?
+Test each explanation against the evidence from step 2. Does the step you
+suspect have the lowest success rate? Do the wrong answers match the predicted
+mistake?
 
 Label each finding's confidence:
 
@@ -149,9 +153,8 @@ Label each finding's confidence:
 - **Predicted:** found in the source only, with no student data yet.
 - **Unexplained:** the gap is real, but no cause was found.
 
-For Predicted and Unexplained findings, name the specific data that would settle
-it. Add a few words to the label when strength varies, for example: "Likely;
-reversed in one term."
+For Predicted and Unexplained findings, name the data that would settle it. Add a
+few words when strength varies, for example: "Likely; reversed in one term."
 
 ## 5. Recommend edits
 
@@ -164,7 +167,8 @@ instructor intended. It can be:
 - a rubric in PrairieLearn
 - a process step, such as calibrating graders
 
-Say "No edit needed" when that's the honest answer. Don't recommend grade changes
+Say "No edit needed" or "Already fixed in the current definition" when that's
+the honest answer. Don't recommend grade changes
 yourself. If a past offering was clearly unequal, state the effect in points and
 leave the decision to the instructor.
 

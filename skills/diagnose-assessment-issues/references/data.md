@@ -29,9 +29,16 @@ If access fails, explain the obstacle once and continue with what you have.
 
 ## Finding the course
 
-Match the course instance by the `uuid` in `infoCourseInstance.json`
-(`course_instances.uuid`), then take its `course_id`. Don't match
-`infoCourse.json`'s UUID against `courses`; the two don't line up.
+Match the course instance by the `uuid` in `infoCourseInstance.json`, then take
+its `course_id`. Don't match `infoCourse.json`'s UUID against `courses`; the two
+don't line up.
+
+```sql
+SELECT course_id, short_name FROM course_instances WHERE uuid = '<uuid>';
+```
+
+The assessment's total points may be empty in the database (`assessments.max_points`).
+In that case, add up each slot's maximum points.
 
 ## Tables
 
@@ -69,14 +76,19 @@ soft-deleted rows (`deleted_at IS NULL`).
   Older ("v2") questions often grade all-or-nothing.
 - **Counting mistakes.** Compare each answer with predicted wrong answers within
   the question's tolerance. Check first that the categories don't overlap with
-  the correct answer or with each other. For code, count features across decoded
-  submissions (for example, which function was used). Never save or print the
-  code itself.
+  the correct answer or with each other. For code, decode and count features
+  inside the query, for example
+  `convert_from(decode(f->>'contents', 'base64'), 'UTF8') ~ 'np\.outer'`, so the
+  code never leaves the database. Never save or print the code itself.
 - **Grader messages** can echo student output. Mask numbers and group messages by
-  pattern; never save raw messages. Messages in old feedback that the current
-  grader can't produce show that the grader changed.
+  pattern; never save raw messages. Structural details such as array shapes are
+  fine to keep. Messages in old feedback that the current grader can't produce
+  show that the grader changed.
 - **Which submission.** Use the best submission when explaining the recorded
-  score. Use the first submission when studying initial mistakes.
+  score. Use the first submission when studying initial mistakes. Exams can store
+  saved but ungraded submissions (`score IS NULL`); skip them.
+- **Course files contain identifiers too.** Access rules in
+  `infoAssessment.json` can list student emails. Don't copy them into outputs.
 - **Zero-point questions** and workspace placeholders don't need analysis.
 
 ## Starting query: per-question statistics across offerings
