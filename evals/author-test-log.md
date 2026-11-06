@@ -13,6 +13,40 @@ Both tasks came from findings made by `diagnose-assessment-issues`.
 | TAM 212: about half the variants of `particleVelonTriCurveSpeed` have answer 0; fix it without changing what the question asks | Numeric, randomized `server.py` | One-function change to `generate()`, keeping only points where the slope isn't zero. The sampler went from 50% zero answers to none in 500 seeds. Built-in tests passed 300 of 300. Correct answers got full credit and plausible mistakes got none. I confirmed the renders. |
 | CS 357: make Terrain and Temperature comparable, keeping the saddle-point case; fix Terrain's contradictory wording | Externally graded Python code | Added a saddle case and a third test to Temperature, fixed its reference solution, and fixed both prompts. Graded in PrairieLearn with Docker, the two alternatives now score identically: reference 15/15, two-way classifier 13.33/15, wrong value 10/15. I confirmed the renders and reviewed the diff. |
 
+## Third test: CS 357 Quiz 3, Fall 2026
+
+Done on November 6 to give the deck a second CS 357 case study. The request
+used the diagnosis numbers: in course instance Fall 2026, assessment `quiz3`,
+question 10's alternatives `Linsys-SurveyElevations` (10.2, 24.7%, n=160) and
+`Linsys-MenuPrices` (10.1, 50.4%, n=201) weren't comparable. The 24.7% is
+before a staff score adjustment on October 25.
+
+The agent:
+
+- added a fully worked A and b example to both alternatives, so their
+  scaffolding stays matched
+- made both graders name the incorrect rows of A
+- left `server.py`, the grading weights and the assessment unchanged
+
+Checks:
+
+- **Grading in PrairieLearn (Docker):** reference solutions scored 100% on
+  both. Typical mistakes kept their earlier partial credit (for example,
+  benchmark row first 20%, signs swapped about 33%), now with row-level
+  feedback.
+- **My review:** I checked the diff, the worked example's arithmetic (lake 240,
+  hill 252, cabin 247), and the before, after, and graded screenshots.
+
+Gaps it found in the skill:
+
+- no harness for running an external grader directly
+- an exception in student code zeroes every test in the Python autograder
+- no guidance on choosing matched scaffolding vs. helping only the weaker
+  alternative
+- looking at several variants tells you little for single-variant code
+  questions
+- feedback renders in a non-wrapping block
+
 ## What changed in the skill after testing
 
 - Editing a question changes it everywhere it's used, across every course
