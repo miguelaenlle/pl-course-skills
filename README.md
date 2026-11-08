@@ -29,6 +29,9 @@ frontmatter, usable by Claude Code and Codex.
 - [`docs/assessment-skill-plan.md`](docs/assessment-skill-plan.md): what CS 357's
   agent-written reports contain, where `improve-assessment` falls short, and the
   proposed split into smaller skills.
+- [`docs/file-upload-plan.md`](docs/file-upload-plan.md): plan for letting
+  instructors attach files to course agent messages (R2 storage, upload path,
+  how files reach the sandbox and model, PR breakdown).
 - [`evals/cs357-gold-findings.md`](evals/cs357-gold-findings.md): findings from the
   CS 357 reports, used to score replays of `diagnose-assessment-issues`.
 - [`evals/diagnose-test-log.md`](evals/diagnose-test-log.md): test rounds, what
