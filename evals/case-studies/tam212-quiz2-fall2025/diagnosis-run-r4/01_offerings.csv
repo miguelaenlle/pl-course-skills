@@ -1,0 +1,18 @@
+ci_id,short_name,assessment_id,tid,title,max_points,n_instances,n_excluded,first_start,last_start,n_days,mean_score,median_total_min,p90_total_min
+158221,Fa24,2434746,quiz02,Vector calculus and rotations,,200,3,2024-10-01,2024-10-04,4,78.6,45.6,49.8
+158221,Fa24,2434747,quiz02p,Practice Quiz 2,,585,0,2024-09-23,2024-12-16,26,41.9,22.7,126.9
+158221,Fa24,2434748,quiz02r,Vector calculus and rotations (Retake),,56,0,2024-10-08,2024-10-11,4,58.0,48.0,49.8
+173734,Spring2025,2497144,quiz02,Vector calculus and rotations,,474,3,2025-02-25,2025-02-28,4,81.0,45.5,49.6
+173734,Spring2025,2497145,quiz02p,Practice Quiz 2,,1,0,2025-02-22,2025-02-22,1,0.0,0.7,0.7
+173734,Spring2025,2497146,quiz02r,Vector calculus and rotations (Retake),,129,0,2025-03-04,2025-03-07,4,62.2,48.0,49.8
+183302,Su25,2549743,quiz02,Vector calculus and rotations,,54,0,2025-07-03,2025-07-09,2,79.3,47.1,59.8
+190462,Fall2025,2574213,quiz02,Vector calculus and rotations,,244,2,2025-09-30,2025-10-03,4,77.7,47.2,49.6
+190462,Fall2025,2574214,quiz02p,Practice Quiz 2,,0,0,,,0,,,
+190462,Fall2025,2574215,quiz02r,Vector calculus and rotations (Retake),,102,0,2025-10-07,2025-10-10,4,62.5,48.1,49.9
+206303,Spring2026,2634479,quiz02,Vector calculus and rotations,,589,4,2026-02-24,2026-03-01,6,78.8,47.3,49.8
+206303,Spring2026,2634480,quiz02p,Practice Quiz 2,,0,0,,,0,,,
+206303,Spring2026,2634481,quiz02r,Vector calculus and rotations (Retake),,214,0,2026-03-03,2026-03-09,5,63.1,48.2,49.9
+216136,Su26,2683623,quiz02,Vector calculus and rotations,,81,2,2026-07-02,2026-07-05,3,79.0,52.2,59.4
+225310,Fall2026,2716830,quiz02,Vector calculus and rotations,,326,1,2026-09-29,2026-10-11,7,78.9,47.5,49.8
+225310,Fall2026,2716831,quiz02p,Practice Quiz 2,,0,0,,,0,,,
+225310,Fall2026,2716832,quiz02r,Vector calculus and rotations (Retake),,116,0,2026-10-06,2026-10-17,5,60.3,48.4,49.9

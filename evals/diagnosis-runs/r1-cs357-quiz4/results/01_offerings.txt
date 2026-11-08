@@ -1,0 +1,42 @@
+Access level: forced read-only; this LOGIN has no write or owner privileges.
+ci_id|short_name|assessment_id|tid|title|type|number|n_ai_stats|n_ai_all|n_users_stats|multiple_instance
+10920|Fall2018|339313|quiz4|Conditioning, Eigenvalues, and Markov|Exam|4|393|394|393|f
+20756|Spring2019|570717|quiz4|Short-coding quiz: Monte Carlo, Linear Systems, Eigenvalues|Exam|4|354|356|354|f
+20756|Spring2019|528190|quiz4-practice|Short-coding quiz|Exam|4P|723|732|333|t
+31055|Fall2019|725404|quiz4|Linear systems of equations|Exam|4|337|339|337|f
+52088|Spring2020|1415164|quiz4|Norms, Linsys, Conditioning and Sparse Matrices|Exam|4|29|30|29|f
+52088|Spring2020|1496596|quiz4-sync|Eigenvalues, Markov chains and nonlinear system of equations|Exam|4S|333|335|333|f
+118734|Fall2020|2307591|quiz4M|Linsys, Eigenvalues, Markov, FD|Exam|4M|200|203|200|f
+118734|Fall2020|2307731|quiz4M_Retry|Linsys, Eigenvalues, Markov, FD  (retry)|Exam|4MR|18|20|18|f
+118734|Fall2020|2307112|quiz4N|Linsys, Eigenvalues, Markov, FD |Exam|4N|169|173|169|f
+118734|Fall2020|2307729|quiz4N_Retry|Linsys, Eigenvalues, Markov, FD  (retry)|Exam|4NR|33|34|33|f
+118734|Fall2020|2307852|quiz4-OpenReview|Linsys, Eigenvalues, Markov, FD (open for practice)|Homework|4MN|222|227|222|f
+128491|Spring2021|2310249|quiz4|Sparse, Conditioning, Eigenvalues and Markov Chains|Exam|4|305|309|305|f
+128491|Spring2021|2309905|quiz4-Practice|Sparse, Conditioning, Eigenvalues and Markov Chains|Exam|4P|1471|1480|280|t
+128745|Fall2021|2312127|quiz4|Sparse, Conditioning, Eigenvalues and Markov Chains|Exam|4|365|369|365|f
+128745|Fall2021|2314524|quiz4CQ|Jupyter notebook with dataset for sparse storage coding questions|Homework|4CQ|162|165|162|f
+128745|Fall2021|2312128|quiz4-Practice|Sparse, Conditioning, Eigenvalues and Markov Chains|Exam|4P|2101|2144|346|t
+128956|Spring2022|2318079|quiz4|Sparse, Conditioning, Eigenvalues and Markov Chains|Exam|4N|139|141|139|f
+128956|Spring2022|2315577|quiz4M|Sparse, Conditioning, Eigenvalues and Markov Chains|Exam|4M|268|270|268|f
+128956|Spring2022|2315578|quiz4-Practice|Sparse, Conditioning, Eigenvalues and Markov Chains|Exam|4P|2373|2377|390|t
+129442|Fall2022|2323160|quiz4|Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains|Exam|4|404|404|404|f
+129442|Fall2022|2323161|quiz4-Practice|Practice Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains|Exam|4|3472|3476|488|t
+129442|Fall2022|2323162|quiz4-ZJUI|[ZJUI ONLY] Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains|Exam|4-ZJ1|69|69|69|f
+129681|Spring2023|2324006|quiz4|Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains|Exam|4|405|407|405|f
+129681|Spring2023|2324007|quiz4-Practice|Practice Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains (NOT FOR CREDIT)|Exam|4|2927|2929|415|t
+138454|Fall2023|2355369|quiz4|Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains|Exam|4|386|389|386|f
+138454|Fall2023|2355370|quiz4-Practice|Practice Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains (NOT FOR CREDIT)|Exam|4|3061|3062|394|t
+145154|Spring2024|2388040|quiz4|Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains|Exam|4|384|386|384|f
+145154|Spring2024|2388041|quiz4-Practice|Practice Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains (NOT FOR CREDIT)|Exam|4|2880|2884|401|t
+157792|Fall2024|2444561|quiz4A|Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains|Exam|4|95|95|95|f
+157792|Fall2024|2472839|quiz4B|Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains|Exam|4|352|352|352|f
+157792|Fall2024|2444562|quiz4-Practice|Practice Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains (NOT FOR CREDIT)|Exam|4|3752|3752|454|t
+171058|Spring2025|2491230|quiz4|Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains|Exam|4|415|416|415|f
+171058|Spring2025|2491231|quiz4-Practice|Practice Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains (NOT FOR CREDIT)|Exam|4|3133|3136|418|t
+185710|Fall2025|2557979|quiz4|Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains|Exam|4|445|446|445|f
+185710|Fall2025|2557980|quiz4-Practice|Practice Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains (NOT FOR CREDIT)|Exam|4|3280|3281|457|t
+199834|Spring2026|2619946|quiz4|Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains|Exam|4|308|308|308|f
+199834|Spring2026|2619947|quiz4-Practice|Practice Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains (NOT FOR CREDIT)|Exam|4|2371|2372|311|t
+224254|Fall2026|2713999|quiz4|Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains|Exam|4|350|350|350|f
+224254|Fall2026|2714000|quiz4-Practice|Practice Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains (NOT FOR CREDIT)|Exam|4|2692|2692|358|t
+(39 rows)

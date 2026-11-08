@@ -1,0 +1,5 @@
+Access level: forced read-only; this LOGIN has no write or owner privileges.
+form|n|first_sub_pct
+B = (A - sI)^-1|132|83.3
+B = (A + sI)^-1|141|78.0
+(2 rows)

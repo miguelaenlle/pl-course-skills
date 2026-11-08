@@ -1,0 +1,11 @@
+offering,qid,n_key_matches,n,pct_first_correct,pct_degrees_as_radians,n_decreasing,pct_first_correct_when_decreasing,pct_first_correct_when_increasing,pct_alpha_sign_ignored_when_decreasing,pct_alpha_omitted
+Fa24,pinSlotAcclnMag,43,43,23.3,18.6,17,17.6,26.9,11.8,4.7
+Fa24,polarAcclnTelescopicArm,48,48,25.0,4.2,19,15.8,31.0,26.3,0.0
+Spring2025,pinSlotAcclnMag,121,121,36.4,5.8,62,30.6,42.4,8.1,2.5
+Spring2025,polarAcclnTelescopicArm,122,122,32.0,8.2,55,25.5,37.3,21.8,0.8
+Fall2025,pinSlotAcclnMag,56,56,14.3,16.1,24,12.5,15.6,8.3,0.0
+Fall2025,polarAcclnTelescopicArm,53,53,20.8,9.4,21,19.0,21.9,14.3,0.0
+Spring2026,pinSlotAcclnMag,144,144,25.0,7.6,69,15.9,33.3,17.4,4.2
+Spring2026,polarAcclnTelescopicArm,140,140,21.4,7.1,75,14.7,29.2,12.0,0.0
+Fall2026,pinSlotAcclnMag,76,76,21.1,7.9,40,20.0,22.2,12.5,0.0
+Fall2026,polarAcclnTelescopicArm,85,85,23.5,9.4,47,12.8,36.8,10.6,0.0

@@ -1,0 +1,8 @@
+                qid                |  test_name  |  n  | coords_ok | value_ok | type_ok | type_not_str | bad_tuple | zero_pct 
+-----------------------------------+-------------+-----+-----------+----------+---------+--------------+-----------+----------
+ OptimizationND-Newton-Temperature | Test 1      | 420 |      70.2 |     70.2 |    68.3 |          0.0 |       9.3 |     24.5
+ OptimizationND-Newton-Temperature | Test 2      | 420 |      69.8 |     70.7 |    64.0 |          0.0 |       9.3 |     26.0
+ OptimizationND-Newton-Terrain     | peak_test   | 374 |      61.0 |     61.2 |    51.6 |          1.3 |       9.4 |     32.4
+ OptimizationND-Newton-Terrain     | shelf_test  | 374 |      61.2 |     61.0 |    45.2 |          1.3 |       9.4 |     33.4
+ OptimizationND-Newton-Terrain     | valley_test | 374 |      61.2 |     60.4 |    59.4 |          1.3 |       9.4 |     31.6
+(5 rows)

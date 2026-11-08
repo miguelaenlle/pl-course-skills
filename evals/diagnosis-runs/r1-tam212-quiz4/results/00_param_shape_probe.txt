@@ -1,0 +1,6 @@
+             qid             |                             rad                              | findindex | givenindex | omega | theta 
+-----------------------------+--------------------------------------------------------------+-----------+------------+-------+-------
+ constrainedMotionPistonVelo |                                                              |           |            | -146  | 
+ rigidBodyPinAccelWritten    |                                                              |           |            |       | 90
+ fourBarAngVelSimpleWritten  | {"_type": "ndarray", "_dtype": "int64", "_value": [0, 1, 0]} | 1         | 2          |       | 
+(3 rows)

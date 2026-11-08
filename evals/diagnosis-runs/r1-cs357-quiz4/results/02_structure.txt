@@ -1,0 +1,172 @@
+Access level: forced read-only; this LOGIN has no write or owner privileges.
+assessment_id|zone|zone_title|zone_choose|best_questions|slot|slot_choose|qid|max_points|n_tries|first_pts|grading_method|type
+2491230|1||||1|1|10-Linsys-Conditioning/Cond-ErrorBound-v1|5|3|{5,2,1}|Internal|Freeform
+2491230|1||||1|1|10-Linsys-Conditioning/Cond-ErrorBound-v2|5|3|{5,2,1}|Internal|Freeform
+2491230|1||||2|1|12-Eigenvalues/Eigen-PowerIterationConverge-v2|5|3|{5,2,1}|Internal|Freeform
+2491230|1||||2|1|12-Eigenvalues/Eigen-PowerIterationConverge-v3|5|3|{5,2,1}|Internal|Freeform
+2491230|1||||3|1|10-Linsys-Conditioning/Cond-ConditionNumberEstMC-v2|3|2|{3,1}|Internal|Freeform
+2491230|1||||3|1|10-Linsys-Conditioning/Cond-ConditionNumberEstMC-v1|3|2|{3,1}|Internal|Freeform
+2491230|1||||3|1|10-Linsys-Conditioning/Norm-ConditionNumberEst-v2|3|2|{3,1}|Internal|Freeform
+2491230|1||||3|1|10-Linsys-Conditioning/Cond-GuaranteeLargeCondition|3|2|{3,1}|Internal|Freeform
+2491230|1||||3|1|10-Linsys-Conditioning/Cond-GuaranteeLargeCondition-v2|3|2|{3,1}|Internal|Freeform
+2491230|1||||4|1|13-MarkovChains/Eigen-PageRank-Transition-Mat-Easy|5|5|{5,5,4}|Internal|Freeform
+2491230|1||||4|1|13-MarkovChains/Eigen-Pagerank-Transition-mat|5|5|{5,5,4}|Internal|Freeform
+2491230|1||||5|1|12-Eigenvalues/Eigenvalue-ConvergencePowerIteration|3|2|{3,1}|Internal|Freeform
+2491230|1||||5|1|12-Eigenvalues/Eigenvalues-ConvergenceInverseIteration|3|2|{3,1}|Internal|Freeform
+2491230|1||||5|1|12-Eigenvalues/Eigenvalues-BestShiftInverse|3|2|{3,1}|Internal|Freeform
+2491230|1||||5|1|12-Eigenvalues/Eigenvalues-RuntimePowerVariants-v2|3|2|{3,1}|Internal|Freeform
+2491230|1||||5|1|12-Eigenvalues/Eigen-PowerIterationConvergence|3|2|{3,1}|Internal|Freeform
+2491230|1||||5|1|12-Eigenvalues/Iteration-Mixed-Concepts|3|2|{3,1}|Internal|Freeform
+2491230|1||||5|1|12-Eigenvalues/Eigenvalues-RecogniseIterationForm-v2|3|2|{3,1}|Internal|Freeform
+2491230|1||||5|1|12-Eigenvalues/Eigenvalues-RecogniseIterationForm|3|2|{3,1}|Internal|Freeform
+2491230|1||||6|1|12-Eigenvalues/Eigenvalues-ShiftedInverseConverge|5|3|{5,2,1}|Internal|Freeform
+2491230|1||||6|1|12-Eigenvalues/Eigenvalues-ShiftedInverseConverge-v2|5|3|{5,2,1}|Internal|Freeform
+2491230|1||||6|1|12-Eigenvalues/Eigenvalue-TransformedEigvals-v2|5|3|{5,2,1}|Internal|Freeform
+2491230|1||||6|1|12-Eigenvalues/Eigenvalues-MatrixPolynomial|5|3|{5,2,1}|Internal|Freeform
+2491230|1||||6|1|12-Eigenvalues/Eigenvalue-TransformedEigvalsTriangular|5|3|{5,2,1}|Internal|Freeform
+2491230|1||||7|1|12-Eigenvalues/Eigen-InversePowerItErrorEst|5|3|{5,3,1}|Internal|Freeform
+2491230|1||||7|1|12-Eigenvalues/Eigen-ShiftedInversePowerItErrorEst|5|3|{5,3,1}|Internal|Freeform
+2491230|1||||7|1|12-Eigenvalues/Eigen-PowerItConverge|5|3|{5,3,1}|Internal|Freeform
+2491230|1||||8|1|10-Linsys-Conditioning/Norm-ChangeRHS-v2|5|3|{5,3,1}|Internal|Freeform
+2491230|1||||8|1|10-Linsys-Conditioning/Cond-MatrixChange|5|3|{5,3,1}|Internal|Freeform
+2491230|1||||8|1|10-Linsys-Conditioning/Cond-VectorChange|5|3|{5,3,1}|Internal|Freeform
+2491230|1||||8|1|10-Linsys-Conditioning/Norm-ChangeRHS|5|3|{5,3,1}|Internal|Freeform
+2491230|1||||9|1|10-Linsys-Conditioning/Cond-ConditionNumberApprox-v2|5|3|{5,3,1}|Internal|Freeform
+2491230|1||||9|1|10-Linsys-Conditioning/Cond-DiagMatrix|5|3|{5,3,1}|Internal|Freeform
+2491230|1||||9|1|10-Linsys-Conditioning/Cond-ConditionNumberApprox|5|3|{5,3,1}|Internal|Freeform
+2491230|1||||10|1|11-Sparse/Model_Sparse-COO-v2|5|3|{5,3,1}|Internal|Freeform
+2491230|1||||10|1|11-Sparse/Model_Sparse-COO-v1|5|3|{5,3,1}|Internal|Freeform
+2491230|1||||10|1|11-Sparse/Model_sparse-CSR-v1|5|3|{5,3,1}|Internal|Freeform
+2491230|2|Coding Questions|||11|1|12-Eigenvalues/Eigen-TwoLargestEig|4|204|{4,4,4}|External|Freeform
+2491230|2|Coding Questions|||11|1|12-Eigenvalues/Eigen-Power-Matrix-and-Transpose|4|204|{4,4,4}|External|Freeform
+2491230|2|Coding Questions|||12|1|11-Sparse/Sparse-CSR-Dense-Conversions|4|204|{4,4,4}|External|Freeform
+2491230|2|Coding Questions|||12|1|11-Sparse/Sparse-COO-Dense-Conversions|4|204|{4,4,4}|External|Freeform
+2491230|3|Empty JupyterLab for your personal working area|||13||General-questions/Blank-Workspace|0|1|{0}|Internal|Freeform
+2557979|1||||1|1|10-Linsys-Conditioning/Cond-ErrorBound-v1|5|3|{5,2,1}|Internal|Freeform
+2557979|1||||1|1|10-Linsys-Conditioning/Cond-ErrorBound-v2|5|3|{5,2,1}|Internal|Freeform
+2557979|1||||2|1|12-Eigenvalues/Eigen-PowerIterationConverge-v2|5|3|{5,2,1}|Internal|Freeform
+2557979|1||||2|1|12-Eigenvalues/Eigen-PowerIterationConverge-v3|5|3|{5,2,1}|Internal|Freeform
+2557979|1||||3|1|10-Linsys-Conditioning/Cond-ConditionNumberEstMC-v2|3|2|{3,1}|Internal|Freeform
+2557979|1||||3|1|10-Linsys-Conditioning/Cond-ConditionNumberEstMC-v1|3|2|{3,1}|Internal|Freeform
+2557979|1||||3|1|10-Linsys-Conditioning/Norm-ConditionNumberEst-v2|3|2|{3,1}|Internal|Freeform
+2557979|1||||3|1|10-Linsys-Conditioning/Cond-GuaranteeLargeCondition|3|2|{3,1}|Internal|Freeform
+2557979|1||||3|1|10-Linsys-Conditioning/Cond-GuaranteeLargeCondition-v2|3|2|{3,1}|Internal|Freeform
+2557979|1||||4|1|13-MarkovChains/Eigen-PageRank-Transition-Mat-Easy|5|5|{5,5,4}|Internal|Freeform
+2557979|1||||4|1|13-MarkovChains/Eigen-Pagerank-Transition-mat|5|5|{5,5,4}|Internal|Freeform
+2557979|1||||5|1|12-Eigenvalues/Eigenvalue-ConvergencePowerIteration|3|2|{3,1}|Internal|Freeform
+2557979|1||||5|1|12-Eigenvalues/Eigenvalues-ConvergenceInverseIteration|3|2|{3,1}|Internal|Freeform
+2557979|1||||5|1|12-Eigenvalues/Eigenvalues-BestShiftInverse|3|2|{3,1}|Internal|Freeform
+2557979|1||||5|1|12-Eigenvalues/Eigenvalues-RuntimePowerVariants-v2|3|2|{3,1}|Internal|Freeform
+2557979|1||||5|1|12-Eigenvalues/Eigen-PowerIterationConvergence|3|2|{3,1}|Internal|Freeform
+2557979|1||||5|1|12-Eigenvalues/Iteration-Mixed-Concepts|3|2|{3,1}|Internal|Freeform
+2557979|1||||5|1|12-Eigenvalues/Eigenvalues-RecogniseIterationForm-v2|3|2|{3,1}|Internal|Freeform
+2557979|1||||5|1|12-Eigenvalues/Eigenvalues-RecogniseIterationForm|3|2|{3,1}|Internal|Freeform
+2557979|1||||6|1|12-Eigenvalues/Eigenvalues-ShiftedInverseConverge|5|3|{5,2,1}|Internal|Freeform
+2557979|1||||6|1|12-Eigenvalues/Eigenvalues-ShiftedInverseConverge-v2|5|3|{5,2,1}|Internal|Freeform
+2557979|1||||6|1|12-Eigenvalues/Eigenvalue-TransformedEigvals-v2|5|3|{5,2,1}|Internal|Freeform
+2557979|1||||6|1|12-Eigenvalues/Eigenvalues-MatrixPolynomial|5|3|{5,2,1}|Internal|Freeform
+2557979|1||||6|1|12-Eigenvalues/Eigenvalue-TransformedEigvalsTriangular|5|3|{5,2,1}|Internal|Freeform
+2557979|1||||7|1|12-Eigenvalues/Eigen-InversePowerItErrorEst|5|3|{5,3,1}|Internal|Freeform
+2557979|1||||7|1|12-Eigenvalues/Eigen-ShiftedInversePowerItErrorEst|5|3|{5,3,1}|Internal|Freeform
+2557979|1||||7|1|12-Eigenvalues/Eigen-PowerItConverge|5|3|{5,3,1}|Internal|Freeform
+2557979|1||||8|1|10-Linsys-Conditioning/Norm-ChangeRHS-v2|5|3|{5,3,1}|Internal|Freeform
+2557979|1||||8|1|10-Linsys-Conditioning/Cond-MatrixChange|5|3|{5,3,1}|Internal|Freeform
+2557979|1||||8|1|10-Linsys-Conditioning/Cond-VectorChange|5|3|{5,3,1}|Internal|Freeform
+2557979|1||||8|1|10-Linsys-Conditioning/Norm-ChangeRHS|5|3|{5,3,1}|Internal|Freeform
+2557979|1||||9|1|10-Linsys-Conditioning/Cond-ConditionNumberApprox-v2|5|3|{5,3,1}|Internal|Freeform
+2557979|1||||9|1|10-Linsys-Conditioning/Cond-DiagMatrix|5|3|{5,3,1}|Internal|Freeform
+2557979|1||||9|1|10-Linsys-Conditioning/Cond-ConditionNumberApprox|5|3|{5,3,1}|Internal|Freeform
+2557979|1||||10|1|11-Sparse/Model_Sparse-COO-v2|5|3|{5,3,1}|Internal|Freeform
+2557979|1||||10|1|11-Sparse/Model_Sparse-COO-v1|5|3|{5,3,1}|Internal|Freeform
+2557979|1||||10|1|11-Sparse/Model_sparse-CSR-v1|5|3|{5,3,1}|Internal|Freeform
+2557979|2|Coding Questions|||11|1|12-Eigenvalues/Eigen-TwoLargestEig|4|204|{4,4,4}|External|Freeform
+2557979|2|Coding Questions|||11|1|12-Eigenvalues/Eigen-Power-Matrix-and-Transpose|4|204|{4,4,4}|External|Freeform
+2557979|2|Coding Questions|||12|1|11-Sparse/Sparse-COO-Dense-Conversions|4|204|{4,4,4}|External|Freeform
+2557979|2|Coding Questions|||12|1|11-Sparse/Sparse-CSR-Dense-Conversions|4|204|{4,4,4}|External|Freeform
+2557979|3|Empty JupyterLab for your personal working area|||13||General-questions/Blank-Workspace|0|1|{0}|Internal|Freeform
+2619946|1||||1|1|10-Linsys-Conditioning/Cond-ErrorBound-v1|5|3|{5,2,1}|Internal|Freeform
+2619946|1||||1|1|10-Linsys-Conditioning/Cond-ErrorBound-v2|5|3|{5,2,1}|Internal|Freeform
+2619946|1||||2|1|12-Eigenvalues/Eigen-PowerIterationConverge-v2|5|3|{5,2,1}|Internal|Freeform
+2619946|1||||2|1|12-Eigenvalues/Eigen-PowerIterationConverge-v3|5|3|{5,2,1}|Internal|Freeform
+2619946|1||||3|1|10-Linsys-Conditioning/Cond-ConditionNumberEstMC-v2|3|2|{3,1}|Internal|Freeform
+2619946|1||||3|1|10-Linsys-Conditioning/Cond-ConditionNumberEstMC-v1|3|2|{3,1}|Internal|Freeform
+2619946|1||||3|1|10-Linsys-Conditioning/Norm-ConditionNumberEst-v2|3|2|{3,1}|Internal|Freeform
+2619946|1||||3|1|10-Linsys-Conditioning/Cond-GuaranteeLargeCondition|3|2|{3,1}|Internal|Freeform
+2619946|1||||3|1|10-Linsys-Conditioning/Cond-GuaranteeLargeCondition-v2|3|2|{3,1}|Internal|Freeform
+2619946|1||||4|1|13-MarkovChains/Eigen-PageRank-Transition-Mat-Easy|5|5|{5,5,4}|Internal|Freeform
+2619946|1||||4|1|13-MarkovChains/Eigen-Pagerank-Transition-mat|5|5|{5,5,4}|Internal|Freeform
+2619946|1||||5|1|12-Eigenvalues/Eigenvalue-ConvergencePowerIteration|3|2|{3,1}|Internal|Freeform
+2619946|1||||5|1|12-Eigenvalues/Eigenvalues-ConvergenceInverseIteration|3|2|{3,1}|Internal|Freeform
+2619946|1||||5|1|12-Eigenvalues/Eigenvalues-BestShiftInverse|3|2|{3,1}|Internal|Freeform
+2619946|1||||5|1|12-Eigenvalues/Eigenvalues-RuntimePowerVariants-v2|3|2|{3,1}|Internal|Freeform
+2619946|1||||5|1|12-Eigenvalues/Eigen-PowerIterationConvergence|3|2|{3,1}|Internal|Freeform
+2619946|1||||5|1|12-Eigenvalues/Iteration-Mixed-Concepts|3|2|{3,1}|Internal|Freeform
+2619946|1||||5|1|12-Eigenvalues/Eigenvalues-RecogniseIterationForm-v2|3|2|{3,1}|Internal|Freeform
+2619946|1||||5|1|12-Eigenvalues/Eigenvalues-RecogniseIterationForm|3|2|{3,1}|Internal|Freeform
+2619946|1||||6|1|12-Eigenvalues/Eigenvalues-ShiftedInverseConverge|5|3|{5,2,1}|Internal|Freeform
+2619946|1||||6|1|12-Eigenvalues/Eigenvalues-ShiftedInverseConverge-v2|5|3|{5,2,1}|Internal|Freeform
+2619946|1||||6|1|12-Eigenvalues/Eigenvalue-TransformedEigvals-v2|5|3|{5,2,1}|Internal|Freeform
+2619946|1||||6|1|12-Eigenvalues/Eigenvalues-MatrixPolynomial|5|3|{5,2,1}|Internal|Freeform
+2619946|1||||6|1|12-Eigenvalues/Eigenvalue-TransformedEigvalsTriangular|5|3|{5,2,1}|Internal|Freeform
+2619946|1||||7|1|12-Eigenvalues/Eigen-InversePowerItErrorEst|5|3|{5,3,1}|Internal|Freeform
+2619946|1||||7|1|12-Eigenvalues/Eigen-ShiftedInversePowerItErrorEst|5|3|{5,3,1}|Internal|Freeform
+2619946|1||||7|1|12-Eigenvalues/Eigen-PowerItConverge|5|3|{5,3,1}|Internal|Freeform
+2619946|1||||8|1|10-Linsys-Conditioning/Norm-ChangeRHS-v2|5|3|{5,3,1}|Internal|Freeform
+2619946|1||||8|1|10-Linsys-Conditioning/Cond-MatrixChange|5|3|{5,3,1}|Internal|Freeform
+2619946|1||||8|1|10-Linsys-Conditioning/Cond-VectorChange|5|3|{5,3,1}|Internal|Freeform
+2619946|1||||8|1|10-Linsys-Conditioning/Norm-ChangeRHS|5|3|{5,3,1}|Internal|Freeform
+2619946|1||||9|1|10-Linsys-Conditioning/Cond-ConditionNumberApprox-v2|5|3|{5,3,1}|Internal|Freeform
+2619946|1||||9|1|10-Linsys-Conditioning/Cond-DiagMatrix|5|3|{5,3,1}|Internal|Freeform
+2619946|1||||9|1|10-Linsys-Conditioning/Cond-ConditionNumberApprox|5|3|{5,3,1}|Internal|Freeform
+2619946|1||||10|1|11-Sparse/Model_Sparse-COO-v2|5|3|{5,3,1}|Internal|Freeform
+2619946|1||||10|1|11-Sparse/Model_Sparse-COO-v1|5|3|{5,3,1}|Internal|Freeform
+2619946|1||||10|1|11-Sparse/Model_sparse-CSR-v1|5|3|{5,3,1}|Internal|Freeform
+2619946|2|Coding Questions|||11|1|12-Eigenvalues/Eigen-TwoLargestEig|4|204|{4,4,4}|External|Freeform
+2619946|2|Coding Questions|||11|1|12-Eigenvalues/Eigen-Power-Matrix-and-Transpose|4|204|{4,4,4}|External|Freeform
+2619946|2|Coding Questions|||12|1|11-Sparse/Sparse-COO-Dense-Conversions|4|204|{4,4,4}|External|Freeform
+2619946|2|Coding Questions|||12|1|11-Sparse/Sparse-CSR-Dense-Conversions|4|204|{4,4,4}|External|Freeform
+2619946|3|Empty JupyterLab for your personal working area|||13||General-questions/Blank-Workspace|0|1|{0}|Internal|Freeform
+2713999|1||||1|1|10-Linsys-Conditioning/Cond-ErrorBound-v1|5|3|{5,2,1}|Internal|Freeform
+2713999|1||||1|1|10-Linsys-Conditioning/Cond-ErrorBound-v2|5|3|{5,2,1}|Internal|Freeform
+2713999|1||||2|1|12-Eigenvalues/Eigen-PowerIterationConverge-v2|5|3|{5,2,1}|Internal|Freeform
+2713999|1||||2|1|12-Eigenvalues/Eigen-PowerIterationConverge-v3|5|3|{5,2,1}|Internal|Freeform
+2713999|1||||3|1|10-Linsys-Conditioning/Cond-ConditionNumberEstMC-v2|3|2|{3,1}|Internal|Freeform
+2713999|1||||3|1|10-Linsys-Conditioning/Cond-ConditionNumberEstMC-v1|3|2|{3,1}|Internal|Freeform
+2713999|1||||3|1|10-Linsys-Conditioning/Norm-ConditionNumberEst-v2|3|2|{3,1}|Internal|Freeform
+2713999|1||||3|1|10-Linsys-Conditioning/Cond-GuaranteeLargeCondition|3|2|{3,1}|Internal|Freeform
+2713999|1||||3|1|10-Linsys-Conditioning/Cond-GuaranteeLargeCondition-v2|3|2|{3,1}|Internal|Freeform
+2713999|1||||4|1|13-MarkovChains/Eigen-PageRank-Transition-Mat-Easy|5|5|{5,5,4}|Internal|Freeform
+2713999|1||||4|1|13-MarkovChains/Eigen-Pagerank-Transition-mat|5|5|{5,5,4}|Internal|Freeform
+2713999|1||||5|1|12-Eigenvalues/Eigenvalue-ConvergencePowerIteration|3|2|{3,1}|Internal|Freeform
+2713999|1||||5|1|12-Eigenvalues/Eigenvalues-ConvergenceInverseIteration|3|2|{3,1}|Internal|Freeform
+2713999|1||||5|1|12-Eigenvalues/Eigenvalues-BestShiftInverse|3|2|{3,1}|Internal|Freeform
+2713999|1||||5|1|12-Eigenvalues/Eigenvalues-RuntimePowerVariants-v2|3|2|{3,1}|Internal|Freeform
+2713999|1||||5|1|12-Eigenvalues/Eigen-PowerIterationConvergence|3|2|{3,1}|Internal|Freeform
+2713999|1||||5|1|12-Eigenvalues/Iteration-Mixed-Concepts|3|2|{3,1}|Internal|Freeform
+2713999|1||||5|1|12-Eigenvalues/Eigenvalues-RecogniseIterationForm-v2|3|2|{3,1}|Internal|Freeform
+2713999|1||||5|1|12-Eigenvalues/Eigenvalues-RecogniseIterationForm|3|2|{3,1}|Internal|Freeform
+2713999|1||||6|1|12-Eigenvalues/Eigenvalues-ShiftedInverseConverge|5|3|{5,2,1}|Internal|Freeform
+2713999|1||||6|1|12-Eigenvalues/Eigenvalues-ShiftedInverseConverge-v2|5|3|{5,2,1}|Internal|Freeform
+2713999|1||||6|1|12-Eigenvalues/Eigenvalue-TransformedEigvals-v2|5|3|{5,2,1}|Internal|Freeform
+2713999|1||||6|1|12-Eigenvalues/Eigenvalues-MatrixPolynomial|5|3|{5,2,1}|Internal|Freeform
+2713999|1||||6|1|12-Eigenvalues/Eigenvalue-TransformedEigvalsTriangular|5|3|{5,2,1}|Internal|Freeform
+2713999|1||||7|1|12-Eigenvalues/Eigen-InversePowerItErrorEst|5|3|{5,3,1}|Internal|Freeform
+2713999|1||||7|1|12-Eigenvalues/Eigen-ShiftedInversePowerItErrorEst|5|3|{5,3,1}|Internal|Freeform
+2713999|1||||7|1|12-Eigenvalues/Eigen-PowerItConverge|5|3|{5,3,1}|Internal|Freeform
+2713999|1||||8|1|10-Linsys-Conditioning/Norm-ChangeRHS-v2|5|3|{5,3,1}|Internal|Freeform
+2713999|1||||8|1|10-Linsys-Conditioning/Cond-MatrixChange|5|3|{5,3,1}|Internal|Freeform
+2713999|1||||8|1|10-Linsys-Conditioning/Cond-VectorChange|5|3|{5,3,1}|Internal|Freeform
+2713999|1||||8|1|10-Linsys-Conditioning/Norm-ChangeRHS|5|3|{5,3,1}|Internal|Freeform
+2713999|1||||9|1|10-Linsys-Conditioning/Cond-ConditionNumberApprox-v2|5|3|{5,3,1}|Internal|Freeform
+2713999|1||||9|1|10-Linsys-Conditioning/Cond-DiagMatrix|5|3|{5,3,1}|Internal|Freeform
+2713999|1||||9|1|10-Linsys-Conditioning/Cond-ConditionNumberApprox|5|3|{5,3,1}|Internal|Freeform
+2713999|1||||10|1|11-Sparse/Model_Sparse-COO-v2|5|3|{5,3,1}|Internal|Freeform
+2713999|1||||10|1|11-Sparse/Model_Sparse-COO-v1|5|3|{5,3,1}|Internal|Freeform
+2713999|1||||10|1|11-Sparse/Model_sparse-CSR-v1|5|3|{5,3,1}|Internal|Freeform
+2713999|2|Coding Questions|||11|1|13-MarkovChains/Markov-BikeShare|4|204|{4,4,4}|External|Freeform
+2713999|2|Coding Questions|||11|1|13-MarkovChains/Markov-MusicTransitions|4|204|{4,4,4}|External|Freeform
+2713999|2|Coding Questions|||12|1|11-Sparse/Sparse-COO-ReliefTransfers|4|204|{4,4,4}|External|Freeform
+2713999|2|Coding Questions|||12|1|11-Sparse/Sparse-COO-AudioMix|4|204|{4,4,4}|External|Freeform
+2713999|2|Coding Questions|||12|1|11-Sparse/Sparse-COO-NutrientTotals|4|204|{4,4,4}|External|Freeform
+2713999|3|Empty JupyterLab for your personal working area|||13||General-questions/Blank-Workspace|0|1|{0}|Internal|Freeform
+(169 rows)

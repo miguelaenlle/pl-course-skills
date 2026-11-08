@@ -1,0 +1,3 @@
+ offering | qid | n | final_above_best | full_without_full_submission 
+----------+-----+---+------------------+------------------------------
+(0 rows)

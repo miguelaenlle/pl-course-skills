@@ -1,0 +1,25 @@
+== Fall2026 coding slots: assignment and pre-override best score by start day group
+qid|days|n|mean_best_pct|mean_final_pct|no_sub_pct
+07-Random-MonteCarlo/MC-ArcadePrizeProbability|a: Oct 6-13|30|78.3|78.3|3.3
+07-Random-MonteCarlo/MC-ArcadePrizeProbability|b: Oct 14|86|77.6|77.6|4.7
+07-Random-MonteCarlo/MC-ArcadePrizeProbability|c: Oct 15-17|56|61.2|61.2|3.6
+07-Random-MonteCarlo/MC-TreasureKeyProbability|a: Oct 6-13|33|63.6|63.6|18.2
+07-Random-MonteCarlo/MC-TreasureKeyProbability|b: Oct 14|79|49.4|50.6|11.4
+07-Random-MonteCarlo/MC-TreasureKeyProbability|c: Oct 15-17|78|50.0|51.3|7.7
+09-Linsys/Linsys-MenuPrices|a: Oct 6-13|35|58.7|58.7|5.7
+09-Linsys/Linsys-MenuPrices|b: Oct 14|86|55.3|55.3|10.5
+09-Linsys/Linsys-MenuPrices|c: Oct 15-17|80|41.6|41.6|17.5
+09-Linsys/Linsys-SurveyElevations|a: Oct 6-13|27|40.7|58.5|22.2
+09-Linsys/Linsys-SurveyElevations|b: Oct 14|79|25.6|47.9|20.3
+09-Linsys/Linsys-SurveyElevations|c: Oct 15-17|54|15.4|40.8|25.9
+(12 rows)
+== Fall2026: did students with no submission on SurveyElevations receive the bump?
+submitted|final_b|count
+f|30|36
+t|30|70
+t|40|3
+t|45|3
+t|50|11
+t|55|2
+t|100|35
+(7 rows)

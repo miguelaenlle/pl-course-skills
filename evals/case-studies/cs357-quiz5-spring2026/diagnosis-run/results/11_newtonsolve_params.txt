@@ -1,0 +1,8 @@
+  grouping   | value |  n  | first_jac_pct | first_iterate_pct 
+-------------+-------+-----+---------------+-------------------
+ cross_terms | 0     |   6 |          66.7 |              50.0
+ cross_terms | 1     |  62 |          72.6 |              38.7
+ cross_terms | 2     | 209 |          80.4 |              52.6
+ start_has_2 | false |  86 |          81.4 |              53.5
+ start_has_2 | true  | 191 |          77.0 |              47.6
+(5 rows)

@@ -1,0 +1,14 @@
+qid,got_shape,expected_shape,n
+17-LinearLeastSquares/LeastSquares-Geese,"(3, 3)","(18, 3)",6
+17-LinearLeastSquares/LeastSquares-Geese,"(20, 3)","(18, 3)",4
+17-LinearLeastSquares/LeastSquares-Geese,"(20, 2)","(18, 3)",3
+17-LinearLeastSquares/LeastSquares-Geese,"(2,)","(18, 3)",2
+17-LinearLeastSquares/LeastSquares-Geese,"(18,)","(18, 3)",2
+17-LinearLeastSquares/LeastSquares-Squirrels,"(2, 2)","(19, 3)",8
+17-LinearLeastSquares/LeastSquares-Squirrels,"(20, 3)","(19, 3)",5
+17-LinearLeastSquares/LeastSquares-Squirrels,"(20, 2)","(19, 3)",4
+17-LinearLeastSquares/LeastSquares-Squirrels,"(18, 3)","(19, 3)",3
+17-LinearLeastSquares/LeastSquares-Squirrels,"(0,)","(19, 3)",3
+17-LinearLeastSquares/LeastSquares-Squirrels,"(19, 2)","(19, 3)",3
+17-LinearLeastSquares/LeastSquares-Squirrels,"(20, 20)","(19, 3)",2
+17-LinearLeastSquares/LeastSquares-Squirrels,"(3, 3)","(19, 3)",2

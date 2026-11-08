@@ -1,0 +1,58 @@
+== masked test messages on best submission (counts >= 3)
+qid|test|msg|n
+07-Random-MonteCarlo/MC-ArcadePrizeProbability|Probability of winning the arcade prize|Your probability estimate is accurate. |122
+07-Random-MonteCarlo/MC-ArcadePrizeProbability|Probability of winning the arcade prize|Your estimate is close. Check the sampling rule and win condition, and consider whether your number of simulated games is large enough. |10
+07-Random-MonteCarlo/MC-ArcadePrizeProbability|Probability of winning the arcade prize|The grader did not detect any calls to the provided rng.choice method. Use the provided random generator to simulate the game draws. |5
+07-Random-MonteCarlo/MC-ArcadePrizeProbability|Probability of winning the arcade prize|Your simulation does not appear to use enough independent games for the requested accuracy. Recall how Monte Carlo error scales with N. How can you estimate N f|5
+07-Random-MonteCarlo/MC-ArcadePrizeProbability|Probability of winning the arcade prize|Check that each call to rng.choice represents one complete game and draws the number of chips specified in the game rules. Check whether the sampling within eac|3
+07-Random-MonteCarlo/MC-ArcadePrizeProbability|Probability of winning the arcade prize|win_probability must be a scalar number. |3
+07-Random-MonteCarlo/MC-ArcadePrizeProbability|Probability of winning the arcade prize|Your estimate is not close to the expected probability. Check how you draw the # chips for one game, count wins, and form the probability. |3
+07-Random-MonteCarlo/MC-TreasureKeyProbability|Probability of opening the treasure vault|Your probability estimate is accurate. |99
+07-Random-MonteCarlo/MC-TreasureKeyProbability|Probability of opening the treasure vault|The grader did not detect any calls to the provided rng.choice method. Use the provided random generator to simulate the game draws. |16
+07-Random-MonteCarlo/MC-TreasureKeyProbability|Probability of opening the treasure vault|Your estimate is not close to the expected probability. Check how you draw the keys, form the displayed pairs, count matches, count wins, and form the probabili|13
+07-Random-MonteCarlo/MC-TreasureKeyProbability|Probability of opening the treasure vault|Check that each call to rng.choice represents one complete game and draws the number of keys specified in the game rules. Check whether the sampling within each|11
+07-Random-MonteCarlo/MC-TreasureKeyProbability|Probability of opening the treasure vault|Your simulation does not appear to use enough independent games for the requested accuracy. Recall how Monte Carlo error scales with N. How can you estimate N f|8
+07-Random-MonteCarlo/MC-TreasureKeyProbability|Probability of opening the treasure vault|Check that each call to rng.choice represents one complete game and draws the number of keys specified in the game rules. |4
+07-Random-MonteCarlo/MC-TreasureKeyProbability|Probability of opening the treasure vault|win_probability must be a scalar number. |3
+09-Linsys/Linsys-MenuPrices|Coefficient matrix A|A is correct. |96
+09-Linsys/Linsys-MenuPrices|Coefficient matrix A|# of # rows of A are correct. Check the quantities and column locations in each receipt equation. |23
+09-Linsys/Linsys-MenuPrices|Coefficient matrix A|A has shape (); expected (#, #). |11
+09-Linsys/Linsys-MenuPrices|Coefficient matrix A|A has shape (#,); expected (#, #). |5
+09-Linsys/Linsys-MenuPrices|Coefficient matrix A|A must contain numeric values. |4
+09-Linsys/Linsys-MenuPrices|Coefficient matrix A|A has shape (#, #); expected (#, #). |3
+09-Linsys/Linsys-MenuPrices|Right-hand side b|b is correct. |119
+09-Linsys/Linsys-MenuPrices|Right-hand side b|b has shape (); expected (#,). |17
+09-Linsys/Linsys-MenuPrices|Right-hand side b|# of # entries of b are correct. |4
+09-Linsys/Linsys-MenuPrices|Solved menu prices|The computed menu prices are correct. |94
+09-Linsys/Linsys-MenuPrices|Solved menu prices|prices has shape (); expected (#,). |44
+09-Linsys/Linsys-MenuPrices|Solved menu prices|The computed prices are not correct. Solve the completed system A @ prices = b. |4
+09-Linsys/Linsys-SurveyElevations|Coefficient matrix A|A is correct. |35
+09-Linsys/Linsys-SurveyElevations|Coefficient matrix A|# of # rows of A are correct. Check the signs and column locations in each equation. |32
+09-Linsys/Linsys-SurveyElevations|Coefficient matrix A|A has shape (); expected (#, #). |13
+09-Linsys/Linsys-SurveyElevations|Coefficient matrix A|A has shape (#, #); expected (#, #). |4
+09-Linsys/Linsys-SurveyElevations|Coefficient matrix A|A has shape (#,); expected (#, #). |3
+09-Linsys/Linsys-SurveyElevations|Coefficient matrix A|A must contain numeric values. |3
+09-Linsys/Linsys-SurveyElevations|Right-hand side b|b is correct. |48
+09-Linsys/Linsys-SurveyElevations|Right-hand side b|b has shape (); expected (#,). |20
+09-Linsys/Linsys-SurveyElevations|Right-hand side b|# of # entries of b are correct. |16
+09-Linsys/Linsys-SurveyElevations|Right-hand side b|b has shape (#,); expected (#,). |5
+09-Linsys/Linsys-SurveyElevations|Solved elevations|elevations has shape (); expected (#,). |45
+09-Linsys/Linsys-SurveyElevations|Solved elevations|The computed elevations are correct. |35
+09-Linsys/Linsys-SurveyElevations|Solved elevations|The computed elevations are not correct. Solve the completed system A @ elevations = b. |9
+(39 rows)
+== SurveyElevations: rows-correct count on best submission, by n locations
+n_loc|rows_correct|some_pts|count
+5|0|f|10
+5|1|t|2
+5|2|t|1
+5||f|7
+5||t|9
+6|0|f|10
+6|1|t|1
+6||f|6
+6||t|11
+7|0|f|6
+7|1|t|2
+7||f|10
+7||t|15
+(13 rows)

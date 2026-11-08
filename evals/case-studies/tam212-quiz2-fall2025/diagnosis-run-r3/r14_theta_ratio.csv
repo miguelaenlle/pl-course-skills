@@ -1,0 +1,7 @@
+qid,input,n,within_1pct,near_miss_1_10pct,sign_flip,near_zero,other
+thetaFunTAccln1,ansValue1,55,38.2,5.5,3.6,1.8,50.9
+thetaFunTAccln1,ansValue2,55,58.2,0.0,1.8,10.9,29.1
+thetaFunTAccln2,ansValue1,45,48.9,0.0,0.0,6.7,44.4
+thetaFunTAccln2,ansValue2,45,51.1,2.2,2.2,17.8,26.7
+thetaFunTAccln3,ansValue1,48,22.9,10.4,0.0,20.8,45.8
+thetaFunTAccln3,ansValue2,48,39.6,0.0,0.0,8.3,52.1

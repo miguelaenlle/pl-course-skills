@@ -1,0 +1,11 @@
+qid,msg_pattern,n
+17-LinearLeastSquares/LeastSquares-Geese,'M' is inaccurate ,31
+17-LinearLeastSquares/LeastSquares-Geese,"'M' does not have correct shape--got: '(#, #)', expected: '(#, #)' ",19
+17-LinearLeastSquares/LeastSquares-Geese,'M' is None or not defined ,17
+17-LinearLeastSquares/LeastSquares-Geese,'M' is not a numpy array ,9
+17-LinearLeastSquares/LeastSquares-Geese,"'M' does not have correct shape--got: '(#,)', expected: '(#, #)' ",4
+17-LinearLeastSquares/LeastSquares-Squirrels,'M' is None or not defined ,40
+17-LinearLeastSquares/LeastSquares-Squirrels,"'M' does not have correct shape--got: '(#, #)', expected: '(#, #)' ",35
+17-LinearLeastSquares/LeastSquares-Squirrels,'M' is inaccurate ,31
+17-LinearLeastSquares/LeastSquares-Squirrels,"'M' does not have correct shape--got: '(#,)', expected: '(#, #)' ",4
+17-LinearLeastSquares/LeastSquares-Squirrels,'M' is not a numpy array ,3

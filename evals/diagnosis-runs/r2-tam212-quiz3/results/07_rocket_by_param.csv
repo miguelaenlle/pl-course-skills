@@ -1,0 +1,17 @@
+scope,answer_sign,omega,n,mean_final_pct
+other 5 offerings,thrust away from planet (answer >= 0),,108,30.9
+other 5 offerings,thrust away from planet (answer >= 0),1,100,32.5
+other 5 offerings,thrust away from planet (answer >= 0),2,8,11.3
+other 5 offerings,thrust toward planet (answer < 0),,292,25.7
+other 5 offerings,thrust toward planet (answer < 0),1,27,27.0
+other 5 offerings,thrust toward planet (answer < 0),2,125,26.1
+other 5 offerings,thrust toward planet (answer < 0),3,140,25.1
+Spring2026,thrust away from planet (answer >= 0),,31,23.9
+Spring2026,thrust away from planet (answer >= 0),1,30,21.7
+Spring2026,thrust away from planet (answer >= 0),2,1,90.0
+Spring2026,thrust toward planet (answer < 0),,103,25.1
+Spring2026,thrust toward planet (answer < 0),1,6,15.0
+Spring2026,thrust toward planet (answer < 0),2,56,28.0
+Spring2026,thrust toward planet (answer < 0),3,41,22.7
+(14 rows)
+Cancel request sent

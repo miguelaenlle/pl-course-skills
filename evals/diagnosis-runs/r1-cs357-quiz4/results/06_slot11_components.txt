@@ -1,0 +1,9 @@
+Access level: forced read-only; this LOGIN has no write or owner privileges.
+offering|qid|n|pts_0|pts_25|pts_50|pts_75|pts_100|first_vec_wrong|second_vec_wrong|bad_return|used_disallowed
+Spring2025|12-Eigenvalues/Eigen-Power-Matrix-and-Transpose|140|41|4|5|9|81|12|24|0|6
+Fall2025|12-Eigenvalues/Eigen-Power-Matrix-and-Transpose|198|50|5|8|20|115|24|44|1|5
+Spring2026|12-Eigenvalues/Eigen-Power-Matrix-and-Transpose|106|38|1|5|15|47|15|31|0|2
+Spring2025|12-Eigenvalues/Eigen-TwoLargestEig|146|38|7|90|2|9|6|93|1|7
+Fall2025|12-Eigenvalues/Eigen-TwoLargestEig|146|48|10|70|0|18|14|81|1|7
+Spring2026|12-Eigenvalues/Eigen-TwoLargestEig|112|30|10|55|0|17|5|62|0|2
+(6 rows)

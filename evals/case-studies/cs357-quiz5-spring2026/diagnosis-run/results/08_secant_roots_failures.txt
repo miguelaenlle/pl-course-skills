@@ -1,0 +1,5 @@
+                    qid                    | n_graded | n_pass | fail_wrong_length | fail_length_only_all_entries_ok | fail_values_same_length | fail_first_entry_wrong | fail_missing_or_empty | fail_other 
+-------------------------------------------+----------+--------+-------------------+---------------------------------+-------------------------+------------------------+-----------------------+------------
+ NonlinearSecant1D-FindCriticalTemperature |      468 |    307 |                90 |                              28 |                       1 |                     50 |                    61 |          9
+ NonlinearSecant1D-FindOptimalLaunchAngle  |      445 |    272 |                78 |                               9 |                       8 |                     68 |                    61 |         26
+(2 rows)

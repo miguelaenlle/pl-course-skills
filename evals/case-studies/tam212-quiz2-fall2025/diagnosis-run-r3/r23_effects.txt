@@ -1,0 +1,11 @@
+slot 3: mean 19.34 pts (n=244)
+slot 4: mean 19.06 pts (n=244)
+slot 5: mean 17.60 pts (n=244)
+slot 6: mean 7.43 pts (n=244)
+slot 7: mean 8.43 pts (n=244)
+slot 8: mean 5.85 pts (n=244)
+Ohare pooled 3.48 (n=92, 38% of 244); vs slot mean -3.95; vs theta1/2 -7.37
+theta3 vs theta1/2: -3.04
+pinSlot vs slot7 mean -2.41; vs spiral -4.31; vs telescopic -2.59
+slot8 mean 5.85; Tri zero-answer 9.94 (n=35), Tri nonzero 4.97 (n=39); zero vs slot mean +4.09
+grader spread G1 96.3% vs G5 80.6% -> 3.1 pts of 20

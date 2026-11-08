@@ -1,0 +1,5 @@
+        dir        | n_first_subs | first_correct_pct | first_sub_sign_flip_pct 
+-------------------+--------------+-------------------+-------------------------
+ clockwise         |          226 |              33.2 |                    16.4
+ counter-clockwise |          245 |              44.1 |                     4.9
+(2 rows)

@@ -1,0 +1,54 @@
+offering,qid,n_assigned,n_with_submission,n_rubric_graded,item_no,points,description,item_deleted,n_applied,applied_pct
+Fall2025,massFromCurveRadWritten,124,124,124,0,2,Correct identification of $\dot{s}$,f,116,93.5
+Fall2025,massFromCurveRadWritten,124,124,124,1,2,Correct identification of $\ddot{s}$,f,74,59.7
+Fall2025,massFromCurveRadWritten,124,124,124,2,5,Correct formula for acceleration,f,77,62.1
+Fall2025,massFromCurveRadWritten,124,124,124,3,5,Correct value for acceleration magnitude,f,105,84.7
+Fall2025,massFromCurveRadWritten,124,124,124,4,2,Correct formula for Newton's Second Law,f,121,97.6
+Fall2025,massFromCurveRadWritten,124,124,124,5,4,Correct final answer,f,120,96.8
+Fall2025,massFromCurveRadWritten,124,124,124,6,-1,Minor calculation error,f,2,1.6
+Fall2025,massFromCurveRadWritten,124,124,124,7,-2,Blurry or bad photo,f,5,4.0
+Fall2025,polyDistCurveAccWritten,119,117,117,0,5,Correct formula for acceleration,f,102,87.2
+Fall2025,polyDistCurveAccWritten,119,117,117,1,2,Correct expression for sdot,f,117,100.0
+Fall2025,polyDistCurveAccWritten,119,117,117,2,2,Correct expression for sddot,f,113,96.6
+Fall2025,polyDistCurveAccWritten,119,117,117,3,2,Correct value for sdot,f,113,96.6
+Fall2025,polyDistCurveAccWritten,119,117,117,4,2,Correct value for sddot,f,113,96.6
+Fall2025,polyDistCurveAccWritten,119,117,117,5,3,Correct value for acceleration,f,102,87.2
+Fall2025,polyDistCurveAccWritten,119,117,117,6,4,Correct final answer,f,110,94.0
+Fall2025,polyDistCurveAccWritten,119,117,117,7,-1,Minor calculation error,f,4,3.4
+Fall2025,polyDistCurveAccWritten,119,117,117,8,-2,Blurry or bad photo,f,4,3.4
+Fall2026,massFromCurveRadWritten,161,159,159,0,5,Proper use of $v$ and $\dot{v}$ in the acceleration equation.,f,144,90.6
+Fall2026,massFromCurveRadWritten,161,159,159,1,5,Correct formula for acceleration,f,142,89.3
+Fall2026,massFromCurveRadWritten,161,159,159,2,4,Correct value for acceleration magnitude,f,135,84.9
+Fall2026,massFromCurveRadWritten,161,159,159,3,2,Correct formula for Newton's Second Law,f,152,95.6
+Fall2026,massFromCurveRadWritten,161,159,159,4,4,Correct final answer,f,137,86.2
+Fall2026,massFromCurveRadWritten,161,159,159,5,-1,Minor calculation error,f,5,3.1
+Fall2026,massFromCurveRadWritten,161,159,159,6,-2,Blurry or bad photo,f,3,1.9
+Fall2026,massFromCurveRadWritten,161,159,159,7,-1,Notation and Units Issues,f,9,5.7
+Fall2026,polyDistCurveAccWritten,155,154,154,0,5,Correct formula for acceleration,f,143,92.9
+Fall2026,polyDistCurveAccWritten,155,154,154,1,2,Correct expression for sdot,f,147,95.5
+Fall2026,polyDistCurveAccWritten,155,154,154,2,2,Correct expression for sddot,f,148,96.1
+Fall2026,polyDistCurveAccWritten,155,154,154,3,2,Correct value for sdot,f,149,96.8
+Fall2026,polyDistCurveAccWritten,155,154,154,4,2,Correct value for sddot,f,148,96.1
+Fall2026,polyDistCurveAccWritten,155,154,154,5,3,Correct value for acceleration,f,142,92.2
+Fall2026,polyDistCurveAccWritten,155,154,154,6,4,Correct final answer,f,140,90.9
+Fall2026,polyDistCurveAccWritten,155,154,154,7,-1,Minor calculation error,f,5,3.2
+Fall2026,polyDistCurveAccWritten,155,154,154,8,-2,Blurry or bad photo,f,1,0.6
+Fall2026,polyDistCurveAccWritten,155,154,154,9,-1,Notation and Units Issues,f,13,8.4
+Spring2026,massFromCurveRadWritten,296,292,292,0,5,Proper use of $v$ and $\dot{v}$ in the acceleration equation.,f,255,87.3
+Spring2026,massFromCurveRadWritten,296,292,292,1,2,Correct identification of $\ddot{s}$,t,0,0.0
+Spring2026,massFromCurveRadWritten,296,292,292,1,5,Correct formula for acceleration,f,251,86.0
+Spring2026,massFromCurveRadWritten,296,292,292,2,4,Correct value for acceleration magnitude,f,230,78.8
+Spring2026,massFromCurveRadWritten,296,292,292,3,2,Correct formula for Newton's Second Law,f,282,96.6
+Spring2026,massFromCurveRadWritten,296,292,292,4,4,Correct final answer,f,236,80.8
+Spring2026,massFromCurveRadWritten,296,292,292,5,-1,Minor calculation error,f,12,4.1
+Spring2026,massFromCurveRadWritten,296,292,292,6,-2,Blurry or bad photo,f,3,1.0
+Spring2026,polyDistCurveAccWritten,288,288,288,0,5,Correct formula for acceleration,f,275,95.5
+Spring2026,polyDistCurveAccWritten,288,288,288,1,2,Correct expression for sdot,f,286,99.3
+Spring2026,polyDistCurveAccWritten,288,288,288,2,2,Correct expression for sddot,f,277,96.2
+Spring2026,polyDistCurveAccWritten,288,288,288,3,2,Correct value for sdot,f,284,98.6
+Spring2026,polyDistCurveAccWritten,288,288,288,4,2,Correct value for sddot,f,277,96.2
+Spring2026,polyDistCurveAccWritten,288,288,288,5,3,Correct value for acceleration,f,265,92.0
+Spring2026,polyDistCurveAccWritten,288,288,288,6,4,Correct final answer,f,263,91.3
+Spring2026,polyDistCurveAccWritten,288,288,288,7,-1,Minor calculation error,f,11,3.8
+Spring2026,polyDistCurveAccWritten,288,288,288,8,-2,Blurry or bad photo,f,3,1.0
+(52 rows)

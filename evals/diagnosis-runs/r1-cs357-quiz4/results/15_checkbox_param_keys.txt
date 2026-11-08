@@ -1,0 +1,7 @@
+Access level: forced read-only; this LOGIN has no write or owner privileges.
+what|k|count
+true_answer type|array|39
+params option keys|feedback|39
+params option keys|html|39
+params option keys|key|39
+(4 rows)

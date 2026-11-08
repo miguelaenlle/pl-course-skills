@@ -1,0 +1,5 @@
+== Vector projection: classify first-submission cos(theta) answers that got no credit (both versions, 4 offerings)
+qid|n_first|correct|not_numeric|gave_theta_radians|gave_theta_degrees|gave_scalar_projection|gave_dot|within_1_to_5pct|gave_nb_over_na|gave_dot_over_na2
+08-Vector-Matrices-Norms/Norm-Vector-Projection-v1|728|384|0|26|31|4|3|7|1|2
+08-Vector-Matrices-Norms/Norm-Vector-Projection-v2|710|368|0|36|27|3|2|13|3|3
+(2 rows)

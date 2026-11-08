@@ -1,0 +1,14 @@
+<section id="demo-author-tam" style="background:#FAFAF8;color:#1F2A44;font-family:Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:32px">
+<h2 style="font-family:Arial, sans-serif;font-size:56px;font-weight:700;line-height:1.1;color:#14213D">Question 8.2: no more zero-answer variants</h2>
+<div style="display:flex;gap:64px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<img src="/_blob/63bb37f99e05ad3ddbfb8b0094d50f02" alt="Before: y = -2 cos(2x) with the particle on a peak, answer 0" style="width:800px;height:640px;object-fit:contain;background:#FFFFFF;border:1px solid #E1E4EA;border-radius:12px">
+<p style="font-size:28px;color:#4A5568">Before: a variant on a peak, answer 0</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px">
+<img src="/_blob/de4b2957fee3e753dac66b7595f77c09" alt="After: y = sin(x) with the particle on a sloped crossing; a submitted 0 is graded 0 percent" style="width:800px;height:640px;object-fit:contain;background:#FFFFFF;border:1px solid #E1E4EA;border-radius:12px">
+<p style="font-size:28px;color:#4A5568">After: a new variant on a slope; submitting 0 scores 0%</p>
+</div>
+</div>
+<aside>One change to generate() in server.py: it now picks only points where the slope isn’t zero. The prompt, figure, tolerances and points are unchanged. Screenshots are from the agent’s run on a local PrairieLearn with a clone of the course.</aside>
+</section>

@@ -1,0 +1,36 @@
+diff --git a/questions/particleVelonTriCurveSpeed/server.py b/questions/particleVelonTriCurveSpeed/server.py
+index a5471661..9948bebf 100644
+--- a/questions/particleVelonTriCurveSpeed/server.py
++++ b/questions/particleVelonTriCurveSpeed/server.py
+@@ -10,17 +10,26 @@ import prairielearn as pl
+ def generate(data):
+  
+     # Create a function of the form y(x) = A Sin(Bx) or ACos(BX) using random values for A and B
+-    xCoeff = random.choice([1, 2, 3, 4, 5, 6]) * 1/2
+-    xPos = xCoeff * math.pi
+     speed = random.randint(1,4) * 5
+     # Randomize left or right
+     func = random.choice(['Sin','Cos'])
+     direction = random.choice(['left', 'right'])
+-    
++
+     coefficient1 = random.choice([-2, -1, 1, 2])
+-    coefficient2 = random.choice([-2,-1,1,2])
+-    
++
+     x = symbols('x')
++    trig = sin if func == 'Sin' else cos
++    # Only pick points where the curve's slope is nonzero. At a peak or trough
++    # v_y = 0 for any speed and direction, so the question needs no work.
++    choices = [
++        (c2, k / 2)
++        for c2 in [-2, -1, 1, 2]
++        for k in [1, 2, 3, 4, 5, 6]
++        if diff(trig(c2 * x), x).subs(x, k * pi / 2) != 0
++    ]
++    coefficient2, xCoeff = random.choice(choices)
++    xPos = xCoeff * math.pi
++
+     if (direction == 'left'):
+         xVel = symbols('xVel', positive=False)
+     else:

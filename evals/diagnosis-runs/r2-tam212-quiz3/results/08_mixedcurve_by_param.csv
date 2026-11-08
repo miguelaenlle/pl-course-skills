@@ -1,0 +1,14 @@
+scope,factor,level,n,mean_final_pct
+all offerings,base,base 2,61,70.3
+all offerings,base,base 3,347,78.5
+all offerings,base,base e (code shows exp**(...)),21,66.7
+all offerings,rho size,100 m - 10 km,129,79.3
+all offerings,rho size,rho < 100 m,108,76.9
+all offerings,rho size,rho >= 10 km,192,75.0
+all offerings,time,1,102,78.3
+all offerings,time,4,114,74.2
+all offerings,time,5,95,78.7
+all offerings,time,8,118,76.3
+Spring2026,base,base 2,12,74.4
+Spring2026,base,base 3,112,75.1
+(12 rows)

@@ -1,0 +1,19 @@
+  offering  |             qid             | n_graded_subs | correct_pct | exact_sign_flip_pct | piston_wrong_magnitude_pct 
+------------+-----------------------------+---------------+-------------+---------------------+----------------------------
+ Spring2025 | constrainedMotionPistonVelo |          1259 |        15.6 |                 0.5 |                       83.9
+ Fall2025   | constrainedMotionPistonVelo |           590 |        16.1 |                 0.3 |                       83.4
+ Spring2026 | constrainedMotionPistonVelo |          1281 |        15.8 |                 0.5 |                       83.6
+ Fall2026   | constrainedMotionPistonVelo |           683 |        14.8 |                 1.3 |                       83.9
+ Spring2025 | rbmCircleChordConstraint    |           384 |        26.6 |                 6.3 |                        0.0
+ Fall2025   | rbmCircleChordConstraint    |           180 |        26.1 |                 6.7 |                        0.0
+ Spring2026 | rbmCircleChordConstraint    |           369 |        24.7 |                 4.6 |                        0.0
+ Fall2026   | rbmCircleChordConstraint    |           191 |        27.2 |                 5.2 |                        0.0
+ Spring2025 | rbmTwoCornerConstraints     |           437 |        17.2 |                 0.0 |                        0.0
+ Fall2025   | rbmTwoCornerConstraints     |           196 |        20.9 |                 0.0 |                        0.0
+ Spring2026 | rbmTwoCornerConstraints     |           448 |        20.8 |                 0.4 |                        0.0
+ Fall2026   | rbmTwoCornerConstraints     |           250 |        22.0 |                 0.8 |                        0.0
+ Spring2025 | rodVelCircleConstraint      |           383 |        16.2 |                 0.3 |                        0.0
+ Fall2025   | rodVelCircleConstraint      |           178 |        20.8 |                 0.6 |                        0.0
+ Spring2026 | rodVelCircleConstraint      |           450 |        18.9 |                 0.2 |                        0.0
+ Fall2026   | rodVelCircleConstraint      |           198 |        25.3 |                 0.0 |                        0.0
+(16 rows)

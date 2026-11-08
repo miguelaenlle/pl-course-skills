@@ -1,0 +1,21 @@
+<section id="demo-diagnose-finding" style="background:#FAFAF8;color:#1F2A44;font-family:'Inter', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:32px">
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:56px;font-weight:700;line-height:1.1;color:#14213D">A finding: 8.2 is easy by accident</h2>
+<div style="display:flex;gap:64px;align-items:center">
+<img src="/_blob/63bb37f99e05ad3ddbfb8b0094d50f02" alt="TAM 212 question 8.2 in PrairieLearn: y = -2 cos(2x) with the particle on a peak, so the vertical velocity is zero" style="width:740px;height:700px;object-fit:contain;background:#FFFFFF;border:1px solid #E1E4EA;border-radius:12px">
+<div style="flex:1;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;gap:48px">
+<div style="display:flex;flex-direction:column;gap:8px">
+<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:96px;font-weight:700;line-height:1;color:#2F6FDE">99%</p>
+<p style="font-size:28px;color:#4A5568">answer is 0</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px">
+<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:96px;font-weight:700;line-height:1;color:#C2410C">50%</p>
+<p style="font-size:28px;color:#4A5568">answer isn’t 0</p>
+</div>
+</div>
+<p style="font-size:32px;line-height:1.4;color:#14213D">Half the variants put the point on a peak, so v_y = 0.</p>
+<p style="font-size:28px;line-height:1.4;color:#4A5568"><b>Recommended edit:</b> only pick points on a slope.</p>
+</div>
+</div>
+<aside>From the agent’s report on TAM 212 Quiz 2, Fall 2025 (n=74). The cause is in server.py: the point is placed at multiples of pi over 2, where sine and cosine curves are often flat. The screenshot shows one such variant.</aside>
+</section>

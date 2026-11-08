@@ -1,0 +1,23 @@
+measure,bucket,n
+sign(x),1,348
+sign(x),-1,126
+sign(x),0,20
+x / correct,1.0,38
+x / correct,0.0,29
+x / correct,-1.0,21
+x / correct,-0.2,12
+x / correct,-0.1,8
+x / gf,1.0,69
+x / gf,0.0,31
+x / gf,-1.0,11
+(x - gf) / -m*r*w^2,0.0,71
+(x - gf) / -m*r*w^2,1.0,39
+(x - gf) / -m*r*w^2,-1.0,28
+(x - gf) / -m*r*w^2,1000.0,18
+(x - gf) / -m*r*w^2,-1000.0,11
+(x - gf) / -m*r*w^2,0.3,10
+(x - gf) / -m*r*w^2,0.1,9
+(x - gf) / -m*r*w^2,-0.1,8
+(x - gf) / -m*r*w^2,-0.2,8
+x / tangential m*a_theta,0.0,22
+(21 rows)

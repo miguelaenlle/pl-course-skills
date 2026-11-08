@@ -1,0 +1,33 @@
+== SurveyElevations 2026-10-25 manual changes: before -> after (bucketed to 5 pct), counts
+old_b|new_b|n
+0|30|105
+5|30|1
+10|40|2
+15|40|1
+20|45|3
+25|50|11
+30|30|2
+35|55|2
+100|100|35
+(9 rows)
+== number of distinct staff making those changes, time span
+n_staff|first_t|last_t
+1|18:37:42.159973|18:41:42.394717
+(1 row)
+== regrades (grading jobs) after the exam window, per coding question
+qid|day|n_jobs
+07-Random-MonteCarlo/MC-TreasureKeyProbability|2026-10-18|3
+08-Vector-Matrices-Norms/Norm-Vector-Projection-v2|2026-10-22|1
+09-Linsys/Linsys-SurveyElevations|2026-10-25|133
+(3 rows)
+== all instances of SurveyElevations: final vs max_submission (bucketed)
+best_sub_b|final_b|count
+0|30|105
+5|30|1
+10|40|2
+15|40|1
+20|45|3
+25|50|11
+35|55|2
+100|100|35
+(8 rows)

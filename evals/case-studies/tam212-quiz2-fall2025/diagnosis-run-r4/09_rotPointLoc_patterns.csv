@@ -1,0 +1,30 @@
+offering,first_answer,n,n_key_matches_current_code,pct_of_offering
+Fa24,correct,71,71,78.9
+Fa24,other,11,11,12.2
+Fa24,negated (-r),4,4,4.4
+Fa24,"multiplied by omega, negated",2,2,2.2
+Fa24,components swapped,1,1,1.1
+Fa24,multiplied by omega instead of dividing,1,1,1.1
+Spring2025,correct,191,191,84.1
+Spring2025,other,14,14,6.2
+Spring2025,negated (-r),12,12,5.3
+Spring2025,components swapped,7,7,3.1
+Spring2025,"multiplied by omega, negated",3,3,1.3
+Fall2025,correct,87,87,71.9
+Fall2025,other,18,18,14.9
+Fall2025,multiplied by omega instead of dividing,7,7,5.8
+Fall2025,negated (-r),5,5,4.1
+Fall2025,components swapped,2,2,1.7
+Fall2025,"multiplied by omega, negated",2,2,1.7
+Spring2026,correct,254,254,81.9
+Spring2026,other,31,31,10.0
+Spring2026,negated (-r),16,16,5.2
+Spring2026,components swapped,3,3,1.0
+Spring2026,"multiplied by omega, negated",3,3,1.0
+Spring2026,multiplied by omega instead of dividing,3,3,1.0
+Fall2026,correct,142,142,81.6
+Fall2026,other,13,13,7.5
+Fall2026,negated (-r),10,10,5.7
+Fall2026,"multiplied by omega, negated",4,4,2.3
+Fall2026,multiplied by omega instead of dividing,3,3,1.7
+Fall2026,components swapped,2,2,1.1

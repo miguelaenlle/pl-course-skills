@@ -1,0 +1,13 @@
+Access level: forced read-only; this LOGIN has no write or owner privileges.
+offering|n|mean_score_pct|median_score_pct|median_minutes|median_time_limit_min|n_no_time_limit|max_points
+Spring2025|415|78.3|81.5|47.3||415|54
+Fall2025|445|82.3|85.8|46.1||445|54
+Spring2026|308|81.9|87.0|46.3||308|54
+Fall2026|350|83.3|87.8|46.2||350|54
+(4 rows)
+offering|n|no_sub_slot11_pct|no_sub_slot12_pct|no_sub_both_pct
+Spring2025|415|28.7|7.5|4.8
+Fall2025|445|20.7|7.9|4.0
+Spring2026|308|28.6|13.0|8.4
+Fall2026|350|6.6|16.9|4.6
+(4 rows)

@@ -1,0 +1,39 @@
+ ci_id  | short_name |  a_id   |      tid       |                                           title                                           | type | n_ai_stats | n_ai_all | n_aq 
+--------+------------+---------+----------------+-------------------------------------------------------------------------------------------+------+------------+----------+------
+  10920 | Fall2018   |  364537 | quiz5          | PCA, SVD, and Least Squares                                                               | Exam |        388 |      389 |   11
+  20756 | Spring2019 |  595813 | quiz5          | Eigenvalues, Markov chains and SVD                                                        | Exam |        184 |      185 |   12
+  20756 | Spring2019 |  596050 | quiz5-sync     | Eigenvalues, Markov chains and SVD                                                        | Exam |        170 |      171 |   12
+  31055 | Fall2019   |  725406 | quiz5          | Eigenvalues                                                                               | Exam |        337 |      339 |   14
+  31055 | Fall2019   | 1028743 | quiz5-retry    | Eigenvalues                                                                               | Exam |        238 |      239 |    2
+  52088 | Spring2020 | 1488447 | quiz5          | Eigenvalues and Markov chains                                                             | Exam |          0 |        0 |   11
+  52088 | Spring2020 | 1496600 | quiz5-sync     | Optimization, SVD and linear least squares                                                | Exam |        337 |      340 |   33
+ 118734 | Fall2020   | 2307997 | quiz5M         | Nonlinear Equations, Optimization, Linear Least-Squares and SVD                           | Exam |        201 |      204 |   23
+ 118734 | Fall2020   | 2307943 | quiz5N         | Nonlinear Equations, Optimization, Linear Least-Squares and SVD                           | Exam |        169 |      173 |   23
+ 128491 | Spring2021 | 2310539 | quiz5          | Finite Difference, Nonlinear Equations and Optimization                                   | Exam |        293 |      296 |   34
+ 128491 | Spring2021 | 2310191 | quiz5-Practice | Finite Difference, Nonlinear Equations and Optimization                                   | Exam |       1326 |     1331 |   35
+ 128745 | Fall2021   | 2314769 | quiz5          | Finite Difference, Nonlinear Equations and Optimization                                   | Exam |        366 |      370 |   30
+ 128745 | Fall2021   | 2314770 | quiz5-Practice | Finite Difference, Nonlinear Equations and Optimization                                   | Exam |       1898 |     1924 |   35
+ 128956 | Spring2022 | 2318363 | quiz5M         | Finite Difference, Nonlinear Equations and Optimization                                   | Exam |        267 |      268 |   29
+ 128956 | Spring2022 | 2315579 | quiz5N         | Finite Difference, Nonlinear Equations and Optimization                                   | Exam |        142 |      144 |   29
+ 128956 | Spring2022 | 2315580 | quiz5-Practice | Finite Difference, Nonlinear Equations and Optimization                                   | Exam |       2048 |     2054 |   35
+ 129442 | Fall2022   | 2323305 | quiz5          | Quiz 5: Finite Difference, Nonlinear Equations and Optimization                           | Exam |        408 |      408 |   31
+ 129442 | Fall2022   | 2323306 | quiz5-Practice | Finite Difference, Nonlinear Equations and Optimization                                   | Exam |       2573 |     2575 |   38
+ 129442 | Fall2022   | 2323307 | quiz5-ZJUI     | [ZJUI ONLY] Quiz 5: Finite Difference, Nonlinear Equations and Optimization               | Exam |         69 |       69 |   29
+ 129681 | Spring2023 | 2324009 | quiz5          | Quiz 5: Finite Difference, Nonlinear Equations and Optimization                           | Exam |        402 |      404 |   32
+ 129681 | Spring2023 | 2324010 | quiz5-Practice | Practice Quiz 5: Finite Difference, Nonlinear Equations and Optimization (NOT FOR CREDIT) | Exam |       2171 |     2173 |   38
+ 138454 | Fall2023   | 2355371 | quiz5          | Quiz 5: Finite Difference, Nonlinear Equations and Optimization                           | Exam |        383 |      385 |   31
+ 138454 | Fall2023   | 2355372 | quiz5-Practice | Practice Quiz 5: Finite Difference, Nonlinear Equations and Optimization (NOT FOR CREDIT) | Exam |       2398 |     2400 |   38
+ 145154 | Spring2024 | 2388042 | quiz5          | Quiz 5: Finite Difference, Nonlinear Equations and Optimization                           | Exam |        378 |      379 |   29
+ 145154 | Spring2024 | 2414297 | quiz5_copy1    | Quiz 5: Finite Difference, Nonlinear Equations and Optimization                           | Exam |          6 |        6 |   29
+ 145154 | Spring2024 | 2388043 | quiz5-Practice | Practice Quiz 5: Finite Difference, Nonlinear Equations and Optimization (NOT FOR CREDIT) | Exam |       2094 |     2094 |   38
+ 157792 | Fall2024   | 2444563 | quiz5          | Quiz 5: Finite Difference, Nonlinear Equations and Optimization                           | Exam |        450 |      451 |   29
+ 157792 | Fall2024   | 2444564 | quiz5-Practice | Practice Quiz 5: Finite Difference, Nonlinear Equations and Optimization (NOT FOR CREDIT) | Exam |       2723 |     2726 |   38
+ 171058 | Spring2025 | 2491233 | quiz5          | Quiz 5: Finite Difference, Nonlinear Equations and Optimization                           | Exam |        406 |      407 |   31
+ 171058 | Spring2025 | 2491234 | quiz5-Practice | Practice Quiz 5: Finite Difference, Nonlinear Equations and Optimization (NOT FOR CREDIT) | Exam |       2312 |     2313 |   38
+ 185710 | Fall2025   | 2557981 | quiz5          | Quiz 5: Finite Difference, Nonlinear Equations and Optimization                           | Exam |        438 |      439 |   31
+ 185710 | Fall2025   | 2557982 | quiz5-Practice | Practice Quiz 5: Finite Difference, Nonlinear Equations and Optimization (NOT FOR CREDIT) | Exam |       2553 |     2553 |   38
+ 199834 | Spring2026 | 2619948 | quiz5          | Quiz 5: Finite Difference, Nonlinear Equations and Optimization                           | Exam |        308 |      308 |   31
+ 199834 | Spring2026 | 2619949 | quiz5-Practice | Practice Quiz 5: Finite Difference, Nonlinear Equations and Optimization (NOT FOR CREDIT) | Exam |       1862 |     1862 |   38
+ 224254 | Fall2026   | 2714001 | quiz5          | Quiz 5: Finite Difference, Nonlinear Equations and Optimization                           | Exam |          0 |        1 |   31
+ 224254 | Fall2026   | 2714002 | quiz5-Practice | Practice Quiz 5: Finite Difference, Nonlinear Equations and Optimization (NOT FOR CREDIT) | Exam |        175 |      175 |   38
+(36 rows)

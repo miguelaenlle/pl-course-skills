@@ -1,0 +1,17 @@
+Access level: forced read-only; this LOGIN has no write or owner privileges.
+competitor|n|first_sub_pct|final_pct
+lambda_1 closest to shift|48|54.2|63.8
+lambda_2 closest to shift|457|63.7|69.3
+(2 rows)
+offering|n_l1|first_pct_l1|n_l2|first_pct_l2
+Spring2025|14|50.0|126|65.1
+Fall2025|13|53.8|135|62.2
+Spring2026|9|77.8|85|63.5
+Fall2026|12|41.7|111|64.0
+(4 rows)
+n_first_subs|correct|eq_err_times_b_times_cond|eq_err_times_cond|eq_err_over_cond|eq_err_cond_over_b|eq_err_times_b|eq_b_cond_over_err|eq_err_over_cond_b
+762|556|114|14|6|8|10|9|11
+(1 row)
+n_first_subs|correct|eq_r_over_cond|r_is_zero_variants
+742|658|47|0
+(1 row)

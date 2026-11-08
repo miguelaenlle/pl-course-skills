@@ -1,0 +1,7 @@
+qid,rate,n_first,first_all_correct_pct,recompute_matches_pct,alpha_sign_flip_pct,alpha_ignored_pct,neg_r_pct
+pinSlotAcclnMag,decreasing,24,12.5,100.0,8.3,0.0,16.7
+pinSlotAcclnMag,increasing,32,15.6,100.0,0.0,0.0,9.4
+pinSlotAcclnMag,,56,14.3,100.0,3.6,0.0,12.5
+polarAcclnTelescopicArm,decreasing,21,19.0,100.0,14.3,,0.0
+polarAcclnTelescopicArm,increasing,32,21.9,100.0,0.0,,0.0
+polarAcclnTelescopicArm,,53,20.8,100.0,5.7,,0.0

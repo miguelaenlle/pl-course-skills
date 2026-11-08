@@ -1,0 +1,7 @@
+offering,qid,n_changes,n_iqs,n_to_full,first_day,last_day,mean_new_score_perc
+Spring2026,16-SVD/SVD-ErrorLowRankApproximation,1,1,1,2026-05-04,2026-05-04,100.0
+Spring2026,16-SVD/SVD-LowRank-Climate-Data-Compression,2,2,0,2026-05-04,2026-05-04,0.0
+Spring2026,17-LinearLeastSquares/LeastSquares-Geese,1,1,0,2026-05-04,2026-05-04,70.0
+Spring2026,17-LinearLeastSquares/LeastSquares-RankDeficient-v1a,1,1,0,2026-05-04,2026-05-04,60.0
+Spring2026,17-LinearLeastSquares/LeastSquares-RankOfMatrix,1,1,0,2026-05-04,2026-05-04,40.0
+Spring2026,17-LinearLeastSquares/LeastSquares-Squirrels,2,2,0,2026-05-04,2026-05-04,35.0

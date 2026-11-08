@@ -1,0 +1,224 @@
+diff --git a/questions/15-Optimization/OptimizationND-Newton-Temperature/question.html b/questions/15-Optimization/OptimizationND-Newton-Temperature/question.html
+index 43a6483d..3d56b451 100644
+--- a/questions/15-Optimization/OptimizationND-Newton-Temperature/question.html
++++ b/questions/15-Optimization/OptimizationND-Newton-Temperature/question.html
+@@ -6,17 +6,17 @@
+     <ul>
+       <li>
+         <code>temperature_func</code>: a numpy function that estimates temperature at coordinates $(x, y, z)$.
+-        Your task is to find its local extremum.
++        Your task is to find its critical point and classify it.
+       </li>
+       <li><code>temperature_grad</code>: a numpy function that computes the gradient of <code>temperature_func</code> at coordinates $(x, y, z)$.</li>
+       <li><code>temperature_hess</code>: a numpy function that computes the hessian of <code>temperature_func</code> at coordinates $(x, y, z)$.</li>
+-      <li><code>start_coords</code>: a numpy array of coordinates for where to start the search for the extremum</li>
++      <li><code>start_coords</code>: a numpy array of coordinates for where to start the search for the critical point</li>
+     </ul>
+     <p>and returns a tuple consisting of the following (in the respective order):</p>
+     <ol>    
+-      <li>the coordinates of the extreme temperature (1d numpy array)</li>
+-      <li>the value of the extreme temperature (float)</li>
+-      <li>the type of extreme temperature, <code>"max"</code> or <code>"min"</code> (string)</li>
++      <li>the coordinates of the critical point (1d numpy array)</li>
++      <li>the temperature at the critical point (float)</li>
++      <li>the type of critical point, <code>"max"</code> (maximizer), <code>"min"</code> (minimizer), or <code>"saddle"</code> (saddle point) (string)</li>
+     </ol>
+     <!-- Funky provides you the following for intended behavior:
+ <pl-code language="python">
+@@ -45,8 +45,8 @@ print(find_temperature_extreme(func2, func2_grad, func2_hess, np.array([0, 4, 1]
+ (np.array([-1, 5, 0]), 100, False) # False = maximum
+ </pl-code> -->
+ <p>
+-  Funky asserts that <code>temperature_func</code> will always have either a local minimum or maximum (but never a saddle point).
+-  For this reason, he believes you should use Newton's method for this problem.
++  Funky asserts that <code>temperature_func</code> has exactly one critical point (a point where the gradient is zero), which may be a local minimum, a local maximum, or a saddle point.
++  He suggests using Newton's method to find it.
+   He notes that if the 2-norm of the difference of subsequent iterations' guesses is less than $10^{-3}$, the algorithm will have converged. In addition, Funky Kong provides you the gradient and hessian of <code>temperature_func</code>. Like <code>temperature_func</code>, these take in coordinates $(x, y, z)$
+     formatted as a numpy array (see the example included below). 
+   </p>
+diff --git a/questions/15-Optimization/OptimizationND-Newton-Temperature/tests/ans.py b/questions/15-Optimization/OptimizationND-Newton-Temperature/tests/ans.py
+index 6669d921..25fd5dbb 100644
+--- a/questions/15-Optimization/OptimizationND-Newton-Temperature/tests/ans.py
++++ b/questions/15-Optimization/OptimizationND-Newton-Temperature/tests/ans.py
+@@ -11,6 +11,10 @@ def find_temperature_extreme(temperature_func, temperature_grad, temperature_hes
+         temp_coords -= s
+     # Hessian gives us whether we're at a min or a max
+     vals, _ = la.eig(temperature_hess(temp_coords))
+-    temp_type = "max" if vals[0] < 0 else "min"
++    temp_type = "saddle"
++    if np.all(vals > 0):
++        temp_type = "min"
++    elif np.all(vals < 0):
++        temp_type = "max"
+     temp_value = temperature_func(temp_coords)
+     return (temp_coords, temp_value, temp_type)
+diff --git a/questions/15-Optimization/OptimizationND-Newton-Temperature/tests/initial_code.py b/questions/15-Optimization/OptimizationND-Newton-Temperature/tests/initial_code.py
+index 5f08faab..6c663ade 100644
+--- a/questions/15-Optimization/OptimizationND-Newton-Temperature/tests/initial_code.py
++++ b/questions/15-Optimization/OptimizationND-Newton-Temperature/tests/initial_code.py
+@@ -3,8 +3,8 @@ import numpy.linalg as la
+ 
+ def find_temperature_extreme(temperature_func, temperature_grad, temperature_hess, start_coords):
+     # TODO:
+-    #   Use Newton's method on temperature_func to determine coordinates and value of extreme temperature
+-    #   Determine whether this extreme is a minimum or maximum
++    #   Use Newton's method on temperature_func to determine coordinates and temperature of its critical point
++    #   Determine whether this critical point is a min (minimum), max (maximum), or saddle (saddle point)
+     #   Return as tuple
+     pass
+ 
+@@ -31,4 +31,15 @@ def find_temperature_extreme(temperature_func, temperature_grad, temperature_hes
+ #     return np.array([[-2,  0,  0], [ 0, -4,  0], [ 0,  0, -2]])
+ # print(find_temperature_extreme(func2, func2_grad, func2_hess, np.array([0., 4., 1.])))
+ # # the output should be
+-# # (np.array([-1, 5, 0]), 100, "max")
+\ No newline at end of file
++# # (np.array([-1, 5, 0]), 100, "max")
++
++# ## EXAMPLE 3
++# def func3(xyz):
++#     return -(xyz[0]+1)**2 + xyz[1]**2 - 1/3*(xyz[2]+3)**2 + 9
++# def func3_grad(xyz):
++#     return np.array([-2*(xyz[0]+1), 2*xyz[1],  -2/3*(xyz[2]+3)])
++# def func3_hess(xyz):
++#     return np.array([[-2, 0, 0], [0, 2, 0], [0, 0, -2/3]])
++# print(find_temperature_extreme(func3, func3_grad, func3_hess, np.array([0., 4., 1.])))
++# # the output should be
++# # (np.array([-1, 0, -3]), 9, "saddle")
+\ No newline at end of file
+diff --git a/questions/15-Optimization/OptimizationND-Newton-Temperature/tests/setup_code.py b/questions/15-Optimization/OptimizationND-Newton-Temperature/tests/setup_code.py
+index 6008aff6..af2c1ead 100644
+--- a/questions/15-Optimization/OptimizationND-Newton-Temperature/tests/setup_code.py
++++ b/questions/15-Optimization/OptimizationND-Newton-Temperature/tests/setup_code.py
+@@ -7,17 +7,15 @@ rng = np.random.default_rng()
+ x, y, z = sp.symbols('x y z')
+ 
+ 
+-def generate_temperature_func(negative = False):
++def generate_temperature_func(coef_signs=(1, 1, 1)):
+     # Generate a quadratic form with random positive coefficients and offsets
+-    a, b, c = [sp.Rational(rng.integers(1, 50), rng.integers(1, 15)) for _ in range(3)]
++    a, b, c = [sp.Rational(rng.integers(1, 50), rng.integers(1, 15)) * coef_signs[i] for i in range(3)]
+     e, f, g = rng.integers(1, 4, 3) * 2
+     k, m, n = [sp.Rational(rng.integers(-1000, 1000), rng.integers(10, 100)) for _ in range(3)]
+-    q, r, s = [sp.Rational(rng.integers(1, 50), rng.integers(1, 15)) for _ in range(3)]
++    q, r, s = [sp.Rational(rng.integers(1, 50), rng.integers(1, 15)) * coef_signs[i] for i in range(3)]
+     o = sp.Rational(rng.integers(-1000, 1000), rng.integers(1, 100))
+ 
+     f = a*(x+k)**e + b*(y+m)**f + c*(z+n)**g + q*(x+k)**2 + r*(y+m)**2 + s*(z+n)**2 + o
+-    if negative:
+-        f *= -1
+     
+     np_shifts = np.array([float(k), float(m), float(n)])
+     start_coords = rng.uniform(7, 15, 3) * rng.choice([-1, 1]) + np_shifts
+diff --git a/questions/15-Optimization/OptimizationND-Newton-Temperature/tests/test.py b/questions/15-Optimization/OptimizationND-Newton-Temperature/tests/test.py
+index f44f169c..03aaa1da 100644
+--- a/questions/15-Optimization/OptimizationND-Newton-Temperature/tests/test.py
++++ b/questions/15-Optimization/OptimizationND-Newton-Temperature/tests/test.py
+@@ -2,7 +2,7 @@ from pl_helpers import name, points
+ from pl_unit_test import PLTestCase
+ from code_feedback import Feedback as feedback
+ 
+-
++import numpy as np
+ 
+ class Test(PLTestCase):
+ 
+@@ -10,7 +10,6 @@ class Test(PLTestCase):
+         score = 0
+         temp_func, temp_grad, temp_hess, start_coords = self.ref.generate_temperature_func(coeffs)
+         ref_coords, ref_elevation, ref_temp_type = self.ref.find_temperature_extreme(temp_func, temp_grad, temp_hess, start_coords.copy())
+-        print(ref_coords, ref_elevation, ref_temp_type)
+         st_tup = feedback.call_user(self.st.find_temperature_extreme, temp_func, temp_grad, temp_hess, start_coords.copy())
+         if type(st_tup) != tuple or len(st_tup) != 3:
+             feedback.add_feedback("find_temperature_extreme did not return a tuple of size 3")
+@@ -20,20 +19,36 @@ class Test(PLTestCase):
+                 score += 1
+             if feedback.check_scalar("temperature", ref_elevation, st_elevation):
+                 score += 1
+-            if ref_temp_type != st_temp_type:
++            if type(st_temp_type) != str:
++                feedback.add_feedback("temp_type (3rd value in tuple) is not a string")
++            elif ref_temp_type != st_temp_type:
+                 feedback.add_feedback("temp_type (3rd value in tuple) is not correct")
+             else:
+                 score += 1
+                 feedback.add_feedback("temp_type (3rd value in tuple) is correct")
+-        
++
+         feedback.set_score(score / 3)
+-    
++
+     @points(5)
+-    @name("Test 1")
++    @name("max_test")
+     def test_0(self):
+-        self._test_inner(False)
+-    
++        # All negative leads to a maximum
++        self._test_inner((-1, -1, -1))
++
+     @points(5)
+-    @name("Test 2")
++    @name("min_test")
+     def test_1(self):
+-        self._test_inner(True)
++        # All positive leads to a minimum
++        self._test_inner((1, 1, 1))
++
++    @points(5)
++    @name("saddle_test")
++    def test_2(self):
++        rng = np.random.default_rng()
++        coeffs = [1, 1, 1]
++        # Choose between 1 and 2 random indices to flip
++        idx1, idx2 = rng.choice(3, size=2, replace=False)
++        coeffs[idx1] = -1
++        if rng.random() > 0.5:
++            coeffs[idx2] = -1
++        self._test_inner(coeffs)
+diff --git a/questions/15-Optimization/OptimizationND-Newton-Terrain/question.html b/questions/15-Optimization/OptimizationND-Newton-Terrain/question.html
+index 0db61c9a..fc46cf4c 100644
+--- a/questions/15-Optimization/OptimizationND-Newton-Terrain/question.html
++++ b/questions/15-Optimization/OptimizationND-Newton-Terrain/question.html
+@@ -6,14 +6,14 @@
+     He asks you to implement a function, <code>find_terrain_extreme</code>, that takes the following inputs:
+   </p>
+     <ul>
+-      <li><code>terrain_func</code>: a numpy function representing the terrain height at coordinates $(x, y, z)$. Your task is to find a local extremum.</li>
++      <li><code>terrain_func</code>: a numpy function representing the terrain height at coordinates $(x, y, z)$. Your task is to find its critical point and classify it.</li>
+       <li><code>terrain_grad</code>: a numpy function that computes the gradient of <code>terrain_func</code> at coordinates $(x, y, z)$.</li>
+       <li><code>terrain_hess</code>: a numpy function that computes the hessian of <code>terrain_func</code> at coordinates $(x, y, z)$.</li>
+       <li><code>start_coords</code>: a numpy array of coordinates to begin the search.</li>
+     </ul>
+     <p>Your function should return a tuple containing:</p>
+     <ol>
+-      <li>The coordinates of the extreme point (1d numpy array).</li>
++      <li>The coordinates of the critical point (1d numpy array).</li>
+       <li>The elevation at this point (float).</li>
+       <li>A string indicating whether this point is a <code>"valley"</code> (minimizer), <code>"peak"</code> (maximizer), or <code>"shelf"</code> (saddle point).</li>
+     </ol>
+@@ -59,7 +59,7 @@ print(find_terrain_extreme(func3, func3_grad, func3_hess, np.array([0, 4, 1])))
+ (np.array([-1, 0, -3]), 9, "shelf")
+   </pl-code> -->
+   <p>
+-    Diddy Kong guarantees that <code>terrain_func</code> always has a local extremum and suggests using Newton's method for optimization. He asserts that if the 2-norm of the difference between successive guesses is less than $10^{-3}$, the algorithm will have converged.
++    Diddy Kong guarantees that <code>terrain_func</code> has exactly one critical point (a point where the gradient is zero), which may be a local minimum, a local maximum, or a saddle point. He suggests using Newton's method to find it. He asserts that if the 2-norm of the difference between successive guesses is less than $10^{-3}$, the algorithm will have converged.
+     Diddy Kong provides you with the gradient and hessian of <code>terrain_func</code>. Like <code>terrain_func</code>, these take in coordinates $(x, y, z)$ formatted as a numpy array (see the example included below).
+     <!-- In addition, Diddy Kong notes that <code>np.linalg.eig</code> may help determine whether a point is a valley, peak, or shelf.</li> -->
+   </p>
+diff --git a/questions/15-Optimization/OptimizationND-Newton-Terrain/tests/initial_code.py b/questions/15-Optimization/OptimizationND-Newton-Terrain/tests/initial_code.py
+index 55638dc0..bdd25a96 100644
+--- a/questions/15-Optimization/OptimizationND-Newton-Terrain/tests/initial_code.py
++++ b/questions/15-Optimization/OptimizationND-Newton-Terrain/tests/initial_code.py
+@@ -3,8 +3,8 @@ import numpy.linalg as la
+ 
+ def find_terrain_extreme(terrain_func, terrain_grad, terrain_hess, start_coords):
+     # TODO:
+-    #   Use Newton's method on terrain_func to determine coordinates and value of the most extreme terrain elevation
+-    #   Determine whether this extreme is a valley (minimum), peak (maximum), or shelf (indeterminate)
++    #   Use Newton's method on terrain_func to determine coordinates and elevation of its critical point
++    #   Determine whether this critical point is a valley (minimum), peak (maximum), or shelf (saddle point)
+     #   Return as tuple
+     pass
+ 

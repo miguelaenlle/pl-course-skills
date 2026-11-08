@@ -1,0 +1,9 @@
+  offering  |            qid             |  n  | with_pl_submission | with_rubric_grading | still_needs_grading | has_grader | n_graders | ai_graded | final_pct | final_pct_graded_only | n_zero | n_1_49 | n_50_99 | n_100 |      statuses       
+------------+----------------------------+-----+--------------------+---------------------+---------------------+------------+-----------+-----------+-----------+-----------------------+--------+--------+---------+-------+---------------------
+ Fall2025   | fourBarAngVelSimpleWritten | 120 |                114 |                 114 |                   0 |        114 |         6 |         0 |      82.5 |                  82.5 |      7 |      8 |      39 |    66 | complete,unanswered
+ Fall2025   | rigidBodyPinAccelWritten   | 123 |                112 |                 112 |                   0 |        112 |         6 |         0 |      60.9 |                  60.9 |     13 |     38 |      34 |    38 | complete,unanswered
+ Spring2026 | fourBarAngVelSimpleWritten | 283 |                260 |                 260 |                   0 |        260 |         9 |         0 |      72.3 |                  72.3 |     34 |     37 |      85 |   127 | complete,unanswered
+ Spring2026 | rigidBodyPinAccelWritten   | 298 |                286 |                 286 |                   0 |        286 |         8 |         0 |      72.5 |                  72.5 |     23 |     57 |      87 |   131 | complete,unanswered
+ Fall2026   | fourBarAngVelSimpleWritten | 167 |                152 |                 152 |                   0 |        152 |         6 |         0 |      80.2 |                  80.2 |     18 |      6 |      71 |    72 | complete,unanswered
+ Fall2026   | rigidBodyPinAccelWritten   | 146 |                140 |                 140 |                   0 |        140 |         6 |         0 |      70.8 |                  70.8 |      9 |     34 |      58 |    45 | complete,unanswered
+(6 rows)

@@ -1,0 +1,239 @@
+diff --git a/questions/09-Linsys/Linsys-MenuPrices/question.html b/questions/09-Linsys/Linsys-MenuPrices/question.html
+index bda59789..524f8d7e 100644
+--- a/questions/09-Linsys/Linsys-MenuPrices/question.html
++++ b/questions/09-Linsys/Linsys-MenuPrices/question.html
+@@ -8,16 +8,10 @@
+   <p>
+     Each tuple <code>(order, total)</code> in <code>receipts</code> describes
+     one purchase. The variable <code>order</code> is a list of
+-    <code>(item, quantity)</code> tuples.
++    <code>(item, quantity)</code> tuples. Each receipt represents the equation
+   </p>
+ 
+-  <p>For example, the receipt</p>
+-
+-  <pre><code>([("taco", 2), ("juice", 1)], 15.50)</code></pre>
+-
+-  <p>represents the equation</p>
+-
+-  $$2p_{\text{taco}}+p_{\text{juice}}=15.50.$$
++  $$\sum_{(\text{item},\,\text{quantity})\,\in\,\text{order}} \text{quantity}\cdot p_{\text{item}}=\text{total}.$$
+ 
+   <p>
+     The order in <code>menu_items</code> determines the columns of the system
+@@ -25,10 +19,58 @@
+     items. Use the receipts in the order given for the rows of the system.
+   </p>
+ 
++  <p>For example, suppose the setup code gives</p>
++
++  <pre><code>menu_items = ["taco", "juice", "salad"]
++receipts = [([("taco", 2), ("juice", 1)], 15.50),
++            ([("salad", 1), ("taco", 1)], 13.25),
++            ([("juice", 2), ("salad", 1)], 14.25)]</code></pre>
++
++  <p>Then the rows of <code>A</code> and the entries of <code>b</code> are:</p>
++
++  <table class="table table-sm table-bordered w-auto text-center">
++    <thead>
++      <tr>
++        <th scope="col">Row</th>
++        <th scope="col">Equation</th>
++        <th scope="col">taco</th>
++        <th scope="col">juice</th>
++        <th scope="col">salad</th>
++        <th scope="col"><code>b</code></th>
++      </tr>
++    </thead>
++    <tbody>
++      <tr>
++        <th scope="row">0</th>
++        <td>$2p_{\text{taco}}+p_{\text{juice}}=15.50$</td>
++        <td>$2$</td>
++        <td>$1$</td>
++        <td>$0$</td>
++        <td>$15.50$</td>
++      </tr>
++      <tr>
++        <th scope="row">1</th>
++        <td>$p_{\text{salad}}+p_{\text{taco}}=13.25$</td>
++        <td>$1$</td>
++        <td>$0$</td>
++        <td>$1$</td>
++        <td>$13.25$</td>
++      </tr>
++      <tr>
++        <th scope="row">2</th>
++        <td>$2p_{\text{juice}}+p_{\text{salad}}=14.25$</td>
++        <td>$0$</td>
++        <td>$2$</td>
++        <td>$1$</td>
++        <td>$14.25$</td>
++      </tr>
++    </tbody>
++  </table>
++
+   <p>
+-    For example, if <code>menu_items</code> is
+-    <code>["taco", "juice", "salad"]</code>, then <code>prices</code> should
+-    contain the prices of the taco, juice, and salad, in that order.
++    Each receipt row has each item's quantity in that item's column and $0$ for
++    items not in the order. Solving this system gives the prices
++    $[6.00, 3.50, 7.25]$ for the taco, juice, and salad.
+   </p>
+ 
+   <p>Construct the following NumPy arrays:</p>
+diff --git a/questions/09-Linsys/Linsys-MenuPrices/tests/test.py b/questions/09-Linsys/Linsys-MenuPrices/tests/test.py
+index 22595763..6fdd78b1 100644
+--- a/questions/09-Linsys/Linsys-MenuPrices/tests/test.py
++++ b/questions/09-Linsys/Linsys-MenuPrices/tests/test.py
+@@ -25,6 +25,18 @@ def numeric_array(value, expected_shape, variable_name):
+     return array
+ 
+ 
++def describe_wrong_rows(student, expected, correct_rows):
++    wrong = [str(i) for i in np.flatnonzero(~correct_rows)]
++    message = (
++        f"{np.count_nonzero(correct_rows)} of {len(correct_rows)} rows of A are "
++        f"correct.\nIncorrect rows (counting from 0): {', '.join(wrong)}."
++    )
++    matches = np.all(np.isclose(student[:, None, :], expected[None, :, :]), axis=2)
++    if np.all(matches.any(axis=1)) and np.all(matches.any(axis=0)):
++        message += "\nYour rows are correct but in the wrong order."
++    return message
++
++
+ class Test(PLTestCase):
+     @points(55)
+     @name("Coefficient matrix A")
+@@ -41,9 +53,8 @@ class Test(PLTestCase):
+             Feedback.add_feedback("A is correct.")
+         else:
+             Feedback.add_feedback(
+-                f"{np.count_nonzero(correct_rows)} of {len(correct_rows)} rows of A "
+-                "are correct. Check the quantities and column locations in each "
+-                "receipt equation."
++                describe_wrong_rows(student, expected, correct_rows)
++                + "\nReceipt rows: each item's quantity in that item's column."
+             )
+         Feedback.set_score(score)
+ 
+diff --git a/questions/09-Linsys/Linsys-SurveyElevations/question.html b/questions/09-Linsys/Linsys-SurveyElevations/question.html
+index 57ecba2c..03fb5a6b 100644
+--- a/questions/09-Linsys/Linsys-SurveyElevations/question.html
++++ b/questions/09-Linsys/Linsys-SurveyElevations/question.html
+@@ -12,13 +12,6 @@
+ 
+   $$h_{\text{end}}-h_{\text{start}}=\text{rise}.$$
+ 
+-  <p>
+-    For example, the measurement <code>("lake", "hill", 12.0)</code>
+-    represents
+-  </p>
+-
+-  $$h_{\text{hill}}-h_{\text{lake}}=12.$$
+-
+   <p>
+     The order in <code>locations</code> determines the columns of the system and
+     the order of the computed elevations. There are $n-1$ measurements for $n$
+@@ -33,14 +26,60 @@
+ 
+   $$h_{\text{benchmark}}=\mathtt{benchmark\_elevation}.$$
+ 
++  <p>For example, suppose the setup code gives</p>
++
++  <pre><code>locations = ["lake", "hill", "cabin"]
++measurements = [("lake", "hill", 12.0), ("cabin", "hill", 5.0)]
++benchmark = "lake"
++benchmark_elevation = 240.0</code></pre>
++
++  <p>Then the rows of <code>A</code> and the entries of <code>b</code> are:</p>
++
++  <table class="table table-sm table-bordered w-auto text-center">
++    <thead>
++      <tr>
++        <th scope="col">Row</th>
++        <th scope="col">Equation</th>
++        <th scope="col">lake</th>
++        <th scope="col">hill</th>
++        <th scope="col">cabin</th>
++        <th scope="col"><code>b</code></th>
++      </tr>
++    </thead>
++    <tbody>
++      <tr>
++        <th scope="row">0</th>
++        <td>$h_{\text{hill}}-h_{\text{lake}}=12$</td>
++        <td>$-1$</td>
++        <td>$1$</td>
++        <td>$0$</td>
++        <td>$12$</td>
++      </tr>
++      <tr>
++        <th scope="row">1</th>
++        <td>$h_{\text{hill}}-h_{\text{cabin}}=5$</td>
++        <td>$0$</td>
++        <td>$1$</td>
++        <td>$-1$</td>
++        <td>$5$</td>
++      </tr>
++      <tr>
++        <th scope="row">2</th>
++        <td>$h_{\text{lake}}=240$</td>
++        <td>$1$</td>
++        <td>$0$</td>
++        <td>$0$</td>
++        <td>$240$</td>
++      </tr>
++    </tbody>
++  </table>
++
+   <p>
+-    For example, if <code>benchmark</code> is <code>"lake"</code> and
+-    <code>benchmark_elevation</code> is <code>240.0</code>, the benchmark
+-    equation is
++    Each measurement row has $-1$ in the start location's column and $+1$ in the
++    end location's column. Solving this system gives the elevations
++    $[240, 252, 247]$ for the lake, hill, and cabin.
+   </p>
+ 
+-  $$h_{\text{lake}}=240.$$
+-
+   <p>Construct the following NumPy arrays:</p>
+   <ul>
+     <li><code>A</code>: the $n\times n$ coefficient matrix;</li>
+diff --git a/questions/09-Linsys/Linsys-SurveyElevations/tests/test.py b/questions/09-Linsys/Linsys-SurveyElevations/tests/test.py
+index 89e1b544..535804df 100644
+--- a/questions/09-Linsys/Linsys-SurveyElevations/tests/test.py
++++ b/questions/09-Linsys/Linsys-SurveyElevations/tests/test.py
+@@ -25,6 +25,18 @@ def numeric_array(value, expected_shape, variable_name):
+     return array
+ 
+ 
++def describe_wrong_rows(student, expected, correct_rows):
++    wrong = [str(i) for i in np.flatnonzero(~correct_rows)]
++    message = (
++        f"{np.count_nonzero(correct_rows)} of {len(correct_rows)} rows of A are "
++        f"correct.\nIncorrect rows (counting from 0): {', '.join(wrong)}."
++    )
++    matches = np.all(np.isclose(student[:, None, :], expected[None, :, :]), axis=2)
++    if np.all(matches.any(axis=1)) and np.all(matches.any(axis=0)):
++        message += "\nYour rows are correct but in the wrong order."
++    return message
++
++
+ class Test(PLTestCase):
+     @points(55)
+     @name("Coefficient matrix A")
+@@ -41,8 +53,9 @@ class Test(PLTestCase):
+             Feedback.add_feedback("A is correct.")
+         else:
+             Feedback.add_feedback(
+-                f"{np.count_nonzero(correct_rows)} of {len(correct_rows)} rows of A "
+-                "are correct. Check the signs and column locations in each equation."
++                describe_wrong_rows(student, expected, correct_rows)
++                + "\nMeasurement rows: -1 in the start column, +1 in the end column."
++                "\nThe last row is the benchmark equation."
+             )
+         Feedback.set_score(score)
+ 

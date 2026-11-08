@@ -1,0 +1,5 @@
+          qid           | n_first_subs | first_all_correct_pct | first_sign_flipped_pct | mean_first_score_pct 
+------------------------+--------------+-----------------------+------------------------+----------------------
+ FiniteDiff-Gradient    |         1128 |                  78.2 |                    1.7 |                 84.4
+ FiniteDiff-Gradient-v2 |         1195 |                  51.6 |                   26.8 |                 58.7
+(2 rows)

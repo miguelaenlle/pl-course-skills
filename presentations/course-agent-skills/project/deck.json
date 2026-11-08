@@ -1,0 +1,36 @@
+{
+  "v": 4,
+  "createdOnFiles": { "v": 1, "at": "2026-11-06T09:00:00Z" },
+  "lists": "css",
+  "title": "Course agent skills",
+  "cover": "cover",
+  "order": [
+    "cover",
+    "outline",
+    "problem",
+    "examples",
+    "solution",
+    "cs1-why",
+    "cs1-fix",
+    "cs1-result",
+    "cs2-why",
+    "cs2-fix",
+    "cs2-result",
+    "cs3-why",
+    "cs3-fix",
+    "cs3-result",
+    "next"
+  ],
+  "sections": {
+    "s0": { "description": "Title and outline", "start": "cover" },
+    "s1": { "description": "Problem: alternatives score differently and nobody knows why", "start": "problem" },
+    "s2": { "description": "Example: two alternatives for one CS 357 question", "start": "examples" },
+    "s3": { "description": "Solution: two skills", "start": "solution" },
+    "s4": { "description": "Case study 1: CS 357, Spring 2026, Quiz 5", "start": "cs1-why" },
+    "s5": { "description": "Case study 2: CS 357, Fall 2026, Quiz 3", "start": "cs2-why" },
+    "s6": { "description": "Case study 3: TAM 212, Fall 2025, Quiz 2", "start": "cs3-why" },
+    "s7": { "description": "Next steps", "start": "next" }
+  },
+  "faces": {},
+  "designSystems": []
+}

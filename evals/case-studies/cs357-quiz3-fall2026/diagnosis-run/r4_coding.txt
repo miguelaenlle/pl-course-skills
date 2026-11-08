@@ -1,0 +1,22 @@
+== per-test pass on best submission
+qid,test,n,passed_pct,mean_pct,zero_pct
+07-Random-MonteCarlo/MC-ArcadePrizeProbability,Probability of winning the arcade prize,153,79.7,81.4,13.7
+07-Random-MonteCarlo/MC-ArcadePrizeProbability,Your code raised an Exception,12,0.0,0.0,100.0
+07-Random-MonteCarlo/MC-TreasureKeyProbability,Probability of opening the treasure vault,155,63.9,63.9,36.1
+07-Random-MonteCarlo/MC-TreasureKeyProbability,Your code raised an Exception,14,0.0,0.0,100.0
+09-Linsys/Linsys-MenuPrices,Coefficient matrix A,142,67.6,67.6,32.4
+09-Linsys/Linsys-MenuPrices,Right-hand side b,142,83.8,83.8,16.2
+09-Linsys/Linsys-MenuPrices,Solved menu prices,142,66.2,66.2,33.8
+09-Linsys/Linsys-MenuPrices,Your code raised an Exception,34,0.0,0.0,100.0
+09-Linsys/Linsys-SurveyElevations,Coefficient matrix A,90,38.9,40.3,54.4
+09-Linsys/Linsys-SurveyElevations,Right-hand side b,90,53.3,55.9,40.0
+09-Linsys/Linsys-SurveyElevations,Solved elevations,90,38.9,38.9,61.1
+09-Linsys/Linsys-SurveyElevations,Your code raised an Exception,34,0.0,0.0,100.0
+(12 rows)
+== submissions without test results / grading problems
+qid,n_subs,with_results,not_succeeded,ungradable,null_score,timeouts
+07-Random-MonteCarlo/MC-ArcadePrizeProbability,1603,1557,0,319,360,
+07-Random-MonteCarlo/MC-TreasureKeyProbability,1586,1526,2,339,389,0
+09-Linsys/Linsys-MenuPrices,1206,1153,0,194,247,
+09-Linsys/Linsys-SurveyElevations,1027,973,0,135,189,
+(4 rows)

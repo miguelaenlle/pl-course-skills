@@ -1,0 +1,9 @@
+              grp               | single_body_questions_drawn | n_students | mean_slot_points_of_51 | median_slot_minutes 
+--------------------------------+-----------------------------+------------+------------------------+---------------------
+ Sp24-Fall2026 excl. Spring2026 |                           0 |        172 |                   47.4 |                12.6
+ Sp24-Fall2026 excl. Spring2026 |                           1 |       1014 |                   48.4 |                10.6
+ Sp24-Fall2026 excl. Spring2026 |                           2 |        497 |                   49.5 |                 7.7
+ Spring2026                     |                           0 |         65 |                   46.6 |                14.8
+ Spring2026                     |                           1 |        329 |                   47.9 |                10.8
+ Spring2026                     |                           2 |        187 |                   48.6 |                 7.8
+(6 rows)

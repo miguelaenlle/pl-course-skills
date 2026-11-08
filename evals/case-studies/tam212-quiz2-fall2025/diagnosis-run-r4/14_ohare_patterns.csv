@@ -1,0 +1,29 @@
+offering,qid,first_answer,n,pct
+Fa24,OhareTrackComputeA,other,26,54.2
+Fa24,OhareTrackComputeA,correct,10,20.8
+Fa24,OhareTrackComputeA,zero,10,20.8
+Fa24,OhareTrackComputeA,A = R (no pi^2/2),2,4.2
+Fa24,OhareTrackComputeR,other,15,51.7
+Fa24,OhareTrackComputeR,zero,7,24.1
+Fa24,OhareTrackComputeR,R = A (no pi^2/2),3,10.3
+Fa24,OhareTrackComputeR,correct,3,10.3
+Fa24,OhareTrackComputeR,half the answer,1,3.4
+Spring2025,OhareTrackComputeA,other,38,42.2
+Spring2025,OhareTrackComputeA,correct,30,33.3
+Spring2025,OhareTrackComputeA,zero,18,20.0
+Spring2025,OhareTrackComputeA,A = R (no pi^2/2),3,3.3
+Spring2025,OhareTrackComputeA,half the answer,1,1.1
+Spring2025,OhareTrackComputeR,other,44,54.3
+Spring2025,OhareTrackComputeR,correct,23,28.4
+Spring2025,OhareTrackComputeR,zero,8,9.9
+Spring2025,OhareTrackComputeR,R = A (no pi^2/2),6,7.4
+Fall2025,OhareTrackComputeA,other,23,57.5
+Fall2025,OhareTrackComputeA,correct,9,22.5
+Fall2025,OhareTrackComputeA,zero,6,15.0
+Fall2025,OhareTrackComputeA,half the answer,1,2.5
+Fall2025,OhareTrackComputeA,A = R (no pi^2/2),1,2.5
+Fall2025,OhareTrackComputeR,other,17,47.2
+Fall2025,OhareTrackComputeR,R = A (no pi^2/2),8,22.2
+Fall2025,OhareTrackComputeR,correct,5,13.9
+Fall2025,OhareTrackComputeR,zero,4,11.1
+Fall2025,OhareTrackComputeR,half the answer,2,5.6

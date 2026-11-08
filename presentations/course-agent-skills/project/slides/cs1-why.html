@@ -1,0 +1,24 @@
+<section id="cs1-why" style="background:#FAFAF8;color:#1F2A44;font-family:Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:24px">
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#14213D">Case study 1: disparity and cause</h2>
+<p style="font-size:28px;color:#4A5568">CS 357 · Course instance: Spring 2026 · Assessment: quiz5 (Quiz 5) · Question 10</p>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:24px">
+<h3 style="font-size:34px;font-weight:700;color:#14213D">Disparity</h3>
+<table style="font-family:Arial, sans-serif;font-size:28px;color:#1F2A44;background:#FFFFFF">
+<tr><th style="width:52%">Alternative</th><th style="width:24%">Students</th><th style="width:24%">Mean score</th></tr>
+<tr><td>10.1 Temperature</td><td>158</td><td>52.3%</td></tr>
+<tr><td>10.2 Terrain</td><td>150</td><td>35.9%</td></tr>
+</table>
+<p style="font-size:26px;line-height:1.4;color:#4A5568">Same 4 points, each student got one.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:24px">
+<h3 style="font-size:34px;font-weight:700;color:#14213D">Cause, from the source and grader results</h3>
+<p style="font-size:28px;line-height:1.4;color:#1F2A44">Only 10.2 tests a saddle point (“shelf”), yet its prompt says the function “always has a local extremum.” 10.1 says “never a saddle point.”</p>
+<table style="font-family:Arial, sans-serif;font-size:26px;color:#1F2A44;background:#FFFFFF">
+<tr><th style="width:60%">Students with correct coordinates</th><th style="width:20%">10.1</th><th style="width:20%">10.2</th></tr>
+<tr><td>Classified every test correctly</td><td>81%</td><td>56%</td></tr>
+</table>
+</div>
+</div>
+<aside>Numbers from read-only production data. The classification row uses each student’s last graded submission where the Newton coordinates and value were right on every test: 63 of 78 for 10.1, 30 of 54 for 10.2. The most common 10.2 failure pattern (valley right, peak and saddle wrong) is consistent with returning “valley” every time. QIDs: 10.1 is 15-Optimization/OptimizationND-Newton-Temperature, 10.2 is 15-Optimization/OptimizationND-Newton-Terrain.</aside>
+</section>

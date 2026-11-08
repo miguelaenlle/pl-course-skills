@@ -1,0 +1,16 @@
+== Error-TaylorErrorBound: actual error vs Lagrange-bound answer
+  error<0.01: key=3 actual-error answer=3 remainder-bound answer=4
+  error<0.001: key=5 actual-error answer=5 remainder-bound answer=6
+  error<0.0001: key=7 actual-error answer=7 remainder-bound answer=7
+== Energy vs RobotArm: credit available without a correct Taylor polynomial
+  Energy: boolean computed from the exact f agrees with the key in 99.1% of draws
+  Energy grading: per case approximation, true_value, boolean (6 items); RobotArm: approximation, true_value, absolute_error (3 items)
+== UFLtoOFL vs UFLtoSubnormal: size of the list students must produce (all-or-nothing, 8 of 10 test points)
+  UFLtoOFL fp_lst: median 39 values over median 3 exponents (range 2-7)
+  UFLtoSubnormal subnormal_lst: median 30 values over 1 exponent
+== Weather vs Graphics (Fall 2026): does the common formula gap = eps * 2^e give the key?
+  Weather: formula matches key in 100% of variants (gap item = 35 of 100 test points)
+  Graphics: formula matches key in 0% of variants (gap item = 35 of 100 test points)
+== Binary64 vs binary32 rounding (Fall 2026): spacing via floor(log2(x))
+  binary64: log2 spacing wrong on 1 of 18 graded inputs; key(2^k-1 boundary case) rounds exactly in float64: False
+  binary32: log2 spacing wrong on 0 of 18 graded inputs; key(2^k-1 boundary case) rounds exactly in float64: True

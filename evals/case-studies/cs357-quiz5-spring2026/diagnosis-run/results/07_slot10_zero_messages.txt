@@ -1,0 +1,17 @@
+                qid                |                                            msg                                             |  n  
+-----------------------------------+--------------------------------------------------------------------------------------------+-----
+ OptimizationND-Newton-Temperature | find_t#mp#ratur#_#xtr#m# did not r#turn a tupl# of siz# #                                  |  78
+ OptimizationND-Newton-Temperature |  # Grading was skipp#d b#caus# an #arli#r t#st fail#d #                                    |  47
+ OptimizationND-Newton-Temperature | Th# callabl# 'find_t#mp#ratur#_#xtr#m#' suppli#d in your cod# fail#d with an #xc#ption whi |  46
+ OptimizationND-Newton-Temperature | 'coords' is inaccurat# 't#mp#ratur#' is inaccurat# t#mp_typ# (#rd valu# in tupl#) is not c |  20
+ OptimizationND-Newton-Temperature | 'coords' is not a numpy array 't#mp#ratur#' is inaccurat# t#mp_typ# (#rd valu# in tupl#) i |  15
+ OptimizationND-Newton-Temperature | Trac#back (most r#c#nt call last): Fil# "/grad#/run/pl_#x#cut#py", lin# #, in #x#cut#_cod# |   7
+ OptimizationND-Newton-Terrain     |  # Grading was skipp#d b#caus# an #arli#r t#st fail#d #                                    | 108
+ OptimizationND-Newton-Terrain     | find_t#rrain_#xtr#m# did not r#turn a tupl# of siz# #                                      | 105
+ OptimizationND-Newton-Terrain     | Th# callabl# 'find_t#rrain_#xtr#m#' suppli#d in your cod# fail#d with an #xc#ption whil# i |  54
+ OptimizationND-Newton-Terrain     | 'coords' is inaccurat# '#l#vation' is inaccurat# t#rrain typ# (#rd valu# in tupl#) is not  |  46
+ OptimizationND-Newton-Terrain     | 'coords' is not a numpy array '#l#vation' is inaccurat# t#rrain typ# (#rd valu# in tupl#)  |  19
+ OptimizationND-Newton-Terrain     | 'coords' do#s not hav# corr#ct data typ#got: 'int#', #xp#ct#d: 'float#' '#l#vation' is ina |  17
+ OptimizationND-Newton-Terrain     | Trac#back (most r#c#nt call last): Fil# "/grad#/run/pl_#x#cut#py", lin# #, in #x#cut#_cod# |   8
+ OptimizationND-Newton-Terrain     | 'coords' is inaccurat# '#l#vation' is not a numb#r t#rrain typ# (#rd valu# in tupl#) is no |   5
+(14 rows)

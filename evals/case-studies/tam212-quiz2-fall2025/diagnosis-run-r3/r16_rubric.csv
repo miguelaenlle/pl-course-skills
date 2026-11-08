@@ -1,0 +1,11 @@
+qid,number,points,description,n_applied,pct_of_graded
+distFromVelWritten,0,5,Correct formula for position,114,90.5
+distFromVelWritten,1,10,Correct intermediate computations,113,89.7
+distFromVelWritten,2,5,Correct final answer,94,74.6
+distFromVelWritten,3,-1,Minor calculation error,4,3.2
+distFromVelWritten,4,-2,Blurry or bad photo,7,5.6
+fcnPosSpeedWritten,0,5,Correct formula for velocity,111,94.9
+fcnPosSpeedWritten,1,10,Correct intermediate computations,114,97.4
+fcnPosSpeedWritten,2,5,Correct final answer,94,80.3
+fcnPosSpeedWritten,3,-1,Minor calculation error,7,6.0
+fcnPosSpeedWritten,4,-2,Blurry or bad photo,10,8.5

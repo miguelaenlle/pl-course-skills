@@ -1,0 +1,11 @@
+trials=2000
+second eigenpair found by reference is the negative one (from [-10,-6]): 100.0%
+reference second power iteration ran all 500 iterations (never met stopping rule): 100.0%
+same_as_ref pass% lambda_max, v_max, lambda_2nd, v_2nd: [100.0, 100.0, 100.0, 100.0]
+norm_eig pass% lambda_max, v_max, lambda_2nd, v_2nd: [100.0, 100.0, 0.0, 100.0]
+start_from_v0 pass% lambda_max, v_max, lambda_2nd, v_2nd: [100.0, 100.0, 99.9, 99.7]
+deflation variants:
+outer pass% lambda_max, v_max, lambda_2nd, v_2nd: [100.0, 100.0, 100.0, 100.0]
+v@v.T pass% lambda_max, v_max, lambda_2nd, v_2nd: [100.0, 100.0, 0.0, 0.0]
+v*v.T pass% lambda_max, v_max, lambda_2nd, v_2nd: [100.0, 100.0, 0.0, 0.0]
+v.T@v pass% lambda_max, v_max, lambda_2nd, v_2nd: [100.0, 100.0, 0.0, 0.0]

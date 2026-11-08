@@ -1,0 +1,18 @@
+500 seeds, 0 raised errors
+correct_answers.yVel: 24 distinct; range -19.4029 to 19.4029
+params.coefficient1: 4 distinct; range -2 to 2
+    most common: 1 (28%), -1 (26%), 2 (23%), -2 (23%)
+params.coefficient2: 4 distinct; range -2 to 2
+    most common: -1 (37%), 1 (32%), -2 (17%), 2 (14%)
+params.direction: 2 distinct
+    most common: "right" (53%), "left" (47%)
+params.func: 2 distinct
+    most common: "Cos" (51%), "Sin" (49%)
+params.speed: 4 distinct; range 5 to 20
+    most common: 5 (26%), 10 (25%), 15 (25%), 20 (24%)
+params.xCoeff: 6 distinct; range 0.5 to 3
+    most common: 1.5 (23%), 2.5 (21%), 0.5 (21%), 1.0 (12%), 3.0 (11%), 2.0 (11%)
+params.xFuncLatex: 12 distinct
+params.xPos: 6 distinct; range 1.5708 to 9.42478
+    most common: 4.71238898038469 (23%), 7.853981633974483 (21%), 1.5707963267948966 (21%), 3.141592653589793 (12%), 9.42477796076938 (11%), 6.283185307179586 (11%)
+params.y: 12 distinct

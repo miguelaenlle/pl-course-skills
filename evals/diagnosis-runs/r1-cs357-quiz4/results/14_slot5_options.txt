@@ -1,0 +1,25 @@
+Access level: forced read-only; this LOGIN has no write or owner privileges.
+qid|option_text|correct|n_shown|pct_selected|pct_marked_right
+12-Eigenvalues/Eigen-PowerIterationConvergence|converges to an eigenvector of $\lambda_2$ if the algorithm uses infinite precision|t|124|53.2|53.2
+12-Eigenvalues/Eigen-PowerIterationConvergence|converges to an eigenvector of $\lambda_3$ if the algorithm uses infinite precision|t|55|60.0|60.0
+12-Eigenvalues/Eigen-PowerIterationConvergence|converges to an eigenvector of $\lambda_1$ if the algorithm uses infinite precision|f|179|29.1|70.9
+12-Eigenvalues/Eigen-PowerIterationConvergence|converges to an eigenvector of $\lambda_1$ if the algorithm uses IEEE754 double precision|t|179|75.4|75.4
+12-Eigenvalues/Eigen-PowerIterationConvergence|converges to an eigenvector of $\lambda_2$ if the algorithm uses infinite precision|f|55|16.4|83.6
+12-Eigenvalues/Eigen-PowerIterationConvergence|converges to an eigenvector of $\lambda_3$ if the algorithm uses infinite precision|f|124|15.3|84.7
+12-Eigenvalues/Eigen-PowerIterationConvergence|converges to an eigenvector of $\lambda_3$ if the algorithm uses IEEE754 double precision|f|179|14.5|85.5
+12-Eigenvalues/Eigen-PowerIterationConvergence|converges to an eigenvector of $\lambda_2$ if the algorithm uses IEEE754 double precision|f|179|14.5|85.5
+12-Eigenvalues/Iteration-Mixed-Concepts| If ${\bf A}$ and the inverse matrix of ${\bf A}$ are given, the asymptotic computational cost of evaluating 5|f|59|61.0|39.0
+12-Eigenvalues/Iteration-Mixed-Concepts| The convergence rate of the Normalized Power Iteration is linear.|t|43|55.8|55.8
+12-Eigenvalues/Iteration-Mixed-Concepts| If the initial guess $x_0$ has no component in the dominant eigenvector $u_1$ (corresponding to the largest e|f|50|42.0|58.0
+12-Eigenvalues/Iteration-Mixed-Concepts| If the first two largest eigenvalues of a matrix have the same magnitude, then Normalized Power Iteration may|t|49|75.5|75.5
+12-Eigenvalues/Iteration-Mixed-Concepts| The asymptotic computational cost of evaluating 500 normalized inverse iterations and 500 normalized shifted |t|34|76.5|76.5
+12-Eigenvalues/Iteration-Mixed-Concepts| Normalized Power Iteration will always converge.|f|52|23.1|76.9
+12-Eigenvalues/Iteration-Mixed-Concepts| Normalized Power Iteration can be used to find the eigenvector corresponding to the smallest eigenvalue in ma|f|46|21.7|78.3
+12-Eigenvalues/Iteration-Mixed-Concepts| The convergence rate of the Inverse Power Iteration only depends on the values of the first two largest eigen|f|42|21.4|78.6
+12-Eigenvalues/Iteration-Mixed-Concepts| If the initial guess $x_0$ has no component in the dominant eigenvector $u_1$ (corresponding to the largest e|t|43|79.1|79.1
+12-Eigenvalues/Iteration-Mixed-Concepts| There is a risk of overflow if the approximated eigenvector is not normalized at each iteration during Power |t|93|80.6|80.6
+12-Eigenvalues/Iteration-Mixed-Concepts| Assuming that ${\bf A}$ and the inverse of ${\bf A}$ are given, the asymptotic computational cost per iterati|t|95|82.1|82.1
+12-Eigenvalues/Iteration-Mixed-Concepts| Shifted Inverse Power Iteration is the most efficient power iteration method to compute the largest eigenvalu|f|46|8.7|91.3
+12-Eigenvalues/Iteration-Mixed-Concepts| The convergence rate of the Inverse Power Iteration depends on the values of the first two smallest eigenvalu|t|51|92.2|92.2
+12-Eigenvalues/Iteration-Mixed-Concepts| Shifted Inverse Power Iteration can be used when we want to obtain an eigenvector of ${\bf A}$ corresponding |t|49|93.9|93.9
+(22 rows)

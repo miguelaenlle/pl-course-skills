@@ -1,0 +1,31 @@
+Access level: forced read-only; this LOGIN has no write or owner privileges.
+offering|day|qid|n
+Spring2025|2025-04-01|11-Sparse/Sparse-COO-Dense-Conversions|15
+Spring2025|2025-04-02|11-Sparse/Sparse-COO-Dense-Conversions|46
+Spring2025|2025-04-03|11-Sparse/Sparse-COO-Dense-Conversions|10
+Spring2025|2025-04-03|11-Sparse/Sparse-CSR-Dense-Conversions|139
+Spring2025|2025-04-04|11-Sparse/Sparse-COO-Dense-Conversions|1
+Spring2025|2025-04-04|11-Sparse/Sparse-CSR-Dense-Conversions|199
+Spring2025|2025-04-05|11-Sparse/Sparse-CSR-Dense-Conversions|2
+Spring2025|2025-04-06|11-Sparse/Sparse-COO-Dense-Conversions|1
+Spring2025|2025-04-06|11-Sparse/Sparse-CSR-Dense-Conversions|2
+Fall2025|2025-10-27|11-Sparse/Sparse-CSR-Dense-Conversions|15
+Fall2025|2025-10-28|11-Sparse/Sparse-CSR-Dense-Conversions|52
+Fall2025|2025-10-29|11-Sparse/Sparse-COO-Dense-Conversions|199
+Fall2025|2025-10-29|11-Sparse/Sparse-CSR-Dense-Conversions|8
+Fall2025|2025-10-30|11-Sparse/Sparse-COO-Dense-Conversions|164
+Fall2025|2025-11-01|11-Sparse/Sparse-COO-Dense-Conversions|2
+Fall2025|2025-11-02|11-Sparse/Sparse-COO-Dense-Conversions|5
+Spring2026|2026-03-31|11-Sparse/Sparse-COO-Dense-Conversions|10
+Spring2026|2026-03-31|11-Sparse/Sparse-CSR-Dense-Conversions|8
+Spring2026|2026-04-01|11-Sparse/Sparse-COO-Dense-Conversions|12
+Spring2026|2026-04-01|11-Sparse/Sparse-CSR-Dense-Conversions|17
+Spring2026|2026-04-02|11-Sparse/Sparse-COO-Dense-Conversions|48
+Spring2026|2026-04-02|11-Sparse/Sparse-CSR-Dense-Conversions|65
+Spring2026|2026-04-03|11-Sparse/Sparse-COO-Dense-Conversions|57
+Spring2026|2026-04-03|11-Sparse/Sparse-CSR-Dense-Conversions|86
+Spring2026|2026-04-04|11-Sparse/Sparse-COO-Dense-Conversions|1
+Spring2026|2026-04-05|11-Sparse/Sparse-COO-Dense-Conversions|2
+Spring2026|2026-04-05|11-Sparse/Sparse-CSR-Dense-Conversions|1
+Spring2026|2026-04-06|11-Sparse/Sparse-COO-Dense-Conversions|1
+(28 rows)

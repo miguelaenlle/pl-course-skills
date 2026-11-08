@@ -1,0 +1,31 @@
+qid,day,n_changes,n_iq,mean_new_pct,mean_delta_pct
+07-Random-MonteCarlo/MC-TreasureKeyProbability,2026-10-18,2,2,100.0,100.0
+08-Vector-Matrices-Norms/Norm-Vector-Projection-v2,2026-10-22,1,1,100.0,55.6
+09-Linsys/Linsys-SurveyElevations,2026-10-25,162,160,47.1,22.3
+(3 rows)
+zone,slot,cnt,n_instances
+2,9,2,1
+(1 row)
+start_day,n,mean_score,med_dur_min,p90_dur_min
+2026-10-06,1,21.7,11.9,11.9
+2026-10-12,22,91.4,46.1,49.9
+2026-10-13,39,84.1,44.2,49.8
+2026-10-14,165,83.7,46.1,49.7
+2026-10-15,129,79.1,48.1,49.8
+2026-10-16,2,73.6,43.0,43.8
+2026-10-17,3,84.4,43.5,48.0
+(7 rows)
+n_inst,n_users,n_teams,max_number,mean,max_points
+361,361,0,1,82.3,41
+(1 row)
+bucket10min,count
+1,2
+2,4
+3,29
+4,58
+5,257
+6,6
+8,2
+9,2
+11,1
+(9 rows)

@@ -1,0 +1,7 @@
+Access level: forced read-only; this LOGIN has no write or owner privileges.
+qid|e0|n|first_sub_pct|n_wrong|wrong_eq_missing_e0|wrong_eq_unshifted_ratio|wrong_eq_unshifted_missing_e0
+12-Eigenvalues/Eigen-InversePowerItErrorEst|1|121|66.9|40|0|0|0
+12-Eigenvalues/Eigen-InversePowerItErrorEst|2|374|69.0|116|32|0|0
+12-Eigenvalues/Eigen-ShiftedInversePowerItErrorEst|1|137|64.2|49|0|7|0
+12-Eigenvalues/Eigen-ShiftedInversePowerItErrorEst|2|368|62.2|139|20|14|3
+(4 rows)

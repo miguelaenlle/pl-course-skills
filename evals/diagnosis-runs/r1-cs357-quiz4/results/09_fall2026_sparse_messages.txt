@@ -1,0 +1,70 @@
+Access level: forced read-only; this LOGIN has no write or owner privileges.
+qid|test_name|message|n
+11-Sparse/Sparse-COO-AudioMix|COO representation: data values|Correct COO gain entries for 4 of 4 cases. |45
+11-Sparse/Sparse-COO-AudioMix|COO representation: data values| - Grading was skipped because an earlier test failed - |18
+11-Sparse/Sparse-COO-AudioMix|COO representation: data values|Correct COO gain entries for 0 of 4 cases. |11
+11-Sparse/Sparse-COO-AudioMix|COO representation: data values|Correct COO gain entries for 1 of 4 cases. |10
+11-Sparse/Sparse-COO-AudioMix|COO representation: data values|row must be one-dimensional. col must be one-dimensional. data must be|3
+11-Sparse/Sparse-COO-AudioMix|COO representation: row and column values|Correct COO coordinates for 4 of 4 cases. |51
+11-Sparse/Sparse-COO-AudioMix|COO representation: row and column values|The callable 'mix_audio' supplied in your code failed with an exceptio|18
+11-Sparse/Sparse-COO-AudioMix|COO representation: row and column values|Correct COO coordinates for 1 of 4 cases. |10
+11-Sparse/Sparse-COO-AudioMix|COO representation: row and column values|Correct COO coordinates for 0 of 4 cases. |5
+11-Sparse/Sparse-COO-AudioMix|COO representation: row and column values|row must be one-dimensional. col must be one-dimensional. row must be |3
+11-Sparse/Sparse-COO-AudioMix|Mixed output signal|Correct mixed signal for 5 of 5 cases. |21
+11-Sparse/Sparse-COO-AudioMix|Mixed output signal| - Grading was skipped because an earlier test failed - |18
+11-Sparse/Sparse-COO-AudioMix|Mixed output signal|Correct mixed signal for 0 of 5 cases. |15
+11-Sparse/Sparse-COO-AudioMix|Mixed output signal|mixed_signal must be one-dimensional. mixed_signal must be one-dimensi|12
+11-Sparse/Sparse-COO-AudioMix|Mixed output signal|Correct mixed signal for 1 of 5 cases. |10
+11-Sparse/Sparse-COO-AudioMix|Mixed output signal|dense-operation check triggered (score 0)|9
+11-Sparse/Sparse-COO-AudioMix|Mixed output signal|Correct mixed signal for 2 of 5 cases. |2
+11-Sparse/Sparse-COO-NutrientTotals|COO representation: data values|Correct COO nutrient entries for 4 of 4 cases. |67
+11-Sparse/Sparse-COO-NutrientTotals|COO representation: data values| - Grading was skipped because an earlier test failed - |16
+11-Sparse/Sparse-COO-NutrientTotals|COO representation: data values|Correct COO nutrient entries for 0 of 4 cases. |11
+11-Sparse/Sparse-COO-NutrientTotals|COO representation: data values|Correct COO nutrient entries for 1 of 4 cases. |7
+11-Sparse/Sparse-COO-NutrientTotals|COO representation: data values|row must be one-dimensional. col must be one-dimensional. data must be|3
+11-Sparse/Sparse-COO-NutrientTotals|COO representation: data values|nutrient_totals must return row, col, data, and totals. nutrient_total|2
+11-Sparse/Sparse-COO-NutrientTotals|COO representation: data values|col must be one-dimensional. data must be one-dimensional. col must be|2
+11-Sparse/Sparse-COO-NutrientTotals|COO representation: data values|row must be one-dimensional. col must be one-dimensional. row must be |1
+11-Sparse/Sparse-COO-NutrientTotals|COO representation: row and column values|Correct COO coordinates for 4 of 4 cases. |68
+11-Sparse/Sparse-COO-NutrientTotals|COO representation: row and column values|The callable 'nutrient_totals' supplied in your code failed with an ex|16
+11-Sparse/Sparse-COO-NutrientTotals|COO representation: row and column values|Correct COO coordinates for 0 of 4 cases. |10
+11-Sparse/Sparse-COO-NutrientTotals|COO representation: row and column values|Correct COO coordinates for 1 of 4 cases. |7
+11-Sparse/Sparse-COO-NutrientTotals|COO representation: row and column values|row must be one-dimensional. col must be one-dimensional. row must be |4
+11-Sparse/Sparse-COO-NutrientTotals|COO representation: row and column values|col must be one-dimensional. col must be one-dimensional. col must be |2
+11-Sparse/Sparse-COO-NutrientTotals|COO representation: row and column values|nutrient_totals must return row, col, data, and totals. nutrient_total|2
+11-Sparse/Sparse-COO-NutrientTotals|Total nutrient amounts|Correct nutrient totals for 5 of 5 cases. |40
+11-Sparse/Sparse-COO-NutrientTotals|Total nutrient amounts|totals must be one-dimensional. totals must be one-dimensional. totals|17
+11-Sparse/Sparse-COO-NutrientTotals|Total nutrient amounts|dense-operation check triggered (score 0)|16
+11-Sparse/Sparse-COO-NutrientTotals|Total nutrient amounts| - Grading was skipped because an earlier test failed - |16
+11-Sparse/Sparse-COO-NutrientTotals|Total nutrient amounts|Correct nutrient totals for 0 of 5 cases. |9
+11-Sparse/Sparse-COO-NutrientTotals|Total nutrient amounts|Correct nutrient totals for 1 of 5 cases. |8
+11-Sparse/Sparse-COO-NutrientTotals|Total nutrient amounts|nutrient_totals must return row, col, data, and totals. nutrient_total|2
+11-Sparse/Sparse-COO-NutrientTotals|Total nutrient amounts|Correct nutrient totals for 2 of 5 cases. |1
+11-Sparse/Sparse-COO-ReliefTransfers|COO representation: data values|Correct signed COO entries for 4 of 4 cases. |60
+11-Sparse/Sparse-COO-ReliefTransfers|COO representation: data values| - Grading was skipped because an earlier test failed - |11
+11-Sparse/Sparse-COO-ReliefTransfers|COO representation: data values|Correct signed COO entries for 0 of 4 cases. |8
+11-Sparse/Sparse-COO-ReliefTransfers|COO representation: data values|Correct signed COO entries for 1 of 4 cases. |7
+11-Sparse/Sparse-COO-ReliefTransfers|COO representation: data values|row must be one-dimensional. col must be one-dimensional. data must be|5
+11-Sparse/Sparse-COO-ReliefTransfers|COO representation: data values|transfer_balance must return row, col, data, and net_change. transfer_|1
+11-Sparse/Sparse-COO-ReliefTransfers|COO representation: row and column values|Correct COO coordinates for 4 of 4 cases. |62
+11-Sparse/Sparse-COO-ReliefTransfers|COO representation: row and column values|The callable 'transfer_balance' supplied in your code failed with an e|11
+11-Sparse/Sparse-COO-ReliefTransfers|COO representation: row and column values|Correct COO coordinates for 1 of 4 cases. |7
+11-Sparse/Sparse-COO-ReliefTransfers|COO representation: row and column values|Correct COO coordinates for 0 of 4 cases. |6
+11-Sparse/Sparse-COO-ReliefTransfers|COO representation: row and column values|row must be one-dimensional. col must be one-dimensional. row must be |5
+11-Sparse/Sparse-COO-ReliefTransfers|COO representation: row and column values|transfer_balance must return row, col, data, and net_change. transfer_|1
+11-Sparse/Sparse-COO-ReliefTransfers|Net supply change|Correct net change for 5 of 5 cases. |32
+11-Sparse/Sparse-COO-ReliefTransfers|Net supply change|net_change must be one-dimensional. net_change must be one-dimensional|18
+11-Sparse/Sparse-COO-ReliefTransfers|Net supply change|dense-operation check triggered (score 0)|16
+11-Sparse/Sparse-COO-ReliefTransfers|Net supply change| - Grading was skipped because an earlier test failed - |11
+11-Sparse/Sparse-COO-ReliefTransfers|Net supply change|Correct net change for 1 of 5 cases. |7
+11-Sparse/Sparse-COO-ReliefTransfers|Net supply change|Correct net change for 0 of 5 cases. |5
+11-Sparse/Sparse-COO-ReliefTransfers|Net supply change|The callable 'transfer_balance' supplied in your code failed with an e|3
+(59 rows)
+violations|n
+a two-dimensional call to zeros, matrix multiplication with @.
+|29
+a two-dimensional call to zeros.
+|8
+matrix multiplication with @.
+|4
+(3 rows)

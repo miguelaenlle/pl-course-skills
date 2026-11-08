@@ -1,0 +1,59 @@
+== TreasureKey: masked grader messages by grading day (all graded submissions)
+day|msg|n
+2026-10-06|Your probability estimate is accurate. |1
+2026-10-12|Your simulation does not appear to use enough independent games for the requested accuracy|17
+2026-10-12|Check that each call to rng.choice represents one complete game and draws the number of ke|13
+2026-10-12|Your probability estimate is accurate. |7
+2026-10-12|The grader did not detect any calls to the provided rng.choice method. Use the provided ra|6
+2026-10-12|Check whether the sampling within each game matches the statement that the keys are drawn |4
+2026-10-12|win_probability must be a scalar number. |3
+2026-10-12|Your estimate is not close to the expected probability. Check how you draw the keys, form |1
+2026-10-13|Your estimate is not close to the expected probability. Check how you draw the keys, form |20
+2026-10-13|Your probability estimate is accurate. |13
+2026-10-13|The grader did not detect any calls to the provided rng.choice method. Use the provided ra|13
+2026-10-13|Your simulation does not appear to use enough independent games for the requested accuracy|11
+2026-10-13|win_probability must be a scalar number. |11
+2026-10-13|Check that each call to rng.choice represents one complete game and draws the number of ke|9
+2026-10-13|Check whether the sampling within each game matches the statement that the keys are drawn |4
+2026-10-14|Your estimate is not close to the expected probability. Check how you draw the keys, form |118
+2026-10-14|Your simulation does not appear to use enough independent games for the requested accuracy|74
+2026-10-14|The grader did not detect any calls to the provided rng.choice method. Use the provided ra|55
+2026-10-14|win_probability must be a scalar number. |55
+2026-10-14|Check that each call to rng.choice represents one complete game and draws the number of ke|49
+2026-10-14|Your probability estimate is accurate. |39
+2026-10-14|Check whether the sampling within each game matches the statement that the keys are drawn |11
+2026-10-14|win_probability must be a finite number between # and #. |5
+2026-10-14|Your estimate is close. Check the sampling and pairing rules, and consider whether your nu|3
+2026-10-15|The grader did not detect any calls to the provided rng.choice method. Use the provided ra|68
+2026-10-15|Your estimate is not close to the expected probability. Check how you draw the keys, form |53
+2026-10-15|Check that each call to rng.choice represents one complete game and draws the number of ke|52
+2026-10-15|Your simulation does not appear to use enough independent games for the requested accuracy|51
+2026-10-15|Your probability estimate is accurate. |38
+2026-10-15|win_probability must be a scalar number. |24
+2026-10-15|Check whether the sampling within each game matches the statement that the keys are drawn |10
+2026-10-15|win_probability must be a finite number between # and #. |8
+2026-10-15|Your estimate is close. Check the sampling and pairing rules, and consider whether your nu|5
+2026-10-16|Your simulation does not appear to use enough independent games for the requested accuracy|13
+2026-10-16|Your estimate is not close to the expected probability. Check how you draw the keys, form |11
+2026-10-16|The grader did not detect any calls to the provided rng.choice method. Use the provided ra|1
+2026-10-16|Check whether the sampling within each game matches the statement that the keys are drawn |1
+2026-10-17|Check that each call to rng.choice represents one complete game and draws the number of ke|4
+2026-10-17|Your simulation does not appear to use enough independent games for the requested accuracy|3
+2026-10-17|win_probability must be a scalar number. |2
+2026-10-17|Your estimate is not close to the expected probability. Check how you draw the keys, form |2
+2026-10-17|Your probability estimate is accurate. |1
+2026-10-18|Your simulation does not appear to use enough independent games for the requested accuracy|1
+(43 rows)
+== TreasureKey / Arcade by generated parameters (final score, all assigned)
+qid|p1|win_on_match|n|mean_final|mean_best
+07-Random-MonteCarlo/MC-TreasureKeyProbability|4|false|19|42.1|42.1
+07-Random-MonteCarlo/MC-TreasureKeyProbability|4|true|22|45.5|45.5
+07-Random-MonteCarlo/MC-TreasureKeyProbability|5|false|14|78.6|78.6
+07-Random-MonteCarlo/MC-TreasureKeyProbability|5|true|17|70.6|64.7
+07-Random-MonteCarlo/MC-TreasureKeyProbability|6|false|22|45.5|45.5
+07-Random-MonteCarlo/MC-TreasureKeyProbability|6|true|19|73.7|73.7
+07-Random-MonteCarlo/MC-TreasureKeyProbability|7|false|20|50.0|50.0
+07-Random-MonteCarlo/MC-TreasureKeyProbability|7|true|22|54.5|54.5
+07-Random-MonteCarlo/MC-TreasureKeyProbability|8|false|13|23.1|23.1
+07-Random-MonteCarlo/MC-TreasureKeyProbability|8|true|22|50.0|45.5
+(10 rows)

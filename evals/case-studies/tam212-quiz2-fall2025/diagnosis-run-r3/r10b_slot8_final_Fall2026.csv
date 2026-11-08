@@ -1,0 +1,5 @@
+qid,answer_is_zero,n,mean_final_pct
+particleVelComponentOnCurve,f,108,51.4
+particleVelOnExpnCurveSpeed,f,105,41.7
+particleVelonTriCurveSpeed,f,46,39.3
+particleVelonTriCurveSpeed,t,64,91.4

@@ -1,0 +1,30 @@
+== SurveyElevations: original vs 2026-10-25 regrade score per submission (bucketed counts)
+orig_b|regrade_b|count
+0|30|65
+0|45|1
+0|50|5
+0|55|1
+5|40|2
+10|40|1
+20|45|2
+25|50|5
+35|55|1
+100|100|35
+|30|13
+|50|1
+(12 rows)
+== A-test message category: original vs regrade
+orig|regrade|count
+||54
+A is correct.
+||35
+# of # rows of A are correct. Check the signs and column loc||26
+A has shape (); expected (#, #).
+||10
+A has shape (#, #); expected (#, #).
+||4
+A must contain numeric values.
+||2
+A has shape (#,); expected (#, #).
+||1
+(7 rows)

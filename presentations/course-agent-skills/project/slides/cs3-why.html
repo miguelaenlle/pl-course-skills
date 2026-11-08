@@ -1,0 +1,26 @@
+<section id="cs3-why" style="background:#FAFAF8;color:#1F2A44;font-family:Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:24px">
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#14213D">Case study 3: disparity and cause</h2>
+<p style="font-size:28px;color:#4A5568">TAM 212 · Course instance: Fall 2025 · Assessment: quiz02 (Quiz 2) · Question 8</p>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:24px">
+<h3 style="font-size:34px;font-weight:700;color:#14213D">Disparity</h3>
+<table style="font-family:Arial, sans-serif;font-size:28px;color:#1F2A44;background:#FFFFFF">
+<tr><th style="width:60%">Alternative</th><th style="width:20%">Students</th><th style="width:20%">Mean</th></tr>
+<tr><td>8.1 VelComponentOnCurve</td><td>89</td><td>58.4%</td></tr>
+<tr><td>8.2 VelonTriCurveSpeed</td><td>74</td><td>73.2%</td></tr>
+<tr><td>8.3 VelOnExpnCurveSpeed</td><td>81</td><td>45.1%</td></tr>
+</table>
+<p style="font-size:26px;line-height:1.4;color:#4A5568">Same 10 points, each student got one.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:24px">
+<h3 style="font-size:34px;font-weight:700;color:#14213D">Cause, from the source and results by variant</h3>
+<p style="font-size:28px;line-height:1.4;color:#1F2A44">8.2’s server.py puts the point at multiples of π/2, where the curve is often flat, so the answer is v_y = 0.</p>
+<table style="font-family:Arial, sans-serif;font-size:26px;color:#1F2A44;background:#FFFFFF">
+<tr><th style="width:60%">8.2 variants</th><th style="width:20%">Share</th><th style="width:20%">Mean</th></tr>
+<tr><td>Answer is 0</td><td>47%</td><td>99%</td></tr>
+<tr><td>All others</td><td>53%</td><td>50%</td></tr>
+</table>
+</div>
+</div>
+<aside>A different course and subject (dynamics) with numeric questions, which shows the skills aren’t tied to CS 357. The instructor asked only “Were the Quiz 2 variants fair last fall?”; the agent found the course, past course instances and alternatives on its own. Full QIDs: particleVelComponentOnCurve, particleVelonTriCurveSpeed, particleVelOnExpnCurveSpeed. The same agent also found that alternatives 6.1 and 6.2 averaged 23% against 52–73% for 6.3–6.5; those were already removed in Spring 2026. Numbers from read-only production data.</aside>
+</section>

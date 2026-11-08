@@ -1,0 +1,18 @@
+Access level: forced read-only; this LOGIN has no write or owner privileges.
+qid|n|n_points_4|mean_auto_points|mean_manual_points|mean_points|n_with_last_grader|min_modified|max_modified
+12-Eigenvalues/Eigen-Power-Matrix-and-Transpose|156|47|1.56|0.00|1.56|0|2026-03-31|2026-04-05
+12-Eigenvalues/Eigen-TwoLargestEig|152|152|4.00|0.00|4.00|0|2026-03-31|2026-04-06
+(2 rows)
+qid|day|n_logs|n_iq|n_distinct_actors|mean_points_set
+12-Eigenvalues/Eigen-TwoLargestEig|2026-04-06|135|135|1|4.00
+(1 row)
+table_name|action|action_detail|day|n
+(0 rows)
+slot11_alternative|n|mean_quiz_pct|mean_quiz_points|quiz_max_points
+12-Eigenvalues/Eigen-Power-Matrix-and-Transpose|156|79.8|43.07|54
+12-Eigenvalues/Eigen-TwoLargestEig|152|84.1|45.44|54
+(2 rows)
+qid|n|mean_points_from_best_submission|mean_points_recorded
+12-Eigenvalues/Eigen-Power-Matrix-and-Transpose|156|1.56|1.56
+12-Eigenvalues/Eigen-TwoLargestEig|152|1.24|4.00
+(2 rows)

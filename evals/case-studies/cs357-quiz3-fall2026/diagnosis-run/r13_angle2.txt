@@ -1,0 +1,6 @@
+== Vector projection: more hypotheses for wrong first-submission cos(theta), and relative-error buckets
+qid|n_wrong|blank|non_numeric_text|ignored_a3|within_2pct|within_2_10pct|off_gt_10pct|gave_sin
+08-Vector-Matrices-Norms/Norm-Vector-Projection-v1|344|0|0|7|3|13|328|3
+08-Vector-Matrices-Norms/Norm-Vector-Projection-v2|342|0|0|7|2|21|319|2
+(2 rows)
+Cancel request sent

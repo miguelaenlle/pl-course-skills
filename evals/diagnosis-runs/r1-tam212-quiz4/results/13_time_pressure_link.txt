@@ -1,0 +1,9 @@
+        grp        | single_body_drawn |  n   | skipped_piston_pct | skipped_slot6_pct 
+-------------------+-------------------+------+--------------------+-------------------
+ other 5 offerings |                 0 |  172 |               23.8 |              14.5
+ other 5 offerings |                 1 | 1014 |               15.9 |               7.8
+ other 5 offerings |                 2 |  497 |               10.9 |               6.8
+ Spring2026        |                 0 |   65 |               21.5 |              12.3
+ Spring2026        |                 1 |  329 |               18.8 |              11.6
+ Spring2026        |                 2 |  187 |               20.9 |              13.9
+(6 rows)

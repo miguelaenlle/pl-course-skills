@@ -1,0 +1,9 @@
+q,test,n,passed_pct
+MenuPrices,Coefficient matrix A,142,67.6
+MenuPrices,Right-hand side b,142,83.8
+MenuPrices,Solved menu prices,142,66.2
+MenuPrices,Your code raised an Exception,34,0.0
+SurveyElevations,Coefficient matrix A,90,38.9
+SurveyElevations,Right-hand side b,90,53.3
+SurveyElevations,Solved elevations,90,38.9
+SurveyElevations,Your code raised an Exception,34,0.0

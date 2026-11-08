@@ -1,0 +1,37 @@
+short_name,tid,assessment_id,type,a_max_points,zone,zone_title,zone_max,best_questions,slot,number_choose,aq_id,qid,max_points,max_auto_points,max_manual_points,points_list,grading_method
+Fall2025,quiz02,2574213,Exam,,1,Python Workstation and Tutorial,,,1,,1762683682,workspace-jupyterlab,0,0,0,{0},Internal
+Fall2025,quiz02,2574213,Exam,,1,Python Workstation and Tutorial,,,2,,1762683684,pythonTutorial,0,0,0,{0},External
+Fall2025,quiz02,2574213,Exam,,2,Group1,,,3,,1762683687,pointKinChangeRV,20,20,0,"{20,19}",Internal
+Fall2025,quiz02,2574213,Exam,,2,Group1,,,4,1,1762683689,rotPointLoc,20,20,0,"{20,19,18,17,16,15}",Internal
+Fall2025,quiz02,2574213,Exam,,2,Group1,,,4,1,1762683688,rotPointVel,20,20,0,"{20,19,18,17,16,15}",Internal
+Fall2025,quiz02,2574213,Exam,,2,Group1,,,5,1,1850348510,distFromVelWritten,20,0,20,{20},Manual
+Fall2025,quiz02,2574213,Exam,,2,Group1,,,5,1,1850348509,fcnPosSpeedWritten,20,0,20,{20},Manual
+Fall2025,quiz02,2574213,Exam,,3,Group2,,,6,1,1762683697,OhareTrackComputeA,15,15,0,"{15,14,14,13,13,12}",Internal
+Fall2025,quiz02,2574213,Exam,,3,Group2,,,6,1,1762683699,OhareTrackComputeR,15,15,0,"{15,14,14,13,13,12}",Internal
+Fall2025,quiz02,2574213,Exam,,3,Group2,,,6,1,1762683700,thetaFunTAccln1,15,15,0,"{15,14,14,13,13,12}",Internal
+Fall2025,quiz02,2574213,Exam,,3,Group2,,,6,1,1762683707,thetaFunTAccln2,15,15,0,"{15,14,14,13,13,12}",Internal
+Fall2025,quiz02,2574213,Exam,,3,Group2,,,6,1,1762683708,thetaFunTAccln3,15,15,0,"{15,14,14,13,13,12}",Internal
+Fall2025,quiz02,2574213,Exam,,3,Group2,,,7,1,1762683710,acclnSpiralCurve,15,15,0,"{15,14,14,13,13,12}",Internal
+Fall2025,quiz02,2574213,Exam,,3,Group2,,,7,1,1762683712,pinSlotAcclnMag,15,15,0,"{15,14,14,13,13,12}",Internal
+Fall2025,quiz02,2574213,Exam,,3,Group2,,,7,1,1762683711,polarAcclnTelescopicArm,15,15,0,"{15,14,14,13,13,12}",Internal
+Fall2025,quiz02,2574213,Exam,,3,Group2,,,7,1,1762683709,polarPolyCurveAcc,15,15,0,"{15,14,14,13,13,12}",Internal
+Fall2025,quiz02,2574213,Exam,,4,Group3,,,8,1,1762683716,particleVelComponentOnCurve,10,10,0,"{10,9,9,9,9,9}",Internal
+Fall2025,quiz02,2574213,Exam,,4,Group3,,,8,1,1762683718,particleVelOnExpnCurveSpeed,10,10,0,"{10,9,9,9,9,9}",Internal
+Fall2025,quiz02,2574213,Exam,,4,Group3,,,8,1,1762683717,particleVelonTriCurveSpeed,10,10,0,"{10,9,9,9,9,9}",Internal
+Fall2025,quiz02r,2574215,Exam,,1,Python Workstation and Tutorial,,,1,,1762683745,workspace-jupyterlab,0,0,0,{0},Internal
+Fall2025,quiz02r,2574215,Exam,,1,Python Workstation and Tutorial,,,2,,1762683746,pythonTutorial,0,0,0,{0},External
+Fall2025,quiz02r,2574215,Exam,,2,Group1,,,3,4,1762683748,angAccToAcc,17,17,0,"{17,16,15,14,13,12}",Internal
+Fall2025,quiz02r,2574215,Exam,,2,Group1,,,3,4,1762683752,ellipticalSpiralAccln,17,17,0,"{17,16,15,14,13,12}",Internal
+Fall2025,quiz02r,2574215,Exam,,2,Group1,,,3,4,1762683753,particleVelOnCurve,17,17,0,"{17,16,15,14,13,12}",Internal
+Fall2025,quiz02r,2574215,Exam,,2,Group1,,,3,4,1762683749,polarCurveVel,17,17,0,"{17,16,15,14,13,12}",Internal
+Fall2025,quiz02r,2574215,Exam,,2,Group1,,,3,4,1762683750,polarPosnPolyFuncToRectVel,17,17,0,"{17,16,15,14,13,12}",Internal
+Fall2025,quiz02r,2574215,Exam,,2,Group1,,,3,4,1762683757,RelativeVectorMovement,17,17,0,"{17,16,15,14,13,12}",Internal
+Fall2025,quiz02r,2574215,Exam,,2,Group1,,,3,4,1762683755,speedPolar,17,17,0,"{17,16,15,14,13,12}",Internal
+Fall2025,quiz02r,2574215,Exam,,2,Group1,,,3,4,1762683756,vehicleAccelnCircularTrack,17,17,0,"{17,16,15,14,13,12}",Internal
+Fall2025,quiz02r,2574215,Exam,,3,Group2,,,4,2,1762683759,angAccMagFromA,12,12,0,"{12,11,11,10,10,9}",Internal
+Fall2025,quiz02r,2574215,Exam,,3,Group2,,,4,2,1762683761,fcnPosVelocity,12,12,0,"{12,11,11,10,10,9}",Internal
+Fall2025,quiz02r,2574215,Exam,,3,Group2,,,4,2,1762683763,particleAccelOnCurve,12,12,0,"{12,11,11,10,10,9}",Internal
+Fall2025,quiz02r,2574215,Exam,,3,Group2,,,4,2,1762683764,polarPolyCurveVel,12,12,0,"{12,11,11,10,10,9}",Internal
+Fall2025,quiz02r,2574215,Exam,,3,Group2,,,4,2,1762683765,posFromVelPolar,12,12,0,"{12,11,11,10,10,9}",Internal
+Fall2025,quiz02r,2574215,Exam,,4,Group3,,,5,1,1762683766,thetaFunTAccln4,8,8,0,"{8,7,7,7,7,7}",Internal
+Fall2025,quiz02r,2574215,Exam,,4,Group3,,,5,1,1762683768,trainVelocitySpiralCurve,8,8,0,"{8,7,7,7,7,7}",Internal

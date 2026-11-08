@@ -1,0 +1,6 @@
+Access level: forced read-only; this LOGIN has no write or owner privileges.
+pattern|n|n_uses_outer|n_matmul_transpose_no_outer|n_reshape_no_outer|n_transpose_of_1d_no_outer|n_elementwise_transpose_no_outer
+A: all four correct|44|29|1|2|9|9
+B: first pair ok, second pair wrong|199|1|29|1|173|149
+C: other|170|2|3|0|17|14
+(3 rows)

@@ -1,0 +1,42 @@
+offering,component,category,n,pct
+Fa24,e_r,other,19,45.2
+Fa24,e_r,correct,13,31.0
+Fa24,e_r,dropped r'*thetaddot in r-ddot,5,11.9
+Fa24,e_r,within 10% (rounding?),4,9.5
+Fa24,e_r,sign flipped,1,2.4
+Fa24,e_theta,correct,22,52.4
+Fa24,e_theta,other,17,40.5
+Fa24,e_theta,dropped r*thetaddot,2,4.8
+Fa24,e_theta,within 10% (rounding?),1,2.4
+Fall2025,e_r,other,29,60.4
+Fall2025,e_r,correct,11,22.9
+Fall2025,e_r,within 10% (rounding?),5,10.4
+Fall2025,e_r,dropped r'*thetaddot in r-ddot,3,6.3
+Fall2025,e_theta,other,28,58.3
+Fall2025,e_theta,correct,19,39.6
+Fall2025,e_theta,dropped r*thetaddot,1,2.1
+Fall2026,e_r,other,59,54.6
+Fall2026,e_r,correct,43,39.8
+Fall2026,e_r,within 10% (rounding?),5,4.6
+Fall2026,e_r,dropped r'*thetaddot in r-ddot,1,0.9
+Fall2026,e_theta,other,62,57.4
+Fall2026,e_theta,correct,40,37.0
+Fall2026,e_theta,within 10% (rounding?),5,4.6
+Fall2026,e_theta,dropped r*thetaddot,1,0.9
+Spring2025,e_r,other,50,49.5
+Spring2025,e_r,correct,43,42.6
+Spring2025,e_r,within 10% (rounding?),3,3.0
+Spring2025,e_r,dropped r'*thetaddot in r-ddot,3,3.0
+Spring2025,e_r,thetadot not squared,2,2.0
+Spring2025,e_theta,other,51,50.5
+Spring2025,e_theta,correct,46,45.5
+Spring2025,e_theta,within 10% (rounding?),3,3.0
+Spring2025,e_theta,sign flipped,1,1.0
+Spring2026,e_r,other,97,55.1
+Spring2026,e_r,correct,62,35.2
+Spring2026,e_r,dropped r'*thetaddot in r-ddot,12,6.8
+Spring2026,e_r,within 10% (rounding?),5,2.8
+Spring2026,e_theta,other,99,56.3
+Spring2026,e_theta,correct,66,37.5
+Spring2026,e_theta,within 10% (rounding?),8,4.5
+Spring2026,e_theta,dropped r*thetaddot,3,1.7

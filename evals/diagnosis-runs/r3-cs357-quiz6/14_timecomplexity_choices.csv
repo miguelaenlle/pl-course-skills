@@ -1,0 +1,13 @@
+requested_order,chosen_option,is_correct,n
+least to most,"LU, matrix-matrix multiplication, SVD",,214
+least to most,"SVD, matrix-matrix multiplication, LU",,27
+least to most,"matrix-matrix multiplication, LU, SVD",,25
+least to most,"SVD, LU, matrix-matrix multiplication",,15
+least to most,"LU, SVD, matrix-matrix multiplication",,10
+least to most,"matrix-matrix multiplication, SVD, LU",,1
+most to least,"SVD, matrix-matrix multiplication, LU",,213
+most to least,"SVD, LU, matrix-matrix multiplication",,34
+most to least,"LU, matrix-matrix multiplication, SVD",,26
+most to least,"matrix-matrix multiplication, SVD, LU",,8
+most to least,"matrix-matrix multiplication, LU, SVD",,6
+most to least,"LU, SVD, matrix-matrix multiplication",,5

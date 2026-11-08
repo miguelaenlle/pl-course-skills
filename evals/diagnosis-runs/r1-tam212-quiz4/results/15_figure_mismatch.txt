@@ -1,0 +1,9 @@
+       qid        |      figure       |  n  | final_pct | first_pct 
+------------------+-------------------+-----+-----------+-----------
+ twoBarAPoint     | a: figure correct | 202 |      93.3 |      86.3
+ twoBarAPoint     | b: Q off by <=1 m | 433 |      97.1 |      88.3
+ twoBarAPoint     | c: Q off by >1 m  | 330 |      93.9 |      86.5
+ twoBarOmegaFromV | a: figure correct | 223 |      91.7 |      84.5
+ twoBarOmegaFromV | b: Q off by <=1 m | 475 |      92.8 |      85.4
+ twoBarOmegaFromV | c: Q off by >1 m  | 284 |      92.6 |      85.9
+(6 rows)

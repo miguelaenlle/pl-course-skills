@@ -1,0 +1,72 @@
+kind,offering,qid,item_or_grader,description,points,n_graded,n_applied,pct,mean_score
+rubric_item,Fall2025,distFromVelWritten,0,Correct formula for position,5,126,114,90.5,
+rubric_item,Fall2025,distFromVelWritten,1,Correct intermediate computations,10,126,113,89.7,
+rubric_item,Fall2025,distFromVelWritten,2,Correct final answer,5,126,94,74.6,
+rubric_item,Fall2025,distFromVelWritten,3,Minor calculation error,-1,126,4,3.2,
+rubric_item,Fall2025,distFromVelWritten,4,Blurry or bad photo,-2,126,7,5.6,
+grader,Fall2025,distFromVelWritten,G2,,,,26,,83.5
+grader,Fall2025,distFromVelWritten,G3,,,,23,,82.4
+grader,Fall2025,distFromVelWritten,G4,,,,26,,93.7
+grader,Fall2025,distFromVelWritten,G5,,,,25,,92.0
+grader,Fall2025,distFromVelWritten,G6,,,,26,,75.8
+rubric_item,Fall2025,fcnPosSpeedWritten,0,Correct formula for velocity,5,117,111,94.9,
+rubric_item,Fall2025,fcnPosSpeedWritten,1,Correct intermediate computations,10,117,114,97.4,
+rubric_item,Fall2025,fcnPosSpeedWritten,2,Correct final answer,5,117,94,80.3,
+rubric_item,Fall2025,fcnPosSpeedWritten,3,Minor calculation error,-1,117,7,6.0,
+rubric_item,Fall2025,fcnPosSpeedWritten,4,Blurry or bad photo,-2,117,10,8.5,
+grader,Fall2025,fcnPosSpeedWritten,G1,,,,1,,100.0
+grader,Fall2025,fcnPosSpeedWritten,G2,,,,23,,90.4
+grader,Fall2025,fcnPosSpeedWritten,G3,,,,21,,78.6
+grader,Fall2025,fcnPosSpeedWritten,G4,,,,24,,99.2
+grader,Fall2025,fcnPosSpeedWritten,G5,,,,24,,93.1
+grader,Fall2025,fcnPosSpeedWritten,G6,,,,24,,94.0
+rubric_item,Fall2026,distFromVelWritten,0,Correct formula for position,7.5,157,144,91.7,
+rubric_item,Fall2026,distFromVelWritten,1,Correct intermediate computations,7.5,157,148,94.3,
+rubric_item,Fall2026,distFromVelWritten,2,Correct final answer,5,157,134,85.4,
+rubric_item,Fall2026,distFromVelWritten,3,Minor calculation error,-1,157,12,7.6,
+rubric_item,Fall2026,distFromVelWritten,4,Blurry or bad photo,-2,157,3,1.9,
+rubric_item,Fall2026,distFromVelWritten,5,Notation Issues,-1,157,36,22.9,
+grader,Fall2026,distFromVelWritten,G1,,,,30,,89.7
+grader,Fall2026,distFromVelWritten,G2,,,,26,,90.8
+grader,Fall2026,distFromVelWritten,G3,,,,26,,96.0
+grader,Fall2026,distFromVelWritten,G4,,,,25,,87.9
+grader,Fall2026,distFromVelWritten,G5,,,,26,,82.7
+grader,Fall2026,distFromVelWritten,G6,,,,24,,87.0
+rubric_item,Fall2026,fcnPosSpeedWritten,0,Correct formula for velocity,7.5,166,157,94.6,
+rubric_item,Fall2026,fcnPosSpeedWritten,1,Correct intermediate computations,7.5,166,160,96.4,
+rubric_item,Fall2026,fcnPosSpeedWritten,2,Correct final answer,5,166,152,91.6,
+rubric_item,Fall2026,fcnPosSpeedWritten,3,Minor calculation error,-1,166,11,6.6,
+rubric_item,Fall2026,fcnPosSpeedWritten,4,Blurry or bad photo,-2,166,4,2.4,
+rubric_item,Fall2026,fcnPosSpeedWritten,5,Notation Issues,-1,166,31,18.7,
+grader,Fall2026,fcnPosSpeedWritten,G1,,,,28,,82.5
+grader,Fall2026,fcnPosSpeedWritten,G2,,,,28,,91.4
+grader,Fall2026,fcnPosSpeedWritten,G3,,,,28,,93.7
+grader,Fall2026,fcnPosSpeedWritten,G4,,,,28,,96.2
+grader,Fall2026,fcnPosSpeedWritten,G5,,,,28,,95.5
+grader,Fall2026,fcnPosSpeedWritten,G6,,,,26,,98.6
+rubric_item,Spring2026,distFromVelWritten,0,Correct formula for position,7.5,280,261,93.2,
+rubric_item,Spring2026,distFromVelWritten,1,Correct intermediate computations,7.5,280,263,93.9,
+rubric_item,Spring2026,distFromVelWritten,2,Correct final answer,5,280,214,76.4,
+rubric_item,Spring2026,distFromVelWritten,3,Minor calculation error,-1,280,18,6.4,
+rubric_item,Spring2026,distFromVelWritten,4,Blurry or bad photo,-2,280,4,1.4,
+grader,Spring2026,distFromVelWritten,G1,,,,41,,86.5
+grader,Spring2026,distFromVelWritten,G2,,,,23,,87.0
+grader,Spring2026,distFromVelWritten,G3,,,,23,,94.6
+grader,Spring2026,distFromVelWritten,G4,,,,42,,83.0
+grader,Spring2026,distFromVelWritten,G5,,,,42,,91.7
+grader,Spring2026,distFromVelWritten,G6,,,,43,,92.6
+grader,Spring2026,distFromVelWritten,G7,,,,43,,92.8
+grader,Spring2026,distFromVelWritten,G8,,,,23,,79.8
+rubric_item,Spring2026,fcnPosSpeedWritten,0,Correct formula for velocity,7.5,301,290,96.3,
+rubric_item,Spring2026,fcnPosSpeedWritten,1,Correct intermediate computations,7.5,301,289,96.0,
+rubric_item,Spring2026,fcnPosSpeedWritten,2,Correct final answer,5,301,246,81.7,
+rubric_item,Spring2026,fcnPosSpeedWritten,3,Minor calculation error,-1,301,25,8.3,
+rubric_item,Spring2026,fcnPosSpeedWritten,4,Blurry or bad photo,-2,301,4,1.3,
+grader,Spring2026,fcnPosSpeedWritten,G1,,,,24,,90.7
+grader,Spring2026,fcnPosSpeedWritten,G2,,,,23,,94.6
+grader,Spring2026,fcnPosSpeedWritten,G3,,,,24,,95.3
+grader,Spring2026,fcnPosSpeedWritten,G4,,,,47,,90.9
+grader,Spring2026,fcnPosSpeedWritten,G5,,,,46,,88.6
+grader,Spring2026,fcnPosSpeedWritten,G6,,,,69,,95.4
+grader,Spring2026,fcnPosSpeedWritten,G7,,,,45,,89.2
+grader,Spring2026,fcnPosSpeedWritten,G8,,,,23,,91.3

@@ -1,0 +1,42 @@
+                    qid                    |  offering  |           test_name           |  n  | mean_test_pct | full_pct 
+-------------------------------------------+------------+-------------------------------+-----+---------------+----------
+ NonlinearSecant1D-FindCriticalTemperature | Fall2025   | f                             | 169 |          94.8 |     94.7
+ NonlinearSecant1D-FindCriticalTemperature | Fall2025   | roots                         | 169 |          71.0 |     71.0
+ NonlinearSecant1D-FindCriticalTemperature | Fall2025   | Your code raised an Exception |  11 |           0.0 |      0.0
+ NonlinearSecant1D-FindCriticalTemperature | Spring2025 | f                             | 177 |          95.5 |     95.5
+ NonlinearSecant1D-FindCriticalTemperature | Spring2025 | roots                         | 177 |          65.5 |     65.5
+ NonlinearSecant1D-FindCriticalTemperature | Spring2025 | Your code raised an Exception |   8 |           0.0 |      0.0
+ NonlinearSecant1D-FindCriticalTemperature | Spring2026 | f                             | 122 |          89.5 |     89.3
+ NonlinearSecant1D-FindCriticalTemperature | Spring2026 | roots                         | 122 |          58.2 |     58.2
+ NonlinearSecant1D-FindCriticalTemperature | Spring2026 | Your code raised an Exception |   7 |           0.0 |      0.0
+ NonlinearSecant1D-FindOptimalLaunchAngle  | Fall2025   | dg                            | 181 |          93.9 |     93.9
+ NonlinearSecant1D-FindOptimalLaunchAngle  | Fall2025   | roots                         | 181 |          62.4 |     62.4
+ NonlinearSecant1D-FindOptimalLaunchAngle  | Fall2025   | Your code raised an Exception |   7 |           0.0 |      0.0
+ NonlinearSecant1D-FindOptimalLaunchAngle  | Spring2025 | dg                            | 153 |          88.9 |     88.9
+ NonlinearSecant1D-FindOptimalLaunchAngle  | Spring2025 | roots                         | 153 |          60.1 |     60.1
+ NonlinearSecant1D-FindOptimalLaunchAngle  | Spring2025 | Your code raised an Exception |   5 |           0.0 |      0.0
+ NonlinearSecant1D-FindOptimalLaunchAngle  | Spring2026 | dg                            | 111 |          84.7 |     84.7
+ NonlinearSecant1D-FindOptimalLaunchAngle  | Spring2026 | roots                         | 111 |          60.4 |     60.4
+ NonlinearSecant1D-FindOptimalLaunchAngle  | Spring2026 | Your code raised an Exception |   2 |           0.0 |      0.0
+ OptimizationND-Newton-Temperature         | Fall2025   | Test 1                        | 252 |          65.9 |     58.7
+ OptimizationND-Newton-Temperature         | Fall2025   | Test 2                        | 252 |          64.3 |     55.6
+ OptimizationND-Newton-Temperature         | Fall2025   | Your code raised an Exception |   5 |           0.0 |      0.0
+ OptimizationND-Newton-Temperature         | Spring2025 | Test 1                        |  58 |          80.5 |     77.6
+ OptimizationND-Newton-Temperature         | Spring2025 | Test 2                        |  58 |          79.3 |     72.4
+ OptimizationND-Newton-Temperature         | Spring2025 | Your code raised an Exception |   1 |           0.0 |      0.0
+ OptimizationND-Newton-Temperature         | Spring2026 | Test 1                        | 110 |          72.4 |     65.5
+ OptimizationND-Newton-Temperature         | Spring2026 | Test 2                        | 110 |          71.2 |     64.5
+ OptimizationND-Newton-Temperature         | Spring2026 | Your code raised an Exception |   2 |           0.0 |      0.0
+ OptimizationND-Newton-Terrain             | Fall2025   | peak_test                     |  69 |          68.1 |     58.0
+ OptimizationND-Newton-Terrain             | Fall2025   | shelf_test                    |  69 |          67.6 |     58.0
+ OptimizationND-Newton-Terrain             | Fall2025   | valley_test                   |  69 |          68.6 |     60.9
+ OptimizationND-Newton-Terrain             | Fall2025   | Your code raised an Exception |   2 |           0.0 |      0.0
+ OptimizationND-Newton-Terrain             | Spring2025 | peak_test                     | 216 |          54.6 |     43.1
+ OptimizationND-Newton-Terrain             | Spring2025 | shelf_test                    | 216 |          51.5 |     35.6
+ OptimizationND-Newton-Terrain             | Spring2025 | valley_test                   | 216 |          57.1 |     47.2
+ OptimizationND-Newton-Terrain             | Spring2025 | Your code raised an Exception |   5 |           0.0 |      0.0
+ OptimizationND-Newton-Terrain             | Spring2026 | peak_test                     |  89 |          58.1 |     41.6
+ OptimizationND-Newton-Terrain             | Spring2026 | shelf_test                    |  89 |          56.9 |     38.2
+ OptimizationND-Newton-Terrain             | Spring2026 | valley_test                   |  89 |          61.8 |     53.9
+ OptimizationND-Newton-Terrain             | Spring2026 | Your code raised an Exception |   1 |           0.0 |      0.0
+(39 rows)

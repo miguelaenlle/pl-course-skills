@@ -1,0 +1,9 @@
+  offering  |            qid             | has_rubric | guidelines_chars | n_items | items_with_explanation | items_with_grader_note 
+------------+----------------------------+------------+------------------+---------+------------------------+------------------------
+ Fall2025   | fourBarAngVelSimpleWritten | t          |                0 |       9 |                      3 |                      9
+ Fall2025   | rigidBodyPinAccelWritten   | t          |                0 |       7 |                      2 |                      7
+ Spring2026 | fourBarAngVelSimpleWritten | t          |                0 |       9 |                      3 |                      9
+ Spring2026 | rigidBodyPinAccelWritten   | t          |                0 |       7 |                      2 |                      7
+ Fall2026   | fourBarAngVelSimpleWritten | t          |                0 |      10 |                      3 |                     10
+ Fall2026   | rigidBodyPinAccelWritten   | t          |                0 |       8 |                      2 |                      8
+(6 rows)

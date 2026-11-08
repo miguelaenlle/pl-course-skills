@@ -1,0 +1,25 @@
+<section id="tam-fix" style="background:#FAFAF8;color:#1F2A44;font-family:Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:24px">
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#14213D">Generality: the fix for 8.2</h2>
+<p style="font-size:28px;color:#4A5568">One change to server.py: only generate points where the curve slopes</p>
+<div style="display:flex;gap:48px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:12px">
+<img src="/_blob/63bb37f99e05ad3ddbfb8b0094d50f02" alt="Before: question 8.2 variant with the particle on a peak, answer 0" style="width:560px;height:540px;object-fit:contain;background:#FFFFFF;border:1px solid #E1E4EA;border-radius:12px">
+<p style="font-size:26px;color:#4A5568">Before: on a peak, answer 0</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px">
+<img src="/_blob/de4b2957fee3e753dac66b7595f77c09" alt="After: question 8.2 variant on a slope; a submitted 0 scores 0 percent" style="width:560px;height:540px;object-fit:contain;background:#FFFFFF;border:1px solid #E1E4EA;border-radius:12px">
+<p style="font-size:26px;color:#4A5568">After: on a slope; 0 scores 0%</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:32px">
+<div style="display:flex;flex-direction:column;gap:4px">
+<p style="font-size:64px;font-weight:700;line-height:1;color:#2F6FDE">51% → 0%</p>
+<p style="font-size:26px;color:#4A5568">zero-answer variants</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:4px">
+<p style="font-size:64px;font-weight:700;line-height:1;color:#2F6FDE">300 / 300</p>
+<p style="font-size:26px;color:#4A5568">question tests passed</p>
+</div>
+</div>
+</div>
+<aside>Zero answers measured with the skill’s variant sampler over 500 generated variants, before and after. Question tests are PrairieLearn’s built-in tests on the question’s Settings tab. On five new variants the correct answer got full credit; a sign error, an answer 5% off, and 0 got none.</aside>
+</section>

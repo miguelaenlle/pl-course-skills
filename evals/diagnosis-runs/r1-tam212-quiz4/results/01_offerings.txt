@@ -1,0 +1,32 @@
+ read_only 
+-----------
+ on
+(1 row)
+ ci_id  |   short_name    | assessment_id |   tid   |             title              | type | number | deleted | n_stat_instances | n_all_instances | first_date | last_date  
+--------+-----------------+---------------+---------+--------------------------------+------+--------+---------+------------------+-----------------+------------+------------
+ 147828 | Sp24            |       2388652 | quiz04  | Rigid Body Kinematics          | Exam | 4      | f       |              461 |             462 | 2024-01-12 | 2024-04-05
+ 147828 | Sp24            |       2388653 | quiz04p | Practice Quiz 4                | Exam | Q4     | f       |             1023 |            1024 | 2024-03-20 | 2024-05-08
+ 147828 | Sp24            |       2388654 | quiz04r | Rigid Body Kinematics (Retake) | Exam | 4R     | f       |              124 |             125 | 2024-04-02 | 2024-04-05
+ 158221 | Fa24            |       2434752 | quiz04  | Rigid Body Kinematics          | Exam | 4      | f       |              198 |             200 | 2024-09-09 | 2024-11-04
+ 158221 | Fa24            |       2434753 | quiz04p | Practice Quiz 4                | Exam | Q4     | f       |              395 |             395 | 2024-10-22 | 2024-12-15
+ 158221 | Fa24            |       2434754 | quiz04r | Rigid Body Kinematics (Retake) | Exam | 4R     | f       |               34 |              36 | 2024-10-17 | 2024-11-08
+ 173734 | Spring2025      |       2497150 | quiz04  | Rigid Body Kinematics          | Exam | 4      | f       |              468 |             468 | 2025-04-01 | 2025-04-04
+ 173734 | Spring2025      |       2497151 | quiz04p | Practice Quiz 4                | Exam | Q4     | f       |                0 |               0 |            | 
+ 173734 | Spring2025      |       2497152 | quiz04r | Rigid Body Kinematics (Retake) | Exam | 4R     | f       |               86 |              86 | 2025-04-08 | 2025-06-25
+ 178186 | ZJUI-Spring2025 |       2512665 | quiz04  | Rigid Body Kinematics          | Exam | 4      | f       |               83 |              83 | 2025-04-25 | 2025-04-25
+ 178186 | ZJUI-Spring2025 |       2512666 | quiz04p | Practice Quiz 4                | Exam | Q4     | f       |                0 |               0 |            | 
+ 178186 | ZJUI-Spring2025 |       2512667 | quiz04r | Rigid Body Kinematics (Retake) | Exam | 4R     | f       |                8 |               8 | 2025-04-28 | 2025-04-28
+ 190462 | Fall2025        |       2574219 | quiz04  | Rigid Body Kinematics          | Exam | 4      | f       |              243 |             244 | 2025-10-28 | 2025-11-12
+ 190462 | Fall2025        |       2574220 | quiz04p | Practice Quiz 4                | Exam | Q4     | f       |                0 |               0 |            | 
+ 190462 | Fall2025        |       2574221 | quiz04r | Rigid Body Kinematics (Retake) | Exam | 4R     | f       |               62 |              62 | 2025-11-04 | 2025-11-07
+ 204652 | ZJUI-Spring2026 |       2632356 | quiz04  | Rigid Body Kinematics          | Exam | 4      | f       |                0 |               0 |            | 
+ 204652 | ZJUI-Spring2026 |       2632357 | quiz04p | Practice Quiz 4                | Exam | Q4     | f       |                0 |               0 |            | 
+ 204652 | ZJUI-Spring2026 |       2632358 | quiz04r | Rigid Body Kinematics (Retake) | Exam | 4R     | f       |                0 |               0 |            | 
+ 206303 | Spring2026      |       2634485 | quiz04  | Rigid Body Kinematics          | Exam | 4      | f       |              581 |             583 | 2026-01-30 | 2026-06-16
+ 206303 | Spring2026      |       2634486 | quiz04p | Practice Quiz 4                | Exam | Q4     | f       |                0 |               0 |            | 
+ 206303 | Spring2026      |       2634487 | quiz04r | Rigid Body Kinematics (Retake) | Exam | 4R     | f       |              165 |             166 | 2026-04-06 | 2026-04-10
+ 216136 | Su26            |       2683625 | quiz04  | Rigid Body Kinematics          | Exam | 4      | f       |               80 |              81 | 2026-07-14 | 2026-07-24
+ 225310 | Fall2026        |       2716836 | quiz04  | Rigid Body Kinematics          | Exam | 4      | f       |              313 |             313 | 2026-10-27 | 2026-11-01
+ 225310 | Fall2026        |       2716837 | quiz04p | Practice Quiz 4                | Exam | Q4     | f       |                0 |               0 |            | 
+ 225310 | Fall2026        |       2716838 | quiz04r | Rigid Body Kinematics (Retake) | Exam | 4R     | f       |               89 |              89 | 2026-11-03 | 2026-11-06
+(25 rows)

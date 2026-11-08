@@ -1,0 +1,8 @@
+             qid             |  f_family   |  n  | first_pct | final_pct 
+-----------------------------+-------------+-----+-----------+-----------
+ Optimization1D-NewtonStep   | \cos(x)     | 272 |      76.5 |      85.4
+ Optimization1D-NewtonStep   | -e^{-x^k}   | 290 |      70.3 |      77.4
+ Optimization1D-NewtonStepv2 | k\cos(x)^k  | 206 |      58.3 |      67.3
+ Optimization1D-NewtonStepv2 | -ke^{-kx^k} | 167 |      69.5 |      76.2
+ Optimization1D-NewtonStepv2 | k\sin(x^k)  | 205 |      78.5 |      84.2
+(5 rows)

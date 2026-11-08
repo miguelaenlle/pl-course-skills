@@ -1,0 +1,229 @@
+ci_id,short_name,a_id,tid,uuid,title,n_students,first_start,last_start,mean_score,med_total_min,p90_total_min
+10920,Fall2018,272555,quiz0-LinearAlgebra,61aec9a7-5cf3-4783-be97-1a7cc6fb2354,Linear Algebra,363,2018-08-28,2018-09-09,80.9,22.9,39.0
+10920,Fall2018,272556,quiz0-Practice-LinearAlgebra,966f148e-c495-467a-8068-f007a9e52cc4,Linear Algebra,1223,2018-08-26,2018-12-17,28.1,12.2,95.4
+10920,Fall2018,274216,quiz1,f34f858f-6e04-4358-af28-0db75c00cc9e,Python and Numerical Experiments,420,2018-09-07,2018-09-17,79.6,35.7,48.6
+10920,Fall2018,274217,quiz2,e9e4fbcd-17c6-4d95-841e-6762e22491d7,"Errors, convergence and floating point representation",415,2018-09-26,2019-01-25,73.4,46.4,50.6
+10920,Fall2018,319860,quiz3,db238c57-3c98-4650-a148-537f9953fd8d,"Linear systems, norms, and errors",395,2018-10-10,2018-11-10,81.7,33.5,48.2
+10920,Fall2018,339313,quiz4,0107a66f-896c-4f15-9008-ec7c16748810,"Conditioning, Eigenvalues, and Markov",393,2018-10-24,2018-10-28,80.1,28.0,45.9
+10920,Fall2018,364537,quiz5,f098014e-fa52-4c2b-bfe2-401684c6ca74,"PCA, SVD, and Least Squares",388,2018-11-07,2018-11-11,79.5,32.3,47.0
+10920,Fall2018,385855,quiz6,336b3c01-5357-41b4-9faa-882762e91cb7,"Least Squares, Interpolation, and Nonlinear Equations",385,2018-11-28,2018-12-02,82.8,32.1,47.0
+10920,Fall2018,410780,quiz-bonus,0e140073-18c4-4bd3-a7aa-bc98c9833010,Simple Coding Questions,287,2018-12-11,2018-12-13,43.8,43.4,50.1
+11427,Spring2018,243473,Quiz6-Optional,6ae0b337-ca1a-48c3-a7c2-4aeefafb2d7f,Optional Quiz 6,234,2018-04-25,2018-04-29,73.1,33.0,47.1
+11427,Spring2018,243472,Quiz-Example,1e412960-63ff-49d0-b21e-bc2257ac51a2,Quiz Example,497,2018-04-23,2018-05-07,44.2,4.2,105.3
+20756,Spring2019,427615,quiz0-LinearAlgebra,9502acfd-c751-4185-bdce-3fff226accd8,Linear Algebra,283,2019-01-23,2019-01-27,76.3,29.2,45.8
+20756,Spring2019,427616,quiz0-Practice-LinearAlgebra,298684a7-30c0-4c9e-9704-54329f1e3df0,Linear Algebra,1065,2019-01-14,2019-05-21,16.3,20.4,1130.8
+20756,Spring2019,435718,quiz1,ba47f58b-a9a6-411a-90aa-9d4a54f41a69,Python and Numerical Experiments,383,2019-01-28,2019-02-03,77.6,36.2,48.6
+20756,Spring2019,472370,quiz2,164be523-f856-4264-a322-b36a59c27de6,"Errors, convergence and floating point representation",370,2019-02-13,2019-02-17,74.4,40.4,49.1
+20756,Spring2019,527193,quiz3,d5caea71-f174-4306-9ea9-298085bf0cb7,"Linear systems, norms, and errors",185,2019-03-01,2019-03-05,77.2,38.0,49.6
+20756,Spring2019,527194,quiz3-sync,374ec415-b3a3-47b0-9f90-7eebd842e563,"Linear systems, norms, and errors",177,2019-02-28,2019-03-05,74.5,42.8,49.1
+20756,Spring2019,570717,quiz4,e6a5a50b-6984-4f8b-b75a-e7db5f8120eb,"Short-coding quiz: Monte Carlo, Linear Systems, Eigenvalues",354,2019-03-10,2019-03-14,86.3,36.3,50.6
+20756,Spring2019,528190,quiz4-practice,491b8169-e8f4-4f02-9832-33bcbd2a7cb3,Short-coding quiz,723,2019-02-25,2019-05-21,0.0,0.1,113.1
+20756,Spring2019,595813,quiz5,83cae92d-3d93-4f96-b69a-d94607bbb129,"Eigenvalues, Markov chains and SVD",184,2019-03-27,2019-04-03,78.0,32.8,47.6
+20756,Spring2019,596050,quiz5-sync,f8c3250e-02ac-4dc1-b3e1-d714f54efc80,"Eigenvalues, Markov chains and SVD",170,2019-03-26,2019-03-26,78.0,37.6,47.9
+20756,Spring2019,632193,quiz6,a1bdc6f9-ebef-473f-864c-1bfb1e304226,"Least Squares, SVD Applications, and Interpolation",183,2019-04-10,2019-04-14,73.3,40.3,50.1
+20756,Spring2019,632194,quiz6-sync,e16ed4a2-34fc-4c5b-a164-75f4d948f257,"Least Squares, SVD Applications, and Interpolation",170,2019-04-09,2019-04-09,71.9,46.0,50.6
+20756,Spring2019,656480,quiz7,f0f22672-e8d6-4e36-8cca-a6622283158e,Non-linear Equations and Optimization,185,2019-04-23,2019-04-28,82.0,38.7,49.1
+20756,Spring2019,656481,quiz7-sync,71529562-5dad-4da9-84c8-17aba9ceca44,Non-linear Equations and Optimization,165,2019-04-23,2019-04-23,76.9,41.8,48.5
+20756,Spring2019,671876,quiz8,a170b8ac-c536-4046-aaa3-97632acf0735,"Short-coding quiz: Interpolation, Least Squares, Nonlinear Equations, and Optimization",350,2019-04-28,2019-05-02,90.4,23.3,45.7
+31055,Fall2019,725389,quiz0-LinearAlgebra,97e3e35e-9384-450a-825c-0632dc8231c8,Linear Algebra,333,2019-08-25,2019-09-05,69.4,32.9,47.7
+31055,Fall2019,725392,quiz0-Practice-LinearAlgebra,b047b5f3-b02c-41d1-8e2f-c5202a114a2f,Linear Algebra,965,2019-08-27,2019-12-16,0.0,21.4,146.0
+31055,Fall2019,689236,quiz1,50957227-683f-4680-9138-a0a5aeeed75b,Python,355,2019-08-28,2019-09-09,80.2,45.5,50.5
+31055,Fall2019,689264,quiz2,8a8564f1-df7a-4954-9f6e-9ca4983ea945,Errors and Floating Point,349,2019-09-09,2019-09-23,63.9,46.9,50.3
+31055,Fall2019,725402,quiz3,dae496c3-9b17-48e9-8784-23f449221a72,Approximations and Monte Carlo,346,2019-10-01,2019-10-06,77.1,46.0,50.1
+31055,Fall2019,725404,quiz4,404552fe-8bcb-45d2-ab6a-a48c012d7040,Linear systems of equations,337,2019-10-17,2019-10-20,71.3,48.0,50.2
+31055,Fall2019,725406,quiz5,f7607a2b-cf41-4e32-b16e-0e8b27a9d866,Eigenvalues,337,2019-10-31,2019-11-04,54.0,48.7,50.5
+31055,Fall2019,1028743,quiz5-retry,06e5602e-5b60-4c49-bad8-bd17c613a45d,Eigenvalues,238,2019-11-06,2019-11-09,54.9,41.8,50.0
+31055,Fall2019,725407,quiz6,99b3155b-b2f1-41ec-986a-ec9e588f29f2,Nonlinear equations and optimization,331,2019-11-14,2019-11-18,68.6,47.8,50.2
+31055,Fall2019,725410,quiz7,c9be7fbd-0d9f-4ee7-999f-ac58d96a16e0,Linear least squares and SVD,329,2019-12-05,2019-12-09,79.1,46.5,50.1
+52088,Spring2020,1169709,quiz0-LinearAlgebra,97e3e35e-9384-450a-825c-0632dc8231c8,Linear Algebra,346,2020-01-24,2020-01-29,70.2,34.7,48.5
+52088,Spring2020,1169710,quiz0-Practice-LinearAlgebra,b047b5f3-b02c-41d1-8e2f-c5202a114a2f,Linear Algebra,1091,2020-01-21,2020-05-15,0.0,26.0,277.2
+52088,Spring2020,1169711,quiz1,50957227-683f-4680-9138-a0a5aeeed75b,Python,376,2020-01-27,2020-02-04,79.8,47.4,50.6
+52088,Spring2020,1272529,quiz2,8a8564f1-df7a-4954-9f6e-9ca4983ea945,Errors and Floating Point,364,2020-02-14,2020-02-19,73.9,46.7,50.2
+52088,Spring2020,1360732,quiz3,dae496c3-9b17-48e9-8784-23f449221a72,Taylor Series and Monte Carlo Methods,348,2020-02-28,2020-03-04,75.9,46.8,50.3
+52088,Spring2020,1415164,quiz4,404552fe-8bcb-45d2-ab6a-a48c012d7040,"Norms, Linsys, Conditioning and Sparse Matrices",29,2020-03-11,2020-03-12,71.6,43.8,49.6
+52088,Spring2020,1496596,quiz4-sync,8636f050-17d4-462e-b96f-388d21fa0ad3,"Eigenvalues, Markov chains and nonlinear system of equations",333,2020-04-14,2020-04-15,65.6,58.6,59.9
+52088,Spring2020,1488447,quiz5,f7607a2b-cf41-4e32-b16e-0e8b27a9d866,Eigenvalues and Markov chains,0,,,,,
+52088,Spring2020,1496600,quiz5-sync,873d0f40-bf27-4446-bad6-475b92c58b43,"Optimization, SVD and linear least squares",337,2020-04-26,2020-05-05,70.5,57.8,59.8
+52088,Spring2020,1488450,quiz6,7e5e48a5-c4f5-4b12-8447-1d1ffed8db0a,"Nonlinear equations, optimization and finite difference",0,,,,,
+52088,Spring2020,1488453,quiz7,c9be7fbd-0d9f-4ee7-999f-ac58d96a16e0,SVD and linear least-squares,0,,,,,
+52088,Spring2020,1488433,quiz-sync-practice,55edb14a-6bd7-4eac-821d-0cf2b6962e24,"Linsys, Conditioning and Sparse Matrices",171,2020-03-31,2020-05-12,29.2,8.0,45.4
+118734,Fall2020,2306357,quiz1_M,127135ff-9622-4b4a-9e58-e9cb81896244,Linear Algebra review and Python intro,219,2020-09-10,2020-11-01,82.4,48.0,50.7
+118734,Fall2020,2228279,quiz1_N,50957227-683f-4680-9138-a0a5aeeed75b,Linear Algebra review and Python intro,176,2020-09-10,2020-11-01,87.2,41.9,49.6
+118734,Fall2020,2306714,quiz2_M,b47dbd4b-e843-47e7-a37f-880f4c50dfdd,"Errors, Floating Point, Rounding, and IEEE",207,2020-09-24,2020-09-25,77.2,38.6,49.5
+118734,Fall2020,2306772,quiz2_N,e92a9eca-1887-49cc-85c3-e93948bc9a3f,"Errors, Floating Point, Rounding, and IEEE",173,2020-09-24,2020-09-26,72.0,44.7,50.3
+118734,Fall2020,2307111,quiz3_M,d7e3e738-3a78-4902-bed0-be0a176c6b61,"Taylor, MC, Matrices, Norms",202,2020-10-06,2020-10-10,74.0,49.4,51.3
+118734,Fall2020,2307123,quiz3_N,b7880fee-dcfc-4e54-9f3a-d0601416f5be,"Taylor, MC, Matrices, Norms",173,2020-10-06,2020-10-09,75.5,48.5,50.4
+118734,Fall2020,2307591,quiz4M,d0c89900-ac3e-40ee-b248-ff378f2b7916,"Linsys, Eigenvalues, Markov, FD",200,2020-10-27,2020-10-30,66.2,48.6,51.1
+118734,Fall2020,2307731,quiz4M_Retry,efc7314f-b0b7-4955-96cd-c76197b43159,"Linsys, Eigenvalues, Markov, FD  (retry)",18,2020-10-30,2020-10-31,65.6,16.7,42.0
+118734,Fall2020,2307112,quiz4N,c8e18d9b-69bc-448d-8c3b-0d974076218a,"Linsys, Eigenvalues, Markov, FD ",169,2020-10-26,2020-10-30,62.7,49.1,50.7
+118734,Fall2020,2307729,quiz4N_Retry,cd1a6405-9ab3-4644-a9d3-aec246a7fefb,"Linsys, Eigenvalues, Markov, FD  (retry)",33,2020-10-30,2020-10-31,68.7,21.1,45.9
+118734,Fall2020,2307852,quiz4-OpenReview,b004974b-17b3-4913-b8aa-e6c7986407c2,"Linsys, Eigenvalues, Markov, FD (open for practice)",222,2020-11-06,2020-12-18,0.0,0.0,3.5
+118734,Fall2020,2307997,quiz5M,6e7bae6e-e9a1-4b9d-825e-29539d591b54,"Nonlinear Equations, Optimization, Linear Least-Squares and SVD",201,2020-11-16,2020-11-20,80.1,46.8,50.6
+118734,Fall2020,2307943,quiz5N,ecef436f-1d09-4343-89da-6f3e7d490b7d,"Nonlinear Equations, Optimization, Linear Least-Squares and SVD",169,2020-11-17,2020-11-20,78.0,47.2,50.3
+128491,Spring2021,2309624,quiz1,138135ff-9622-4b4a-9e58-e9cb81896244,Quiz 1: Linear Algebra + Python + Errors,324,2021-02-09,2021-02-12,84.7,41.8,49.9
+128491,Spring2021,2309004,quiz1-Practice,127135ff-9622-4b4a-9e58-e9cb81896244,Practice Quiz 1: Linear Algebra + Python + Errors,1606,2021-02-03,2021-02-11,36.0,11.5,70.7
+128491,Spring2021,2309867,quiz2,c57dbd4b-e843-47e7-a37f-880f4c50dfdd,Floating Point + Rounding + Taylor Series,318,2021-02-25,2021-02-26,73.5,48.8,50.4
+128491,Spring2021,2309005,quiz2-Practice,b47dbd4b-e843-47e7-a37f-880f4c50dfdd,Floating Point + Rounding + Taylor Series,1542,2021-02-17,2021-02-25,36.8,13.0,67.6
+128491,Spring2021,2310080,quiz3,e7e3e738-3a78-4902-bed0-be0a176c6b61,"Monte Carlo Methods, Matrices, Norms, Linsys",319,2021-03-10,2021-03-12,85.6,37.4,49.8
+128491,Spring2021,2309450,quiz3-Practice,d7e3e738-3a78-4902-bed0-be0a176c6b61,"Monte Carlo Methods, Matrices, Norms, Linsys",1655,2021-03-03,2021-03-11,38.9,8.8,63.3
+128491,Spring2021,2310249,quiz4,b55dbd4b-e843-57e7-a37f-880f4c50dfdd,"Sparse, Conditioning, Eigenvalues and Markov Chains",305,2021-03-25,2021-03-26,75.8,46.0,50.5
+128491,Spring2021,2309905,quiz4-Practice,b55dbd4b-e843-47e7-a37f-880f4c50dfdd,"Sparse, Conditioning, Eigenvalues and Markov Chains",1471,2021-03-10,2021-03-25,35.1,13.4,84.1
+128491,Spring2021,2310539,quiz5,c55dbd4b-e843-47e8-a37f-880f4c50dfdd,"Finite Difference, Nonlinear Equations and Optimization",293,2021-04-14,2021-04-16,73.3,47.8,50.3
+128491,Spring2021,2310191,quiz5-Practice,c55dbd4b-e843-47e7-a37f-880f4c50dfdd,"Finite Difference, Nonlinear Equations and Optimization",1326,2021-04-07,2021-04-15,32.7,12.1,82.9
+128491,Spring2021,2310701,quiz6,c55dbd4b-f843-47e7-a37f-880f4c50dfde,"Linear Least-Squares, SVD and its applications",265,2021-04-28,2021-04-30,76.7,46.2,50.3
+128491,Spring2021,2310368,quiz6-Practice,c55dbd4b-f843-47e7-a37f-880f4c50dfdd,"Linear Least-Squares, SVD and its applications",1465,2021-04-21,2021-04-29,41.8,5.6,40.5
+128491,Spring2021,2310642,quizOptional-1,c66dbd4b-f843-47e7-a37f-880f4c50dfed,"Optional Quiz Version 1, Topics 1-17",79,2021-04-20,2021-04-21,78.7,50.0,59.1
+128491,Spring2021,2310643,quizOptional-2,c55dbd4b-f844-47e7-a37f-880f4c50dfed,"Optional Quiz Version 2, Topics 1-17",65,2021-04-20,2021-04-20,78.1,41.9,59.3
+128491,Spring2021,2310644,quizOptional-3,c55dbd4b-f843-47e7-a37f-880f4c61dfed,"Optional Quiz Version 3, Topics 1-17",64,2021-04-20,2021-04-20,77.1,44.6,58.5
+128491,Spring2021,2310645,quizOptional-4,c55dbd4b-f843-47e7-a37f-880f4c50dfed,"Optional Quiz Version 4, Topics 1-17",66,2021-04-20,2021-04-21,83.5,41.6,58.1
+128745,Fall2021,2312121,quiz1,138135ff-9622-4b4a-9e58-e9cb81896244,Quiz 1: Linear Algebra + Python + Errors,391,2021-09-09,2021-09-10,80.7,51.1,61.6
+128745,Fall2021,2312122,quiz1-Practice,127135ff-9622-4b4a-9e58-e9cb81896244,Practice Quiz 1: Linear Algebra + Python + Errors,1589,2021-08-31,2021-09-09,45.4,19.3,89.8
+128745,Fall2021,2312123,quiz2,c57dbd4b-e843-47e7-a37f-880f4c50dfdd,Floating Point + Rounding + Taylor Series,368,2021-09-23,2021-09-24,71.9,57.2,59.6
+128745,Fall2021,2312124,quiz2-Practice,b47dbd4b-e843-47e7-a37f-880f4c50dfdd,Floating Point + Rounding + Taylor Series,1637,2021-09-14,2021-09-23,38.9,16.9,77.4
+128745,Fall2021,2312125,quiz3,e7e3e738-3a78-4902-bed0-be0a176c6b61,"Monte Carlo Methods, Matrices, Norms, Linsys",371,2021-10-07,2021-10-08,86.7,53.9,59.6
+128745,Fall2021,2312126,quiz3-Practice,d7e3e738-3a78-4902-bed0-be0a176c6b61,"Monte Carlo Methods, Matrices, Norms, Linsys",1847,2021-09-28,2021-10-07,46.2,12.7,76.2
+128745,Fall2021,2312127,quiz4,b55dbd4b-e843-57e7-a37f-880f4c50dfdd,"Sparse, Conditioning, Eigenvalues and Markov Chains",365,2021-10-21,2021-10-22,77.5,58.6,59.7
+128745,Fall2021,2314524,quiz4CQ,b55dbd4b-e843-57e7-a37f-880f4c50dfde,Jupyter notebook with dataset for sparse storage coding questions,162,2021-10-22,2021-12-13,0.0,0.0,0.0
+128745,Fall2021,2312128,quiz4-Practice,b55dbd4b-e843-47e7-a37f-880f4c50dfdd,"Sparse, Conditioning, Eigenvalues and Markov Chains",2101,2021-10-12,2021-10-21,35.4,12.4,84.2
+128745,Fall2021,2314769,quiz5,c65dbd4b-e843-47e8-a37f-880f4c50dfdd,"Finite Difference, Nonlinear Equations and Optimization",366,2021-11-11,2021-11-12,76.4,57.3,59.7
+128745,Fall2021,2314770,quiz5-Practice,c55dbd4b-e843-47e7-a47f-880f4c50dfdd,"Finite Difference, Nonlinear Equations and Optimization",1898,2021-11-04,2021-11-11,31.7,13.1,87.1
+128745,Fall2021,2312131,quiz6,c55dbd4b-f843-47e7-a37f-880f4c50dfde,"Linear Least-Squares, SVD and its applications",355,2021-12-02,2021-12-03,85.6,54.8,59.7
+128745,Fall2021,2312132,quiz6-Practice,c55dbd4b-f843-47e7-a37f-880f4c50dfdd,"Linear Least-Squares, SVD and its applications",2425,2021-11-18,2021-12-02,42.2,6.6,49.6
+128956,Spring2022,2315571,quiz1,138135ff-9622-4b4a-9e58-e9cb81896244,Quiz 1: Linear Algebra + Python + Errors,285,2022-02-03,2022-02-03,86.6,43.1,58.7
+128956,Spring2022,2315572,quiz1-Practice,127135ff-9622-4b4a-9e58-e9cb81896244,Practice Quiz 1: Linear Algebra + Python + Errors,1943,2022-01-25,2022-02-03,48.5,19.0,86.6
+128956,Spring2022,2316900,quiz1-sectionN,138135ff-9622-4b4a-9e58-e1cb81896244,Quiz 1: Linear Algebra + Python + Errors,150,2022-02-03,2022-02-03,84.5,45.3,59.0
+128956,Spring2022,2315574,quiz2-Practice,b47dbd4b-e843-47e7-a37f-880f4c50dfdd,Quiz 2: Floating Point + Rounding + Taylor Series,2103,2022-02-09,2022-02-17,39.4,13.6,73.0
+128956,Spring2022,2317363,quiz2-sectionM,c57dbd4b-e844-47e7-a37f-880f4c50dfdd,Quiz 2: Floating Point + Rounding + Taylor Series,283,2022-02-17,2022-02-18,76.4,49.9,59.1
+128956,Spring2022,2315573,quiz2-sectionN,c57dbd4b-e843-47e7-a37f-880f4c50dfdd,Quiz 2: Floating Point + Rounding + Taylor Series,141,2022-02-17,2022-02-17,67.9,57.5,59.6
+128956,Spring2022,2317724,quiz3M,22f95f9b-fe6a-4337-98bc-b214b0b1ca6c,"Monte Carlo Methods, Matrices, Norms, Linsys",275,2022-03-03,2022-03-03,80.3,54.9,59.6
+128956,Spring2022,2317723,quiz3N,22f95f9b-fe6a-4337-97bc-b214b0b1ca6c,"Monte Carlo Methods, Matrices, Norms, Linsys",145,2022-03-03,2022-03-03,83.5,49.6,59.2
+128956,Spring2022,2315576,quiz3-Practice,d7e3e738-3a78-4902-bed0-be0a176c6b61,"Monte Carlo Methods, Matrices, Norms, Linsys",2314,2022-02-22,2022-03-03,42.6,9.5,61.6
+128956,Spring2022,2318079,quiz4,b55dbd5b-e843-57e7-a37f-880f4c50dfdd,"Sparse, Conditioning, Eigenvalues and Markov Chains",139,2022-03-24,2022-03-24,80.7,55.9,59.5
+128956,Spring2022,2315577,quiz4M,b55dbd4b-e843-57e7-a37f-880f4c50dfdd,"Sparse, Conditioning, Eigenvalues and Markov Chains",268,2022-03-24,2022-04-01,81.2,58.0,59.7
+128956,Spring2022,2315578,quiz4-Practice,b55dbd4b-e843-47e7-a37f-880f4c50dfdd,"Sparse, Conditioning, Eigenvalues and Markov Chains",2373,2022-03-11,2022-04-01,34.8,10.7,77.0
+128956,Spring2022,2318363,quiz5M,c75dbd4b-e843-47e8-a37f-880f4c50dfdd,"Finite Difference, Nonlinear Equations and Optimization",267,2022-04-14,2022-05-19,78.0,58.0,59.8
+128956,Spring2022,2315579,quiz5N,c65dbd4b-e843-47e8-a37f-880f4c50dfdd,"Finite Difference, Nonlinear Equations and Optimization",142,2022-04-14,2022-04-14,72.8,57.9,59.6
+128956,Spring2022,2315580,quiz5-Practice,c55dbd4b-e843-47e7-a47f-880f4c50dfdd,"Finite Difference, Nonlinear Equations and Optimization",2048,2022-04-06,2022-05-19,35.9,15.5,81.8
+128956,Spring2022,2318376,quiz6M,c560f8f2-6bbb-4956-b9b0-74c1a4f32bbf,"Linear Least-Squares, SVD and its applications",271,2022-04-28,2022-06-16,84.8,44.0,59.1
+128956,Spring2022,2318377,quiz6N,272fa869-5c6e-4607-a059-79bde99486af,"Linear Least-Squares, SVD and its applications",129,2022-04-28,2022-04-28,85.6,54.5,59.6
+128956,Spring2022,2315582,quiz6-Practice,c55dbd4b-f843-47e7-a37f-880f4c50dfdd,"Linear Least-Squares, SVD and its applications",2589,2022-04-21,2022-04-28,48.6,6.4,40.6
+129442,Fall2022,2320869,quiz1,138135ff-9622-4b4a-9e58-e9cb81896244,Quiz 1: Linear Algebra + Python + Errors,470,2022-09-07,2022-09-11,91.6,28.1,46.8
+129442,Fall2022,2320870,quiz1-Practice,127135ff-9622-4b4a-9e58-e9cb81896244,Practice Quiz 1: Linear Algebra + Python + Errors,3864,2022-08-30,2022-09-10,52.3,13.8,51.6
+129442,Fall2022,2322213,quiz1-Practice-ZJUI,137135ff-9622-4b4a-9e58-e9cb81896244,Mock Quiz 1: Linear Algebra + Python + Errors,9,2022-09-06,2022-09-07,18.1,0.0,14.7
+129442,Fall2022,2322214,quiz1-ZJUI,138135ff-9623-4b4a-9e58-e9cb81896244,[ZJUI only] Quiz 1: Linear Algebra + Python + Errors,50,2022-09-09,2022-09-09,92.5,22.9,33.5
+129442,Fall2022,2320873,quiz2,c57dbd4b-e844-47e7-a37f-880f4c50dfdd,Quiz 2: Floating Point + Rounding + Taylor Series,425,2022-09-21,2022-09-28,75.0,47.0,49.8
+129442,Fall2022,2320872,quiz2-Practice,b47dbd4b-e843-47e7-a37f-880f4c50dfdd,Quiz 2: Floating Point + Rounding + Taylor Series,2954,2022-09-13,2022-09-24,47.7,20.3,83.4
+129442,Fall2022,2322524,quiz2_ZJUI,c57dbd4b-e944-47e7-a37f-880f4c50dfdd,[ZJUI ONLY] Quiz 2: Floating Point + Rounding + Taylor Series,62,2022-09-20,2022-09-23,87.1,53.3,70.5
+129442,Fall2022,2322744,quiz2_ZJUI_retake,c57dbd4b-e944-47e7-a37f-890f4c50dfdd,[ZJUI ONLY] RETAKE Quiz 2: Floating Point + Rounding + Taylor Series,5,2022-09-30,2022-09-30,97.6,44.1,50.1
+129442,Fall2022,2320877,quiz3,22f95f9b-fe6a-4337-97bc-b214b0b1ca6c,"Quiz 3: Monte Carlo Methods, Matrices, Norms, Linsys",422,2022-10-10,2022-10-18,86.2,44.4,49.6
+129442,Fall2022,2320875,quiz3-Practice,d7e3e738-3a78-4902-bed0-be0a176c6b61,"Monte Carlo Methods, Matrices, Norms, Linsys",3513,2022-10-04,2022-10-15,50.2,12.2,63.4
+129442,Fall2022,2322986,quiz3_ZJUI,22f95f9b-fe6a-4447-97bc-b214b0b1ca6c,"[ZJUI ONLY] Quiz 3: Monte Carlo Methods, Matrices, Norms, Linsys",73,2022-10-12,2022-10-14,89.9,47.4,61.8
+129442,Fall2022,2323160,quiz4,b55dbd5b-e843-57e7-a37f-880f4c50dfdd,"Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains",404,2022-10-26,2022-11-02,80.6,46.1,49.7
+129442,Fall2022,2323161,quiz4-Practice,b55dbd4b-e843-47e7-a37f-880f4c50dfdd,"Practice Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains",3472,2022-10-20,2022-10-29,38.9,14.7,87.3
+129442,Fall2022,2323162,quiz4-ZJUI,b55dbd5b-e843-67e7-a37f-880f4c50dfdd,"[ZJUI ONLY] Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains",69,2022-10-28,2022-11-02,86.3,54.4,60.8
+129442,Fall2022,2323305,quiz5,c75dbd4b-e843-47e8-a37f-880f4c50dfdd,"Quiz 5: Finite Difference, Nonlinear Equations and Optimization",408,2022-11-09,2022-11-15,77.6,47.7,49.8
+129442,Fall2022,2323306,quiz5-Practice,c55dbd4b-e843-47e7-a47f-880f4c50dfdd,"Finite Difference, Nonlinear Equations and Optimization",2573,2022-11-02,2022-11-12,35.6,22.2,99.4
+129442,Fall2022,2323307,quiz5-ZJUI,c76dbd4b-e843-47e8-a37f-880f4c50dfdd,"[ZJUI ONLY] Quiz 5: Finite Difference, Nonlinear Equations and Optimization",69,2022-11-11,2022-11-18,89.1,59.1,68.8
+129442,Fall2022,2323467,quiz6,c560f8f2-6bbb-4956-b9b0-74c1a4f32bbf,"Quiz 6: Linear Least-Squares, SVD and its applications",396,2022-11-30,2022-12-06,84.4,35.3,49.0
+129442,Fall2022,2323468,quiz6-Practice,c55dbd4b-f843-47e7-a37f-880f4c50dfdd,"Linear Least-Squares, SVD and its applications",3606,2022-11-17,2022-12-03,54.7,8.7,49.9
+129442,Fall2022,2323469,quiz6-ZJUI,c560f8f2-6bbb-4956-b9b0-74c1a4f42bbf,"[ZJUI ONLY] Quiz 6: Linear Least-Squares, SVD and its applications",47,2022-12-02,2022-12-02,85.7,46.0,49.7
+129681,Spring2023,2323995,quiz1,138135ff-9622-4b4a-9e58-e9cb81896244,Quiz 1: Linear Algebra + Python + Errors,428,2023-01-30,2023-02-03,91.4,27.3,47.6
+129681,Spring2023,2323996,quiz1-Practice,127135ff-9622-4b4a-9e58-e9cb81896244,Practice Quiz 1: Linear Algebra + Python + Errors (NOT FOR CREDIT),3074,2023-01-24,2023-02-02,55.1,16.6,52.7
+129681,Spring2023,2323999,quiz2,c57dbd4b-e844-47e7-a37f-880f4c50dfdd,Quiz 2: Floating Point + Rounding + Taylor Series,408,2023-02-13,2023-02-17,75.0,47.6,49.7
+129681,Spring2023,2324000,quiz2-Practice,b47dbd4b-e843-47e7-a37f-880f4c50dfdd,Practice Quiz 2: Floating Point + Rounding + Taylor Series (NOT FOR CREDIT),2520,2023-02-07,2023-02-16,48.0,21.9,87.0
+129681,Spring2023,2324003,quiz3,22f95f9b-fe6a-4337-97bc-b214b0b1ca6c,"Quiz 3: Monte Carlo Methods, Matrices, Norms, Linsys",412,2023-02-27,2023-03-04,84.7,48.7,58.8
+129681,Spring2023,2324004,quiz3-Practice,d7e3e738-3a78-4902-bed0-be0a176c6b61,"Practice Quiz 3: Monte Carlo Methods, Matrices, Norms, Linsys (NOT FOR CREDIT)",2978,2023-02-21,2023-03-02,49.6,12.1,63.9
+129681,Spring2023,2324006,quiz4,b55dbd5b-e843-57e7-a37f-880f4c50dfdd,"Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains",405,2023-03-27,2023-04-02,77.3,46.9,49.7
+129681,Spring2023,2324007,quiz4-Practice,b55dbd4b-e843-47e7-a37f-880f4c50dfdd,"Practice Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains (NOT FOR CREDIT)",2927,2023-03-21,2023-05-05,40.6,17.1,90.1
+129681,Spring2023,2324009,quiz5,c75dbd4b-e843-47e8-a37f-880f4c50dfdd,"Quiz 5: Finite Difference, Nonlinear Equations and Optimization",402,2023-04-10,2023-04-18,76.1,48.6,49.8
+129681,Spring2023,2324010,quiz5-Practice,c55dbd4b-e843-47e7-a47f-880f4c50dfdd,"Practice Quiz 5: Finite Difference, Nonlinear Equations and Optimization (NOT FOR CREDIT)",2171,2023-04-04,2023-05-12,35.7,22.9,102.6
+129681,Spring2023,2324012,quiz6,c560f8f2-6bbb-4956-b9b0-74c1a4f32bbf,"Quiz 6: Linear Least-Squares, SVD and its applications",395,2023-04-24,2023-05-12,83.3,36.4,49.5
+129681,Spring2023,2324013,quiz6-Practice,c55dbd4b-f843-47e7-a37f-880f4c50dfdd,"Practice Quiz 6: Linear Least-Squares, SVD and its applications (NOT FOR CREDIT)",3397,2023-04-18,2023-05-12,54.3,8.1,49.4
+138454,Fall2023,2355363,quiz1,138135ff-9622-4b4a-9e58-e9cb81896244,Quiz 1: Linear Algebra + Python + Errors,410,2023-09-01,2023-09-08,90.9,37.1,49.2
+138454,Fall2023,2355364,quiz1-Practice,127135ff-9622-4b4a-9e58-e9cb81896244,Practice Quiz 1: Linear Algebra + Python + Errors (NOT FOR CREDIT),3259,2023-08-29,2023-09-08,55.2,15.8,56.6
+138454,Fall2023,2355365,quiz2,c57dbd4b-e844-47e7-a37f-880f4c50dfdd,Quiz 2: Floating Point + Rounding + Taylor Series,391,2023-09-18,2023-09-25,77.6,47.3,49.8
+138454,Fall2023,2355366,quiz2-Practice,b47dbd4b-e843-47e7-a37f-880f4c50dfdd,Practice Quiz 2: Floating Point + Rounding + Taylor Series (NOT FOR CREDIT),2901,2023-09-12,2023-09-23,45.0,19.9,81.5
+138454,Fall2023,2355367,quiz3,22f95f9b-fe6a-4337-97bc-b214b0b1ca6c,"Quiz 3: Monte Carlo Methods, Matrices, Norms, Linsys",391,2023-10-09,2023-10-19,85.5,46.3,49.8
+138454,Fall2023,2355368,quiz3-Practice,d7e3e738-3a78-4902-bed0-be0a176c6b61,"Practice Quiz 3: Monte Carlo Methods, Matrices, Norms, Linsys (NOT FOR CREDIT)",3292,2023-10-03,2023-10-16,51.4,13.2,65.9
+138454,Fall2023,2355369,quiz4,b55dbd5b-e843-57e7-a37f-880f4c50dfdd,"Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains",386,2023-10-23,2023-11-01,80.8,48.0,49.8
+138454,Fall2023,2355370,quiz4-Practice,b55dbd4b-e843-47e7-a37f-880f4c50dfdd,"Practice Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains (NOT FOR CREDIT)",3061,2023-10-17,2023-10-30,40.3,17.4,92.3
+138454,Fall2023,2355371,quiz5,c75dbd4b-e843-47e8-a37f-880f4c50dfdd,"Quiz 5: Finite Difference, Nonlinear Equations and Optimization",383,2023-11-06,2023-11-12,77.3,48.6,49.8
+138454,Fall2023,2355372,quiz5-Practice,c55dbd4b-e843-47e7-a47f-880f4c50dfdd,"Practice Quiz 5: Finite Difference, Nonlinear Equations and Optimization (NOT FOR CREDIT)",2398,2023-10-31,2023-11-11,36.1,25.1,103.4
+138454,Fall2023,2355373,quiz6,c560f8f2-6bbb-4956-b9b0-74c1a4f32bbf,"Quiz 6: Linear Least-Squares, SVD and its applications",372,2023-11-27,2023-12-05,83.9,38.6,49.5
+138454,Fall2023,2355374,quiz6-Practice,c55dbd4b-f843-47e7-a37f-880f4c50dfdd,"Practice Quiz 6: Linear Least-Squares, SVD and its applications (NOT FOR CREDIT)",3634,2023-11-14,2023-12-03,57.7,9.1,52.1
+145154,Spring2024,2388034,quiz1,138135ff-9622-4b4a-9e58-e9cb81896244,Quiz 1: Linear Algebra + Python + Errors,414,2024-01-30,2024-02-04,91.5,38.7,49.4
+145154,Spring2024,2388035,quiz1-Practice,127135ff-9622-4b4a-9e58-e9cb81896244,Practice Quiz 1: Linear Algebra + Python + Errors (NOT FOR CREDIT),3484,2024-01-16,2024-02-12,54.9,13.9,51.7
+145154,Spring2024,2388036,quiz2,c57dbd4b-e844-47e7-a37f-880f4c50dfdd,Quiz 2: Floating Point + Rounding + Taylor Series,403,2024-02-13,2024-02-17,76.0,44.5,49.6
+145154,Spring2024,2388037,quiz2-Practice,b47dbd4b-e843-47e7-a37f-880f4c50dfdd,Practice Quiz 2: Floating Point + Rounding + Taylor Series (NOT FOR CREDIT),2576,2024-02-06,2024-02-17,45.4,19.6,81.6
+145154,Spring2024,2388038,quiz3,22f95f9b-fe6a-4337-97bc-b214b0b1ca6c,"Quiz 3: Monte Carlo Methods, Matrices, Norms, Linsys",409,2024-02-27,2024-03-02,83.9,46.4,49.7
+145154,Spring2024,2388039,quiz3-Practice,d7e3e738-3a78-4902-bed0-be0a176c6b61,"Practice Quiz 3: Monte Carlo Methods, Matrices, Norms, Linsys (NOT FOR CREDIT)",3062,2024-02-20,2024-03-02,50.7,12.4,66.5
+145154,Spring2024,2388040,quiz4,b55dbd5b-e843-57e7-a37f-880f4c50dfdd,"Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains",384,2024-03-26,2024-03-31,81.2,43.6,49.5
+145154,Spring2024,2388041,quiz4-Practice,b55dbd4b-e843-47e7-a37f-880f4c50dfdd,"Practice Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains (NOT FOR CREDIT)",2880,2024-03-07,2024-03-30,40.3,17.3,93.0
+145154,Spring2024,2388042,quiz5,c75dbd4b-e843-47e8-a37f-880f4c50dfdd,"Quiz 5: Finite Difference, Nonlinear Equations and Optimization",378,2024-04-09,2024-04-12,74.9,48.4,49.8
+145154,Spring2024,2414297,quiz5_copy1,fa187ac8-94cb-499c-b291-36555dda1a71,"Quiz 5: Finite Difference, Nonlinear Equations and Optimization",6,2024-04-12,2024-04-14,72.4,45.1,48.2
+145154,Spring2024,2388043,quiz5-Practice,c55dbd4b-e843-47e7-a47f-880f4c50dfdd,"Practice Quiz 5: Finite Difference, Nonlinear Equations and Optimization (NOT FOR CREDIT)",2094,2024-02-29,2024-04-29,36.8,25.3,99.8
+145154,Spring2024,2388044,quiz6,c560f8f2-6bbb-4956-b9b0-74c1a4f32bbf,"Quiz 6: Linear Least-Squares, SVD and its applications",378,2024-02-07,2024-04-28,81.1,38.3,49.5
+145154,Spring2024,2388045,quiz6-Practice,c55dbd4b-f843-47e7-a37f-880f4c50dfdd,"Practice Quiz 6: Linear Least-Squares, SVD and its applications (NOT FOR CREDIT)",3052,2024-01-31,2024-04-26,57.4,10.3,52.5
+157792,Fall2024,2444555,quiz1,138135ff-9622-4b4a-9e58-e9cb81896244,Quiz 1: Linear Algebra + Python + Errors,484,2024-09-09,2024-09-14,87.0,41.3,49.4
+157792,Fall2024,2444556,quiz1-Practice,127135ff-9622-4b4a-9e58-e9cb81896244,Practice Quiz 1: Linear Algebra + Python + Errors (NOT FOR CREDIT),3777,2024-09-03,2024-09-14,53.8,14.5,53.8
+157792,Fall2024,2444557,quiz2,c57dbd4b-e844-47e7-a37f-880f4c50dfdd,Quiz 2: Floating Point + Rounding + Taylor Series,472,2024-09-23,2024-10-02,75.4,46.0,49.7
+157792,Fall2024,2444558,quiz2-Practice,b47dbd4b-e843-47e7-a37f-880f4c50dfdd,Practice Quiz 2: Floating Point + Rounding + Taylor Series (NOT FOR CREDIT),3154,2024-09-17,2024-11-15,46.9,22.4,85.3
+157792,Fall2024,2467858,quiz3A,22f95f9b-fe6a-4338-97bc-b214b0b1ca6c,"Quiz 3: Monte Carlo Methods, Matrices, Norms, Linsys",49,2024-10-14,2024-10-15,86.4,47.1,49.7
+157792,Fall2024,2444559,quiz3B,22f95f9b-fe6a-4337-97bc-b214b0b1ca6c,"Quiz 3: Monte Carlo Methods, Matrices, Norms, Linsys",34,2024-10-15,2024-10-16,89.6,45.4,49.5
+157792,Fall2024,2467860,quiz3C,22f95f9b-fe6a-5337-97bc-b214b0b1ca6c,"Quiz 3: Monte Carlo Methods, Matrices, Norms, Linsys",374,2024-10-16,2024-10-19,79.4,48.6,49.8
+157792,Fall2024,2444560,quiz3-Practice,d7e3e738-3a78-4902-bed0-be0a176c6b61,"Practice Quiz 3: Monte Carlo Methods, Matrices, Norms, Linsys (NOT FOR CREDIT)",3489,2024-10-08,2024-10-18,50.9,14.1,68.9
+157792,Fall2024,2444561,quiz4A,b55dbd5b-e843-57e7-a37f-880f4c50dfdd,"Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains",95,2024-10-28,2024-11-03,86.3,44.4,49.8
+157792,Fall2024,2472839,quiz4B,b55dbd5b-e840-57e7-a37f-880f4c50dfdd,"Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains",352,2024-10-30,2024-10-31,82.1,45.7,49.9
+157792,Fall2024,2444562,quiz4-Practice,b55dbd4b-e843-47e7-a37f-880f4c50dfdd,"Practice Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains (NOT FOR CREDIT)",3752,2024-10-22,2024-11-02,41.9,15.2,81.7
+157792,Fall2024,2444563,quiz5,c75dbd4b-e843-47e8-a37f-880f4c50dfdd,"Quiz 5: Finite Difference, Nonlinear Equations and Optimization",450,2024-11-11,2024-11-17,79.1,47.8,49.8
+157792,Fall2024,2444564,quiz5-Practice,c55dbd4b-e843-47e7-a47f-880f4c50dfdd,"Practice Quiz 5: Finite Difference, Nonlinear Equations and Optimization (NOT FOR CREDIT)",2723,2024-11-05,2024-11-17,40.9,26.5,91.6
+157792,Fall2024,2444565,quiz6,c560f8f2-6bbb-4956-b9b0-74c1a4f32bbf,"Quiz 6: Linear Least-Squares, SVD and its applications",428,2024-12-02,2024-12-08,83.1,37.0,49.3
+157792,Fall2024,2444566,quiz6-Practice,c55dbd4b-f843-47e7-a37f-880f4c50dfdd,"Practice Quiz 6: Linear Least-Squares, SVD and its applications (NOT FOR CREDIT)",4072,2024-11-19,2024-12-09,58.2,9.5,46.8
+171058,Spring2025,2491224,quiz1,138135ff-9622-4b4a-9e58-e9cb81896244,Quiz 1: Linear Algebra + Python + Errors,429,2025-02-04,2025-02-09,87.5,41.0,49.4
+171058,Spring2025,2491225,quiz1-Practice,127135ff-9622-4b4a-9e58-e9cb81896244,Practice Quiz 1: Linear Algebra + Python + Errors (NOT FOR CREDIT),3351,2025-01-28,2025-02-18,57.3,16.3,55.3
+171058,Spring2025,2491226,quiz2,c57dbd4b-e844-47e7-a37f-880f4c50dfdd,Quiz 2: Floating Point + Rounding + Taylor Series,422,2025-02-18,2025-02-21,74.3,47.3,49.8
+171058,Spring2025,2491227,quiz2-Practice,b47dbd4b-e843-47e7-a37f-880f4c50dfdd,Practice Quiz 2: Floating Point + Rounding + Taylor Series (NOT FOR CREDIT),2766,2025-02-12,2025-02-23,47.9,23.2,83.4
+171058,Spring2025,2491228,quiz3,22f95f9b-fe6a-4338-97bc-b214b0b1ca6c,"Quiz 3: Monte Carlo Methods, Matrices, Norms, Linsys",417,2025-03-04,2025-03-09,79.6,47.0,49.7
+171058,Spring2025,2491229,quiz3-Practice,d7e3e738-3a78-4902-bed0-be0a176c6b61,"Practice Quiz 3: Monte Carlo Methods, Matrices, Norms, Linsys (NOT FOR CREDIT)",3189,2025-02-25,2025-03-08,52.5,14.6,67.7
+171058,Spring2025,2491230,quiz4,b55dbd5b-e840-57e7-a37f-880f4c50dfdd,"Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains",415,2025-04-01,2025-04-06,78.3,47.3,49.7
+171058,Spring2025,2491231,quiz4-Practice,b55dbd4b-e843-47e7-a37f-880f4c50dfdd,"Practice Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains (NOT FOR CREDIT)",3133,2025-03-13,2025-04-06,44.7,19.7,93.4
+171058,Spring2025,2491233,quiz5,c75dbd4b-e843-47e8-a37f-880f4c50dfdd,"Quiz 5: Finite Difference, Nonlinear Equations and Optimization",406,2025-01-23,2025-04-19,78.2,47.8,49.8
+171058,Spring2025,2491234,quiz5-Practice,c55dbd4b-e843-47e7-a47f-880f4c50dfdd,"Practice Quiz 5: Finite Difference, Nonlinear Equations and Optimization (NOT FOR CREDIT)",2312,2025-04-08,2025-04-19,43.8,31.0,98.7
+171058,Spring2025,2491236,quiz6,c560f8f2-6bbb-4956-b9b0-74c1a4f32bbf,"Quiz 6: Linear Least-Squares, SVD and its applications",399,2025-04-29,2025-05-04,79.3,42.7,49.6
+171058,Spring2025,2491237,quiz6-Practice,c55dbd4b-f843-47e7-a37f-880f4c50dfdd,"Practice Quiz 6: Linear Least-Squares, SVD and its applications (NOT FOR CREDIT)",3546,2025-04-22,2025-05-04,61.9,11.9,54.4
+185710,Fall2025,2557973,quiz1,138135ff-9622-4b4a-9e58-e9cb81896244,Quiz 1: Linear Algebra + Python + Errors,467,2025-09-08,2025-09-14,86.5,40.2,49.1
+185710,Fall2025,2557974,quiz1-Practice,127135ff-9622-4b4a-9e58-e9cb81896244,Practice Quiz 1: Linear Algebra + Python + Errors (NOT FOR CREDIT),3473,2025-09-02,2025-09-14,59.2,16.0,54.6
+185710,Fall2025,2557975,quiz2,c57dbd4b-e844-47e7-a37f-880f4c50dfdd,Quiz 2: Floating Point + Rounding + Taylor Series,454,2025-09-22,2025-09-28,76.9,47.1,49.6
+185710,Fall2025,2557976,quiz2-Practice,b47dbd4b-e843-47e7-a37f-880f4c50dfdd,Practice Quiz 2: Floating Point + Rounding + Taylor Series (NOT FOR CREDIT),2875,2025-09-16,2025-09-28,52.8,25.1,79.6
+185710,Fall2025,2557977,quiz3,22f95f9b-fe6a-4338-97bc-b214b0b1ca6c,"Quiz 3: Monte Carlo Methods, Matrices, Norms, Linsys",453,2025-10-13,2025-10-19,82.0,46.4,49.7
+185710,Fall2025,2557978,quiz3-Practice,d7e3e738-3a78-4902-bed0-be0a176c6b61,"Practice Quiz 3: Monte Carlo Methods, Matrices, Norms, Linsys (NOT FOR CREDIT)",3433,2025-10-07,2025-10-19,55.6,13.7,64.6
+185710,Fall2025,2557979,quiz4,b55dbd5b-e840-57e7-a37f-880f4c50dfdd,"Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains",445,2025-10-27,2025-11-02,82.3,46.1,49.7
+185710,Fall2025,2557980,quiz4-Practice,b55dbd4b-e843-47e7-a37f-880f4c50dfdd,"Practice Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains (NOT FOR CREDIT)",3280,2025-10-21,2025-11-02,48.0,19.7,84.7
+185710,Fall2025,2557981,quiz5,c75dbd4b-e843-47e8-a37f-880f4c50dfdd,"Quiz 5: Finite Difference, Nonlinear Equations and Optimization",438,2025-11-10,2025-11-16,80.4,47.3,49.8
+185710,Fall2025,2557982,quiz5-Practice,c55dbd4b-e843-47e7-a47f-880f4c50dfdd,"Practice Quiz 5: Finite Difference, Nonlinear Equations and Optimization (NOT FOR CREDIT)",2553,2025-11-04,2025-11-15,44.4,29.1,93.2
+185710,Fall2025,2557983,quiz6,c560f8f2-6bbb-4956-b9b0-74c1a4f32bbf,"Quiz 6: Linear Least-Squares, SVD and its applications",428,2025-12-01,2025-12-09,81.1,42.6,49.6
+185710,Fall2025,2557984,quiz6-Practice,c55dbd4b-f843-47e7-a37f-880f4c50dfdd,"Practice Quiz 6: Linear Least-Squares, SVD and its applications (NOT FOR CREDIT)",3742,2025-10-28,2025-12-09,62.7,11.3,53.1
+199834,Spring2026,2619940,quiz1,138135ff-9622-4b4a-9e58-e9cb81896244,Quiz 1: Linear Algebra + Python + Errors,316,2026-02-03,2026-02-08,86.8,41.9,49.2
+199834,Spring2026,2619941,quiz1-Practice,127135ff-9622-4b4a-9e58-e9cb81896244,Practice Quiz 1: Linear Algebra + Python + Errors (NOT FOR CREDIT),2541,2026-01-27,2026-02-08,59.5,16.5,56.7
+199834,Spring2026,2619942,quiz2,c57dbd4b-e844-47e7-a37f-880f4c50dfdd,Quiz 2: Floating Point + Rounding + Taylor Series,311,2026-02-17,2026-02-22,76.6,47.3,49.7
+199834,Spring2026,2619943,quiz2-Practice,b47dbd4b-e843-47e7-a37f-880f4c50dfdd,Practice Quiz 2: Floating Point + Rounding + Taylor Series (NOT FOR CREDIT),2110,2026-02-10,2026-02-22,53.1,24.7,78.6
+199834,Spring2026,2619944,quiz3,22f95f9b-fe6a-4338-97bc-b214b0b1ca6c,"Quiz 3: Monte Carlo Methods, Matrices, Norms, Linsys",313,2026-03-03,2026-03-09,80.3,47.1,49.8
+199834,Spring2026,2619945,quiz3-Practice,d7e3e738-3a78-4902-bed0-be0a176c6b61,"Practice Quiz 3: Monte Carlo Methods, Matrices, Norms, Linsys (NOT FOR CREDIT)",2516,2026-02-24,2026-03-09,56.1,14.5,59.4
+199834,Spring2026,2619946,quiz4,b55dbd5b-e840-57e7-a37f-880f4c50dfdd,"Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains",308,2026-03-31,2026-04-06,81.9,46.3,49.6
+199834,Spring2026,2619947,quiz4-Practice,b55dbd4b-e843-47e7-a37f-880f4c50dfdd,"Practice Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains (NOT FOR CREDIT)",2371,2026-03-04,2026-04-06,49.3,18.1,82.5
+199834,Spring2026,2619948,quiz5,c75dbd4b-e843-47e8-a37f-880f4c50dfdd,"Quiz 5: Finite Difference, Nonlinear Equations and Optimization",308,2026-04-14,2026-05-06,76.8,46.9,49.8
+199834,Spring2026,2619949,quiz5-Practice,c55dbd4b-e843-47e7-a47f-880f4c50dfdd,"Practice Quiz 5: Finite Difference, Nonlinear Equations and Optimization (NOT FOR CREDIT)",1862,2026-04-07,2026-05-05,42.6,25.9,89.1
+199834,Spring2026,2619950,quiz6,c560f8f2-6bbb-4956-b9b0-74c1a4f32bbf,"Quiz 6: Linear Least-Squares, SVD and its applications",294,2026-04-28,2026-05-04,77.8,42.6,49.5
+199834,Spring2026,2619951,quiz6-Practice,c55dbd4b-f843-47e7-a37f-880f4c50dfdd,"Practice Quiz 6: Linear Least-Squares, SVD and its applications (NOT FOR CREDIT)",2894,2026-04-21,2026-05-05,61.2,9.4,45.6
+224254,Fall2026,2713993,quiz1,138135ff-9622-4b4a-9e58-e9cb81896244,Quiz 1: Linear Algebra + Python + Errors,373,2026-09-08,2026-09-13,85.4,42.9,49.5
+224254,Fall2026,2713994,quiz1-Practice,127135ff-9622-4b4a-9e58-e9cb81896244,Practice Quiz 1: Linear Algebra + Python + Errors (NOT FOR CREDIT),2675,2026-09-01,2026-10-29,18.2,21.3,63.1
+224254,Fall2026,2713995,quiz2,c57dbd4b-e844-47e7-a37f-880f4c50dfdd,Quiz 2: Floating Point + Rounding + Taylor Series,364,2026-09-21,2026-09-28,83.8,44.8,49.7
+224254,Fall2026,2713996,quiz2-Practice,b47dbd4b-e843-47e7-a37f-880f4c50dfdd,Practice Quiz 2: Floating Point + Rounding + Taylor Series (NOT FOR CREDIT),2388,2026-09-15,2026-10-15,27.5,23.3,82.0
+224254,Fall2026,2713997,quiz3,22f95f9b-fe6a-4338-97bc-b214b0b1ca6c,"Quiz 3: Monte Carlo Methods, Matrices, Norms, Linsys",361,2026-10-06,2026-10-17,82.3,46.7,49.8
+224254,Fall2026,2713998,quiz3-Practice,d7e3e738-3a78-4902-bed0-be0a176c6b61,"Practice Quiz 3: Monte Carlo Methods, Matrices, Norms, Linsys (NOT FOR CREDIT)",2631,2026-09-28,2026-10-28,29.3,19.9,78.7
+224254,Fall2026,2713999,quiz4,b55dbd5b-e840-57e7-a37f-880f4c50dfdd,"Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains",350,2026-10-26,2026-11-03,83.3,46.2,49.8
+224254,Fall2026,2714000,quiz4-Practice,b55dbd4b-e843-47e7-a37f-880f4c50dfdd,"Practice Quiz 4: Sparse, Conditioning, Eigenvalues and Markov Chains (NOT FOR CREDIT)",2692,2026-10-19,2026-11-03,22.2,19.0,89.6
+224254,Fall2026,2714001,quiz5,c75dbd4b-e843-47e8-a37f-880f4c50dfdd,"Quiz 5: Finite Difference, Nonlinear Equations and Optimization",0,,,,,
+224254,Fall2026,2714002,quiz5-Practice,c55dbd4b-e843-47e7-a47f-880f4c50dfdd,"Practice Quiz 5: Finite Difference, Nonlinear Equations and Optimization (NOT FOR CREDIT)",176,2026-09-07,2026-11-06,40.2,0.0,37.8
+224254,Fall2026,2714003,quiz6,c560f8f2-6bbb-4956-b9b0-74c1a4f32bbf,"Quiz 6: Linear Least-Squares, SVD and its applications",0,,,,,
+224254,Fall2026,2714004,quiz6-Practice,c55dbd4b-f843-47e7-a37f-880f4c50dfdd,"Practice Quiz 6: Linear Least-Squares, SVD and its applications (NOT FOR CREDIT)",0,,,,,

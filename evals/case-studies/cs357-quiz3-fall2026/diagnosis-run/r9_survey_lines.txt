@@ -1,0 +1,14 @@
+== SurveyElevations & MenuPrices: per-submission code features (best submission), aggregated by A outcome
+qid|a_cls|n|bench_in_a|minus_start|minus_end|alloc_n_minus_1
+09-Linsys/Linsys-MenuPrices|1 A correct|96|0|0|0|0
+09-Linsys/Linsys-MenuPrices|2 A 0 rows|23|0|0|0|0
+09-Linsys/Linsys-MenuPrices|4 A wrong shape|19|0|0|0|0
+09-Linsys/Linsys-MenuPrices|5 exception|39|0|1|0|0
+09-Linsys/Linsys-MenuPrices|6 other|4|0|0|0|0
+09-Linsys/Linsys-SurveyElevations|1 A correct|35|20|18|0|0
+09-Linsys/Linsys-SurveyElevations|2 A 0 rows|26|0|0|0|0
+09-Linsys/Linsys-SurveyElevations|3 A some rows|6|3|0|1|0
+09-Linsys/Linsys-SurveyElevations|4 A wrong shape|20|0|0|0|1
+09-Linsys/Linsys-SurveyElevations|5 exception|42|3|1|2|0
+09-Linsys/Linsys-SurveyElevations|6 other|3|0|0|0|0
+(11 rows)
