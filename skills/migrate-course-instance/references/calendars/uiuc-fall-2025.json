@@ -1,0 +1,10 @@
+{
+  "term": "Fall 2025",
+  "institution": "University of Illinois Urbana-Champaign",
+  "source": "https://registrar.illinois.edu/fall-2025-academic-calendar/",
+  "instructionBegins": "2025-08-25",
+  "instructionEnds": "2025-12-10",
+  "holidays": [{ "name": "Labor Day", "date": "2025-09-01" }],
+  "breaks": [{ "name": "Fall break", "start": "2025-11-22", "end": "2025-11-30" }],
+  "finals": { "start": "2025-12-12", "end": "2025-12-18" }
+}

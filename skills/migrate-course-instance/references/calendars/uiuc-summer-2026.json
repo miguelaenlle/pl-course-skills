@@ -1,0 +1,14 @@
+{
+  "term": "Summer 2026 (full session)",
+  "institution": "University of Illinois Urbana-Champaign",
+  "source": "https://registrar.illinois.edu/faculty-staff/calendars/academic-calendars/summer-academic-calendar-26/",
+  "instructionBegins": "2026-05-18",
+  "instructionEnds": "2026-08-06",
+  "holidays": [
+    { "name": "Memorial Day", "date": "2026-05-25" },
+    { "name": "Juneteenth (observed)", "date": "2026-06-19" },
+    { "name": "Independence Day (observed)", "date": "2026-07-03" }
+  ],
+  "breaks": [],
+  "finals": { "start": "2026-08-07", "end": "2026-08-08" }
+}

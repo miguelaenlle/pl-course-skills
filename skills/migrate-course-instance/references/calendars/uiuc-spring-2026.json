@@ -1,0 +1,10 @@
+{
+  "term": "Spring 2026",
+  "institution": "University of Illinois Urbana-Champaign",
+  "source": "https://registrar.illinois.edu/academic-calendars/academic-calendars-archive/spring-academic-calendar-26/",
+  "instructionBegins": "2026-01-20",
+  "instructionEnds": "2026-05-06",
+  "holidays": [{ "name": "Martin Luther King Jr. Day", "date": "2026-01-19" }],
+  "breaks": [{ "name": "Spring break", "start": "2026-03-14", "end": "2026-03-22" }],
+  "finals": { "start": "2026-05-08", "end": "2026-05-14" }
+}
