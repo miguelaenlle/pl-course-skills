@@ -10,7 +10,8 @@ for t in sorted(set(pred) & set(actual)):
         if p[field] and a[field]:
             ok = p[field] == a[field]
             sameday = p[field].date() == a[field].date()
-            stats[(field, 'exact' if ok else ('same day' if sameday else 'different'))] += 1
+            sameweek = abs((p[field].date() - a[field].date()).days) <= 3
+            stats[(field, 'exact' if ok else ('same day' if sameday else ('within 3 days' if sameweek else 'different')))] += 1
             if not sameday: misses.append((t, field, p[field], a[field], (a[field]-p[field]).days))
     pl = [d for d, _ in p['late']]; al = [d for d, _ in a['late']]
     if pl and al:
@@ -18,6 +19,8 @@ for t in sorted(set(pred) & set(actual)):
 for k in sorted(stats): print(k, stats[k])
 tot = collections.Counter(); 
 for (f, r), n in stats.items(): tot[f] += n
-for f in tot: print(f, f"{100*stats[(f,'exact')]/tot[f]:.0f}% exact of {tot[f]}")
+for f in tot:
+    near = stats[(f, 'exact')] + stats[(f, 'same day')] + stats[(f, 'within 3 days')]
+    print(f, f"{100*stats[(f,'exact')]/tot[f]:.0f}% exact, {100*near/tot[f]:.0f}% within 3 days, of {tot[f]}")
 print('\nmisses (assessment, field, predicted, actual, actual-predicted days):')
 for m in misses: print(f"  {m[0]:24} {m[1]:8} {m[2]:%a %Y-%m-%d %H:%M}  {m[3]:%a %Y-%m-%d %H:%M}  {m[4]:+d}")

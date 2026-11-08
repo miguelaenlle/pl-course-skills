@@ -1,0 +1,12 @@
+124 dates in . (years: 2025, 2026)
+
+0 dates outside ZJUI Spring 2026 (more than 10 weeks before or after it):
+
+3 dates on a holiday, in a break, or between instruction and finals:
+  hw06a allowAccess[0].startDate 2026-05-02T00:00:01 (lands on Labor Day)
+  hw06a allowAccess[1].startDate 2026-05-02T00:00:01 (lands on Labor Day)
+  hw06a allowAccess[2].startDate 2026-05-02T00:00:01 (lands on Labor Day)
+
+2 other term-specific items:
+  course instance UUID (a copy in the same course needs a new one) (1): infoCourseInstance.json
+  name: 'ZJUI Spring 2026' (1): infoCourseInstance.json

@@ -156,7 +156,8 @@ class Calendar:
                 return self.end + dt.timedelta(days=loc[1] + 2), flags
             d = self.finals[0] + dt.timedelta(days=loc[1])
             if d > self.finals[1]:
-                flags.append("past the end of target finals")
+                flags.append("target finals are shorter; moved to the last day of finals")
+                d = self.finals[1]
             return d, flags
         if kind == "post":
             return self.term_end() + dt.timedelta(days=loc[1]), flags
@@ -246,6 +247,10 @@ def term_items(rel, data):
             items.append((rel, "assessment password"))
         if rule.get("institution") == "LTI":
             items.append((rel, "LTI 1.1 access rule"))
+        elif rule.get("institution"):
+            items.append((rel, f"access limited to institution {rule['institution']!r} (publishing uses selfEnrollment.restrictToInstitution instead)"))
+        if rule.get("mode") == "Exam" and not rule.get("examUuid"):
+            items.append((rel, "Exam-mode rule without a PrairieTest exam (proctored room or testing center)"))
     for i, rule in enumerate(data.get("accessControl") or []):
         exams = ((rule.get("integrations") or {}).get("prairieTest") or {}).get("exams") or []
         items += [(rel, "PrairieTest exam UUID")] * len(exams)
@@ -357,7 +362,7 @@ def cmd_scan(args):
         for uids, where in groups:
             kind = "repeats across many assessments: often course staff or CAs" if len(where) >= 5 else "few assessments: likely extensions or accommodations"
             shown = ", ".join(sorted(set(where))[:6]) + (" ..." if len(set(where)) > 6 else "")
-            print(f"  {len(uids)} UIDs on {len(where)} assessments ({kind}): {shown}")
+            print(f"  {len(uids)} UIDs on {len(where)} assessment{'s' if len(where) != 1 else ''} ({kind}): {shown}")
     grouped = defaultdict(list)
     for rel, what in items:
         grouped[what].append(short(rel))
@@ -410,16 +415,25 @@ def order_flags(old_by_file, new_by_file):
     return out
 
 
+def rule_of(path):
+    m = re.match(r"((allowAccess|accessControl)\[\d+\])\.", path)
+    return m.group(1) if m else None
+
+
 def cmd_plan(args):
     src, dst = Calendar(args.from_), Calendar(args.to)
     today = dt.date.today()
     rows, mapped, originals = [], defaultdict(dict), defaultdict(dict)
     for rel, path in json_files(args.ci):
         dates, data = load(path)
+        stale_rules = {rule_of(p) for p, v in dates if src.stale(day(v)) and rule_of(p)}
         for p, v in dates:
             d = day(v)
             if in_student_rule(p, data):
                 rows.append([rel, p, v, v, "per-student rule (removed by strip)", ""])
+                continue
+            if rule_of(p) in stale_rules and not src.stale(d):
+                rows.append([rel, p, v, v, "rule has a date outside the source term; left unchanged", "rule outside source term"])
                 continue
             if src.stale(d):
                 rows.append([rel, p, v, v, "outside the source term; left unchanged", "outside source term"])
@@ -432,7 +446,7 @@ def cmd_plan(args):
             if p.endswith("selfEnrollment.beforeDate") and dst.add_deadline:
                 nd, flags = dst.add_deadline, ["set to the add deadline"]
             flags += dst.check(nd)
-            if loc[0] in ("pre", "gap", "finals", "post") and nd.weekday() != d.weekday():
+            if loc[0] in ("gap", "finals") and nd.weekday() != d.weekday():
                 flags.append(f"weekday changes {WEEKDAYS[d.weekday()]}->{WEEKDAYS[nd.weekday()]}")
             if nd < today:
                 flags.append("already in the past")

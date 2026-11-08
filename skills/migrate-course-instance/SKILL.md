@@ -77,9 +77,13 @@ as a small JSON file (format below, examples in
    - finals
    - the last day to add the course
 
-   Published future calendars are often marked tentative; say so. The files in
+   Published future calendars are often marked tentative; say so. Calendars
+   may be PDFs or images rather than web pages. A term can also span two
+   documents; for example, a spring term whose first weeks come before a winter
+   break may list its start only on the fall calendar. The files in
    `references/calendars/` are worked examples. Check them against the
    registrar before you rely on them.
+
 2. **If you can't find the official calendar,** ask for the first day of
    instruction and any breaks, but don't wait on the answer. Infer what you can
    from the course's own history: the same term last year usually starts in the
@@ -100,9 +104,10 @@ as a small JSON file (format below, examples in
 }
 ```
 
-Only `instructionBegins` is required. If the two terms differ in length by more
-than a week (semester to summer, semester to quarter), the week-by-week mapping
-no longer fits. Say so, propose a compressed schedule, and make it a decision in
+Only `instructionBegins` is required. Record anything the format can't hold,
+such as make-up class days, in a `notes` field and in the review. If the two
+terms differ by more than one week of instruction (semester to summer,
+semester to quarter), the week-by-week mapping no longer fits. Say so, propose a compressed schedule, and make it a decision in
 the review.
 
 ## 3. Make the copy
@@ -118,12 +123,16 @@ rewrite them on the copy itself.
   - possibly access control migrated to the modern format
 
   It does not move assessment dates; that's this skill's job.
+
 - Otherwise copy the directory yourself, including `clientFilesCourseInstance`,
   and in `infoCourseInstance.json`:
   - generate a new `uuid` and set `longName`
   - replace legacy `allowAccess` with `publishing`, using the start and end of
     the old rule (they get mapped with everything else), unless the course uses
-    LTI 1.1
+    LTI 1.1. If the old rule had an `institution`, carry it into
+    `selfEnrollment`. For example, a rule that allowed another campus becomes
+    `restrictToInstitution: false`, usually with `useEnrollmentCode: true`.
+    Otherwise those students can't self-enroll.
   - remove `shareSourcePublicly`
 
   Assessment UUIDs can stay the same; they only need to be unique within a
@@ -199,6 +208,12 @@ Give one compact review. Don't paste the CSV. Include:
      the assessment it belongs with (a practice quiz opens with its quiz). If
      that assessment has no dates in PrairieLearn, use the week it covers in the
      course's schedule.
+   - **Finals that don't line up.** If the target finals period is shorter, the
+     script moves dates past its end to the last day of finals. Ask the
+     instructor for the actual exam slot.
+   - **Exam-mode rules without a PrairieTest exam** (a proctored room or testing
+     center) carry over as they are. Ask the instructor to confirm the room is
+     still set up.
    - **PrairieTest exams.** These need new exams in PrairieTest for the new term.
      Default: leave the old exam UUIDs in place, since they grant access only
      during reservations for the old exams, which are over. List them so they
@@ -214,6 +229,7 @@ Give one compact review. Don't paste the CSV. Include:
 
      Say which assessments would be left with no rules at all, since only staff
      can open those.
+
    - **Student-label overrides** (such as early access for a "CA" label). Default:
      keep them, with their dates mapped. The label's members have to be added
      again in the new course instance.

@@ -14,6 +14,11 @@ frontmatter, usable by Claude Code and Codex.
   questions and assessment settings, then verify them in PrairieLearn: bulk
   variant checks, rendered screenshots, and grading with correct and wrong
   answers.
+- [`migrate-course-instance`](skills/migrate-course-instance/SKILL.md): set up
+  a course instance for a new term. It moves every date onto the new term's
+  academic calendar (by week of instruction, skipping breaks), clears UID rules
+  and per-student overrides, flags conflicts and leftover dates, and verifies
+  the result.
 - [`improve-assessment`](skills/improve-assessment/SKILL.md): investigate past
   results, prototype question changes with instructor feedback, then finalize an
   assessment locally. Copied unchanged from the course-agent worktree
@@ -30,3 +35,10 @@ frontmatter, usable by Claude Code and Codex.
   changed after each, and known limits.
 - [`evals/author-test-log.md`](evals/author-test-log.md): authoring tests, what
   changed after them, and known limits.
+- [`evals/migrate-test-log.md`](evals/migrate-test-log.md): replays of real
+  CS 357 and TAM 212 term copies, three instructor-style migration runs, and
+  fixes.
+- [`evals/case-studies/`](evals/case-studies/): evidence behind the deck's three
+  case studies.
+- [`presentations/course-agent-skills/`](presentations/course-agent-skills/):
+  source for the "Course agent skills" deck.

@@ -1,0 +1,19 @@
+141 dates in . (years: 2024, 2025)
+
+7 dates outside ZJUI Spring 2025 (more than 10 weeks before or after it):
+  QTEST: 2024-05-17
+  quiz01p: 2024-09-09
+  quiz02p: 2024-09-23
+  quiz03p: 2024-10-07
+  quiz04p: 2024-10-21
+  quiz05p: 2024-11-04
+  quiz06p: 2024-11-18
+
+2 dates on a holiday, in a break, or between instruction and finals:
+  DS6 allowAccess[0].endDate 2025-05-31T23:59:59 (lands on Dragon Boat Festival)
+  DS6 allowAccess[1].endDate 2025-05-31T23:59:59 (lands on Dragon Boat Festival)
+
+26 other term-specific items:
+  course instance UUID (a copy in the same course needs a new one) (1): infoCourseInstance.json
+  name: 'ZJUI Spring 2026' (1): infoCourseInstance.json
+  legacy rule for specific UIDs (24): DS0, DS6, QTEST, final_practice, hw01a, hw01b, hw02a, hw02b, hw03a, hw03b, hw04a, hw04b, ... (12 more)

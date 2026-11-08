@@ -1,0 +1,14 @@
+{
+  "term": "ZJUI Spring 2026",
+  "institution": "ZJU-UIUC Institute (Zhejiang University International Campus, Haining)",
+  "source": "https://www.intl.zju.edu.cn/en/academics/calendar (2025-2026 Spring-Summer calendar PDF for weeks 3-16; 2025-2026 Fall-Winter calendar PDF for 'Jan. 12 Instruction Begins' and 'Jan. 26 Winter Vacation Begins')",
+  "instructionBegins": "2026-01-12",
+  "instructionEnds": "2026-05-22",
+  "holidays": [
+    { "name": "Tomb-Sweeping Day", "date": "2026-04-05" },
+    { "name": "Labor Day", "date": "2026-05-01" },
+    { "name": "Labor Day", "date": "2026-05-02" }
+  ],
+  "breaks": [{ "name": "Winter vacation (Spring Festival)", "start": "2026-01-26", "end": "2026-03-01" }],
+  "finals": { "start": "2026-05-23", "end": "2026-06-03" }
+}
