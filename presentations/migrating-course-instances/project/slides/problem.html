@@ -1,0 +1,20 @@
+<section id="problem" style="background:#FAFAF8;color:#1F2A44;font-family:Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:48px">
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#14213D">Problem</h2>
+<p style="font-size:44px;line-height:1.3;color:#14213D">Copying a course instance gives it a new term, but every assessment keeps last term’s dates.</p>
+<div style="display:grid;gap:32px;grid-template-columns:1fr 1fr 1fr">
+<div style="display:flex;flex-direction:column;gap:16px;padding:40px;background:#FFFFFF;border:1px solid #E1E4EA;border-radius:16px">
+<p style="font-size:88px;font-weight:700;line-height:1;color:#2F6FDE">468</p>
+<p style="font-size:28px;line-height:1.4;color:#4A5568">dates to move each term in CS 357</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px;padding:40px;background:#FFFFFF;border:1px solid #E1E4EA;border-radius:16px">
+<p style="font-size:88px;font-weight:700;line-height:1;color:#C2410C">39</p>
+<p style="font-size:28px;line-height:1.4;color:#4A5568">dates left from earlier terms, TAM 212 Fall 2025</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px;padding:40px;background:#FFFFFF;border:1px solid #E1E4EA;border-radius:16px">
+<p style="font-size:88px;font-weight:700;line-height:1;color:#C2410C">7</p>
+<p style="font-size:28px;line-height:1.4;color:#4A5568">assessments closed all term, TAM 212 Fall 2026</p>
+</div>
+</div>
+<p style="font-size:28px;color:#4A5568">PrairieLearn’s copy sets the new publishing dates. Releases and deadlines are left to the instructor.</p>
+<aside>468 is the number of date strings in CS 357’s Spring 2026 course instance files (100 assessments). PrairieLearn’s “Make a copy of this course instance” asks for publishing dates and migrates access-control format, but does not move any assessment date (checked in the source: CourseInstanceCopyEditor). The 39 and the 7 come from scanning the real course repositories.</aside>
+</section>

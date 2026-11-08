@@ -1,0 +1,36 @@
+{
+  "v": 4,
+  "createdOnFiles": { "v": 1, "at": "2026-11-08T03:30:00Z" },
+  "lists": "css",
+  "title": "Migrating course instances",
+  "cover": "cover",
+  "order": [
+    "cover",
+    "outline",
+    "problem",
+    "example",
+    "solution",
+    "rule",
+    "evidence",
+    "cs1-plan",
+    "cs1-result",
+    "cs2-plan",
+    "cs2-result",
+    "cs3-plan",
+    "cs3-result",
+    "fixes",
+    "next"
+  ],
+  "sections": {
+    "s0": { "description": "Title and outline", "start": "cover" },
+    "s1": { "description": "Problem: copying a course instance leaves every assessment date behind", "start": "problem" },
+    "s2": { "description": "Example: real dates that were never moved", "start": "example" },
+    "s3": { "description": "Solution: one skill that maps dates onto the new term's calendar", "start": "solution" },
+    "s4": { "description": "Case study 1: CS 357, Fall 2026 to Spring 2027", "start": "cs1-plan" },
+    "s5": { "description": "Case study 2: TAM 212, Spring 2026 to Fall 2026", "start": "cs2-plan" },
+    "s6": { "description": "Case study 3: TAM 212 at ZJUI, Spring 2025 to Spring 2026", "start": "cs3-plan" },
+    "s7": { "description": "What testing fixed, and next steps", "start": "fixes" }
+  },
+  "faces": {},
+  "designSystems": []
+}
