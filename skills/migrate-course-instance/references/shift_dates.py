@@ -5,6 +5,7 @@
     shift_dates.py plan  COURSE_INSTANCE_DIR --from FROM.json --to TO.json [--csv PLAN.csv]
     shift_dates.py apply COURSE_INSTANCE_DIR --plan PLAN.csv
     shift_dates.py strip COURSE_INSTANCE_DIR
+    shift_dates.py report COURSE_INSTANCE_DIR --plan PLAN.csv --from FROM.json --to TO.json [--md OUT.md]
 
 `scan` lists every date and everything else that belongs to one term: UID
 rules, per-student overrides, PrairieTest exams, term-named questions, dates
@@ -460,8 +461,8 @@ def cmd_plan(args):
                 r[5] = "; ".join(x for x in [r[5], *msgs] if x)
     out = open(args.csv, "w", newline="") if args.csv else sys.stdout
     w = csv.writer(out)
-    w.writerow(["file", "path", "old", "new", "position in source term", "flags"])
-    w.writerows(rows)
+    w.writerow(["file", "path", "old", "new", "position in source term", "flags", "reason"])
+    w.writerows(r + [""] for r in rows)
     if args.csv:
         out.close()
         flagged = [r for r in rows if r[5]]
@@ -578,6 +579,194 @@ def cmd_strip(args):
         print("  " + n)
 
 
+def date_roles(data):
+    """Map date paths to what they mean for students: release, due, late, closes."""
+    roles = {}
+    ac = data.get("accessControl") or []
+    if ac:
+        dc = ac[0].get("dateControl") or {}
+        if (dc.get("release") or {}).get("date"):
+            roles["accessControl[0].dateControl.release.date"] = ("release", None)
+        if (dc.get("due") or {}).get("date"):
+            roles["accessControl[0].dateControl.due.date"] = ("due", None)
+        for kind in ("earlyDeadlines", "lateDeadlines"):
+            for i, x in enumerate(dc.get(kind) or []):
+                roles[f"accessControl[0].dateControl.{kind}[{i}].date"] = ("late" if kind == "lateDeadlines" else "early", x.get("credit"))
+        return roles
+    rules = [(i, r) for i, r in enumerate(data.get("allowAccess") or []) if not r.get("uids")]
+    starts = [(r["startDate"], f"allowAccess[{i}].startDate") for i, r in rules if r.get("startDate")]
+    if starts:
+        roles[min(starts)[1]] = ("release", None)
+    full = [(r["endDate"], f"allowAccess[{i}].endDate") for i, r in rules if r.get("endDate") and r.get("credit", 0) >= 100]
+    if full:
+        roles[min(full)[1]] = ("due", None)
+    for i, r in rules:
+        if r.get("endDate") and 0 < r.get("credit", 0) < 100:
+            roles[f"allowAccess[{i}].endDate"] = ("late", r["credit"])
+    zero = [(r["endDate"], f"allowAccess[{i}].endDate") for i, r in rules if r.get("endDate") and not r.get("credit")]
+    if zero:
+        roles[max(zero)[1]] = ("closes", None)
+    return roles
+
+
+def fmt(s, with_time=True):
+    t = stamp(s)
+    out = f"{WEEKDAYS[t.weekday()]}, {t:%b} {t.day}"
+    return out + (f", {t:%H:%M}" if with_time else "")
+
+
+def week_label(cal, s):
+    loc = cal.locate(day(s))
+    return f"w{loc[1] + 1}" if loc[0] == "week" else cal.describe(loc)
+
+
+DAY_NAMES = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+KIND_WORDS = {"release": "Release", "due": "Due date", "closes": "Closing date", "late": "Late deadline", "early": "Early deadline"}
+
+
+def breaks_between(cal, a, b):
+    return sorted({name for s, e, name in cal.breaks if s <= day(b) and e >= day(a)})
+
+
+def calendar_events(cal):
+    """Breaks, holidays and finals, as (start, end, name), in date order."""
+    ev = [(s, e, n) for s, e, n in cal.breaks]
+    ev += [(d, d, n) for d, n in cal.holidays.items() if not cal.in_break(d)]
+    if cal.finals:
+        ev.append((cal.finals[0], cal.finals[1], "Finals"))
+    return sorted(ev)
+
+
+def event_row(ev, side):
+    s, e, name = ev
+    when = f"{WEEKDAYS[s.weekday()]}, {s:%b} {s.day}" + ("" if s == e else f" – {WEEKDAYS[e.weekday()]}, {e:%b} {e.day}")
+    cells = [f"*{when}*", "", "", ""] if side == "old" else ["", "", f"*{when}*", ""]
+    return f"| *{name}* | | " + " | ".join(cells) + " | |"
+
+
+def cmd_report(args):
+    src, dst = Calendar(args.from_), Calendar(args.to)
+    plan = defaultdict(dict)
+    for r in csv.DictReader(open(args.plan, newline="")):
+        plan[r["file"]][r["path"]] = r
+    rows, undated, label_counts, late_count = [], [], defaultdict(int), [0]
+    for rel, path in json_files(args.ci):
+        data = json.loads(read_text(path))
+        if rel == "infoCourseInstance.json":
+            continue
+        roles = {p: v for p, v in date_roles(data).items() if p in plan.get(rel, {})}
+        if not roles:
+            undated.append(data.get("title") or short(rel))
+            continue
+        get = lambda role: next((plan[rel][p] for p, (k, _) in roles.items() if k == role), None)
+        rel_r, due_r, close_r = get("release"), get("due"), get("closes")
+        notes = []
+        for p, (kind, _) in roles.items():
+            r = plan[rel][p]
+            what = KIND_WORDS[kind]
+            reason = (r.get("reason") or "").strip()
+            o, n = stamp(r["old"]), stamp(r["new"])
+            if src.stale(o.date()):
+                notes.append(f"{what} was left over from {o.year}" + (f": {reason}" if reason else ""))
+                continue
+            loc = src.locate(o.date())
+            if loc[0] == "break":
+                notes.append(f"{what} fell in {src.in_break(o.date()).lower()}")
+            mapped, _ = dst.place(loc)
+            diffs = []
+            if n.weekday() != o.weekday():
+                diffs.append(f"{DAY_NAMES[n.weekday()]} instead of {DAY_NAMES[o.weekday()]}")
+            if n.time() != o.time():
+                diffs.append(f"{n:%H:%M} instead of {o:%H:%M}")
+            by_hand = mapped is not None and n.date() != mapped
+            if diffs or by_hand:
+                text = f"{what} " + (", ".join(diffs) if diffs else "moved by hand")
+                if reason:
+                    text += f": {reason}"
+                elif by_hand:
+                    text += f" (calendar rule gave {fmt(mapped.isoformat() + r['old'][10:], False)})"
+                notes.append(text)
+            elif reason:
+                notes.append(f"{what}: {reason}")
+            if n.date() in dst.holidays:
+                notes.append(f"{what} now on {dst.holidays[n.date()]}")
+            if dst.in_break(n.date()):
+                notes.append(f"{what} now in {dst.in_break(n.date()).lower()}")
+            if dst.end and dst.end < n.date() and (not dst.finals or n.date() < dst.finals[0]):
+                notes.append(f"{what} now between the last class and finals")
+        if rel_r and due_r:
+            ob, nb = breaks_between(src, rel_r["old"], due_r["old"]), breaks_between(dst, rel_r["new"], due_r["new"])
+            od = (stamp(due_r["old"]) - stamp(rel_r["old"])).days
+            nd_ = (stamp(due_r["new"]) - stamp(rel_r["new"])).days
+            if od != nd_:
+                gained = [b.lower() for b in nb if b not in ob]
+                lost = [b.lower() for b in ob if b not in nb]
+                if gained:
+                    notes.append(f"Now spans {', '.join(gained)}: open {nd_} days, was {od}")
+                elif lost:
+                    notes.append(f"No longer spans {', '.join(lost)}: open {nd_} days, was {od}")
+                else:
+                    notes.append(f"Open {nd_} days, was {od}")
+        labels = [r for r in (data.get("accessControl") or [])[1:] if "labels" in r]
+        for lab in {l for r in labels for l in r["labels"]}:
+            label_counts[lab] += 1
+        late_count[0] += sum(1 for k, _ in roles.values() if k in ("late", "early"))
+        rows.append({
+            "set": " ".join(f"{data.get('set', '')} {data.get('number', '')}".split()),
+            "title": data.get("title") or short(rel), "tid": short(rel),
+            "rel": rel_r, "due": due_r or close_r, "due_kind": "due" if due_r else "closes",
+            "notes": list(dict.fromkeys(notes)),
+        })
+    rows.sort(key=lambda x: (stamp((x["rel"] or x["due"])["new"]), x["set"]))
+    out = [f"# {src.term} → {dst.term}: where each assessment moved", ""]
+    for cal in (src, dst):
+        brk = "; ".join(f"{n} {s:%b %d}–{e:%b %d}" for s, e, n in cal.breaks) or "none"
+        out.append(f"- **{cal.term}:** instruction {cal.begin:%b %d} – {cal.end:%b %d}" if cal.end else f"- **{cal.term}:** instruction from {cal.begin:%b %d}")
+        out[-1] += f"; breaks: {brk}" + (f"; finals {cal.finals[0]:%b %d}–{cal.finals[1]:%b %d}" if cal.finals else "")
+    ci_plan = plan.get("infoCourseInstance.json", {})
+    pub = [ci_plan.get(f"publishing.{k}") for k in ("startDate", "endDate")]
+    if all(pub):
+        out.append(f"- **Course instance open:** {fmt(pub[0]['old'], False)} – {fmt(pub[1]['old'], False)} → {fmt(pub[0]['new'], False)} – {fmt(pub[1]['new'], False)}")
+    out += ["", "| Assessment | ID | Current release | Current due | New release | New due | Notes |",
+            "| --- | --- | --- | --- | --- | --- | --- |"]
+    key_old = lambda x: stamp((x["rel"] or x["due"])["old"]).date()
+    key_new = lambda x: stamp((x["rel"] or x["due"])["new"]).date()
+    old_events, new_events = calendar_events(src), calendar_events(dst)
+    for i, x in enumerate(rows):
+        stale_row = src.stale(key_old(x))
+        for ev in [e for e in old_events if not stale_row and e[0] <= key_old(x)]:
+            out.append(event_row(ev, "old"))
+            old_events.remove(ev)
+        for ev in [e for e in new_events if e[0] <= key_new(x)]:
+            out.append(event_row(ev, "new"))
+            new_events.remove(ev)
+        r, d = x["rel"], x["due"]
+        closes = " (closes)" if d and x["due_kind"] == "closes" else ""
+        cells = [
+            fmt(r["old"]) if r else "–", (fmt(d["old"]) + closes) if d else "–",
+            fmt(r["new"]) if r else "–", (fmt(d["new"]) + closes) if d else "–",
+        ]
+        out.append(f"| {x['title']} | `{x['tid']}` | " + " | ".join(cells) + f" | {'. '.join(x['notes'])} |")
+    for ev in sorted(old_events):
+        out.append(event_row(ev, "old"))
+    for ev in sorted(new_events):
+        out.append(event_row(ev, "new"))
+    if undated:
+        out += ["", f"**No dates in PrairieLearn ({len(undated)}):** " + ", ".join(sorted(undated))]
+    noted = sum(1 for x in rows if x["notes"])
+    out += ["", f"{len(rows)} assessments with dates, {noted} with notes."]
+    if late_count[0]:
+        out.append(f"Late and early deadlines ({late_count[0]}) moved by the same rule.")
+    for lab, n in sorted(label_counts.items()):
+        out.append(f"Overrides for the \"{lab}\" student label ({n} assessments) moved with their assessments.")
+    text = "\n".join(out) + "\n"
+    if args.md:
+        write_text(args.md, text)
+        print(f"Wrote {args.md}: {len(rows)} assessments, {noted} with notes")
+    else:
+        print(text)
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -594,8 +783,14 @@ def main():
     a.add_argument("--plan", required=True)
     t = sub.add_parser("strip")
     t.add_argument("ci")
+    r = sub.add_parser("report", help="table of where each assessment moved, for the review")
+    r.add_argument("ci")
+    r.add_argument("--plan", required=True)
+    r.add_argument("--from", dest="from_", required=True)
+    r.add_argument("--to", required=True)
+    r.add_argument("--md", help="write the table to this Markdown file")
     args = ap.parse_args()
-    {"scan": cmd_scan, "plan": cmd_plan, "apply": cmd_apply, "strip": cmd_strip}[args.cmd](args)
+    {"scan": cmd_scan, "plan": cmd_plan, "apply": cmd_apply, "strip": cmd_strip, "report": cmd_report}[args.cmd](args)
 
 
 if __name__ == "__main__":

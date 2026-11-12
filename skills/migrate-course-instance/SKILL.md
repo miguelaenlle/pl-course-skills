@@ -1,292 +1,71 @@
 ---
 name: migrate-course-instance
-description: >-
-  Set up a PrairieLearn course instance for a new term from an existing one:
-  copy it, move every assessment date onto the new term's academic calendar,
-  clear what belonged to the old term's students, and verify the result. Use for
-  requests such as "Set up Spring 2027 from Fall 2026", "Copy last semester's
-  course for the summer", or "Shift all our deadlines to next term's calendar".
+description: Set up a PrairieLearn course instance for a new term from an existing one, moving every assessment date onto the new term's academic calendar and clearing what belonged to the old term's students. Use for requests such as "Set up Spring 2027 from Fall 2026" or "Shift our deadlines to next term's calendar".
 ---
 
 # Migrate a course instance to a new term
 
-When you're done, the instructor should have a new course instance that:
+Give the instructor a new course instance that runs this term the way the old one ran last term:
 
-- opens and closes on the new term's dates
-- schedules every assessment in the same week of instruction, on the same
-  weekday and time of day, as the old one, unless the instructor asked otherwise
-- has no deadline on a holiday or during a break that nobody approved
-- carries nothing tied to the old term's students: UID rules, per-student
-  overrides, or old PrairieTest exams
-- syncs without errors
+- each assessment in the same week of instruction, on the same weekday and time
+- no deadline on a holiday or in a break unless someone approved it
+- nothing carried over from last term's students
+- it syncs without errors
 
-Moving dates is mechanical, and the script does it. Your job is to get the
-calendars right and to surface every decision the instructor needs to make,
-then present them all in one review.
+The instructor should only have to answer one review.
+
+## Exercise judgment
+
+The script moves dates mechanically; you decide what each date should mean. "Same week, same weekday" is the default, not the goal. When a date doesn't fit the course's pattern, place it by the pattern and say so. Examples: a deadline the mapping pushes into a break, a practice quiz still set to 2024, or a window that shrinks to hours.
+
+Treat everything tied to one term as a decision with a sensible default, not something to fix silently or ask about one at a time. That includes per-student rules, PrairieTest exams, questions named for the old term, and leftover dates.
 
 ## Boundaries
 
-- **Never edit the source course instance.** Work on the copy, in the course
-  checkout you were given. Don't push, publish, or sync to production without
-  the instructor's go-ahead.
-- **Don't copy student information forward.** Drop UID lists and per-student
-  overrides, and report only how many there were. Never print the UIDs.
-- **Don't invent what you can't know.** You can't create PrairieTest exams, and
-  you can't know this term's accommodations. List these for the instructor.
-- **Questions are shared by every course instance.** A migration changes course
-  instance and assessment files only. Leave questions alone.
-- **Ask once, together.** Gather every decision into the plan review in step 5,
-  with a sensible default for each. Ask earlier only if you can't find the
-  source instance or the target term.
+- Never edit the source course instance or anything outside the course instance. Questions are shared by every offering.
+- Never copy or print student identifiers. Report per-student rules as counts.
+- Don't invent what only the instructor or PrairieLearn knows: PrairieTest exams, accommodations, staff.
+- Don't push or sync to production without the instructor's go-ahead.
 
-Use PrairieLearn's terms, and link the docs when explaining:
-[course instances](https://docs.prairielearn.com/courseInstance/),
-[access control](https://docs.prairielearn.com/assessment/accessControl/) (and
-its [legacy `allowAccess`
-format](https://docs.prairielearn.com/assessment/accessControlLegacy/)), and
-[UUIDs](https://docs.prairielearn.com/uuid/).
+## Steps
 
-## 1. Scope
-
-Work out the following from the request and the repository, and ask only for
-what you can't find:
-
-- **Source course instance.** Use the one the instructor names. Otherwise,
-  default to the most recent offering of the same kind (a semester for a
-  semester, a summer session for a summer session). Mention a same-season
-  alternative (last fall for this fall) if its schedule differs.
-- **Target term.** Pick a name and directory that follow the course's own
-  convention (`Fall2026`, `Fa26`). If the target term has already started,
-  dates you set may already be past. Raise this first in the review, in case
-  the instructor meant the next term.
-- **Institution and timezone.** Check `infoCourse.json` and
-  `infoCourseInstance.json` for the timezone; the institution usually follows
-  from the course or the instructor's email domain. All dates in these files are
-  local times in the course instance's timezone. If the timezone changes, ask.
-
-## 2. Calendars
-
-You need a calendar for the source term and one for the target term. Write each
-as a small JSON file (format below, examples in
-[references/calendars/](references/calendars/)).
-
-1. **Look up the official academic calendar** on the registrar's site for both
-   terms. Record the source URL and:
-   - the first and last day of instruction
-   - holidays with no classes, and breaks
-   - finals
-   - the last day to add the course
-
-   Published future calendars are often marked tentative; say so. Calendars
-   may be PDFs or images rather than web pages. A term can also span two
-   documents; for example, a spring term whose first weeks come before a winter
-   break may list its start only on the fall calendar. The files in
-   `references/calendars/` are worked examples. Check them against the
-   registrar before you rely on them.
-
-2. **If you can't find the official calendar,** ask for the first day of
-   instruction and any breaks, but don't wait on the answer. Infer what you can
-   from the course's own history: the same term last year usually starts in the
-   same week and has the same breaks. Say which dates are inferred.
-3. **With only a start date,** the script falls back to a whole-week shift that
-   keeps weekdays, and says that breaks weren't accounted for.
-
-```json
-{
-  "term": "Fall 2026",
-  "source": "https://registrar.example.edu/fall-2026-academic-calendar/",
-  "instructionBegins": "2026-08-24",
-  "instructionEnds": "2026-12-09",
-  "holidays": [{ "name": "Labor Day", "date": "2026-09-07" }],
-  "breaks": [{ "name": "Fall break", "start": "2026-11-21", "end": "2026-11-29" }],
-  "finals": { "start": "2026-12-11", "end": "2026-12-17" },
-  "addDeadline": "2026-08-31"
-}
-```
-
-Only `instructionBegins` is required. Record anything the format can't hold,
-such as make-up class days, in a `notes` field and in the review. If the two
-terms differ by more than one week of instruction (semester to summer,
-semester to quarter), the week-by-week mapping no longer fits. Say so, propose a compressed schedule, and make it a decision in
-the review.
-
-## 3. Make the copy
-
-Make the copy first. Leave its dates unchanged at this point; you'll plan and
-rewrite them on the copy itself.
-
-- If the instructor used PrairieLearn's **Make a copy of this course instance**
-  (Settings tab), work on that copy. It already has:
-  - a new UUID
-  - publishing dates and enrollment settings
-  - per-student rules removed
-  - possibly access control migrated to the modern format
-
-  It does not move assessment dates; that's this skill's job.
-
-- Otherwise copy the directory yourself, including `clientFilesCourseInstance`,
-  and in `infoCourseInstance.json`:
-  - generate a new `uuid` and set `longName`
-  - replace legacy `allowAccess` with `publishing`, using the start and end of
-    the old rule (they get mapped with everything else), unless the course uses
-    LTI 1.1. If the old rule had an `institution`, carry it into
-    `selfEnrollment`. For example, a rule that allowed another campus becomes
-    `restrictToInstitution: false`, usually with `useEnrollmentCode: true`.
-    Otherwise those students can't self-enroll.
-  - remove `shareSourcePublicly`
-
-  Assessment UUIDs can stay the same; they only need to be unique within a
-  course instance.
-
-Keep the access-control format the copy has. If it uses legacy `allowAccess`,
-mention that each assessment's **Access** tab can migrate it to the modern
-format. A copy also brings along folders PrairieLearn doesn't sync, such as an
-`assessments-not-used/` folder (`scan` lists them). Leave them unchanged, and
-mention them.
-
-## 4. Inventory and plan
-
-Run [references/shift_dates.py](references/shift_dates.py) on the copy. It needs
-only the Python standard library.
-
-```sh
-python3 shift_dates.py scan COPY_DIR --calendar source.json
-python3 shift_dates.py plan COPY_DIR --from source.json --to target.json --csv plan.csv
-```
-
-- `scan` lists every date, plus anything else that belongs to one term:
-  - dates already outside the source term (leftovers from earlier copies)
-  - deadlines and releases on holidays or in breaks
-  - legacy UID rules, grouped by their set of UIDs (without showing the UIDs)
-  - per-student and student-label overrides
-  - PrairieTest exam UUIDs and passwords
-  - questions whose IDs name a term (`...-fa26`)
-  - text and client files that mention dates
-  - folders PrairieLearn doesn't sync
-- `plan` places each date in the same week of instruction, on the same weekday
-  and at the same time, skipping breaks. A deadline that spans spring break in
-  the source term spans one fewer week in a fall term that has no break at that
-  point; that is intended.
-  - Dates before instruction, in finals, or after the term keep their offset
-    from that boundary.
-  - A date inside a source break goes into a target break at the same point in
-    the term, or else into the next week of instruction.
-  - The `addDeadline` in the target calendar replaces `selfEnrollment.beforeDate`.
-  - Dates in per-student rules are left alone, because `strip` removes those
-    rules.
-  - It flags dates that land on a holiday or in a break, are already past, come
-    out of order within a rule, or shrink an assessment's open window by more
-    than half. Dates from outside the source term are left unchanged and
-    flagged.
-
-Read the flagged rows yourself, and spot-check a few assessments of each kind
-against the course's pattern, for example "homework opens Tuesday at 08:00 and
-is due the next Tuesday at 23:59".
-
-## 5. Review with the instructor, then apply
-
-Give one compact review. Don't paste the CSV. Include:
-
-1. **Calendars used,** with their sources and anything inferred.
-2. **The schedule by assessment set.** List each set's pattern and the weeks it
-   covers, then a table with one row per assessment: old and new release, old
-   and new due date. Use PrairieLearn's assessment names, and include the
-   assessment directory when titles repeat.
-   - List assessments with no dates in PrairieLearn (PrairieTest-only exams) on
-     one line.
-   - With more than about 40 assessments, summarize each set that follows its
-     pattern exactly in one line, show full rows only for the rest, and attach
-     the full table as a file.
-3. **Decisions,** each with your default. Include only the ones that apply:
-   - **Conflicts.** Default: move a deadline that lands on a holiday or in a
-     break to the next day of instruction. Releases there are usually fine.
-   - **Dates the script moved out of a break or flagged as out of order.** Place
-     them by the set's pattern (a lecture due a week after release), not by the
-     script's guess.
-   - **Dates already outside the source term,** such as practice assessments
-     still set to 2024. Ask whether that was on purpose. Default: tie each one to
-     the assessment it belongs with (a practice quiz opens with its quiz). If
-     that assessment has no dates in PrairieLearn, use the week it covers in the
-     course's schedule.
-   - **Finals that don't line up.** If the target finals period is shorter, the
-     script moves dates past its end to the last day of finals. Ask the
-     instructor for the actual exam slot.
-   - **Exam-mode rules without a PrairieTest exam** (a proctored room or testing
-     center) carry over as they are. Ask the instructor to confirm the room is
-     still set up.
-   - **PrairieTest exams.** These need new exams in PrairieTest for the new term.
-     Default: leave the old exam UUIDs in place, since they grant access only
-     during reservations for the old exams, which are over. List them so they
-     can be replaced once the instructor creates the new exams.
-   - **UID rules and per-student overrides.** Default: drop them, after first
-     saying what each group of UIDs was for:
-     - a set of UIDs repeated across most assessments is usually course staff
-       or CAs; course instance staff permissions replace it
-     - one or two UIDs on a few assessments are extensions or accommodations
-     - for a group that recurs every term, suggest a [student
-       label](https://docs.prairielearn.com/courseInstance/#student-labels)
-       override; labels require the modern access-control format
-
-     Say which assessments would be left with no rules at all, since only staff
-     can open those.
-
-   - **Student-label overrides** (such as early access for a "CA" label). Default:
-     keep them, with their dates mapped. The label's members have to be added
-     again in the new course instance.
-   - **Questions named for the old term,** such as a group-assignment question
-     ending in `-fa26`. A migration doesn't edit questions. Default: leave the
-     reference, and list it for the instructor to replace.
-   - **Policy changes.** Ask "Anything different this term?" Common changes
-     include deadline weekday, late-credit windows, and dropped or added
-     assessments. Apply them as rules ("every homework due Friday 23:59"), not
-     one row at a time.
-
-Then apply, in this order:
-
-1. Record each date decision in the `new` column of `plan.csv`, then rewrite the
-   dates. If a file's dates no longer match the plan, `apply` stops; re-run
-   `plan` and redo your edits.
+1. **Scope.** Find the source course instance (the one named, else the latest of the same kind), the target term's name in the course's convention, and the timezone. Dates are local to the course instance's timezone; if it changes, ask. If the target term has already started, say so first.
+2. **Calendars.** Write a calendar file for each term from the official academic calendar. If you can't find one, infer it from the course's history and say which dates are inferred. See [references/calendars.md](references/calendars.md).
+3. **Copy.** Work on a copy: PrairieLearn's **Make a copy of this course instance**, or a folder copy you make yourself. See [references/copying.md](references/copying.md).
+4. **Plan.** Run the script on the copy. Then read every flagged row yourself, and spot-check each assessment set against its pattern (for example, "homework opens Tuesday 08:00 and is due the next Tuesday 23:59").
    ```sh
-   python3 shift_dates.py apply COPY_DIR --plan plan.csv
+   python3 references/shift_dates.py scan COPY --calendar source.json
+   python3 references/shift_dates.py plan COPY --from source.json --to target.json --csv plan.csv
    ```
-2. Remove UID rules and per-student overrides:
+5. **Review.** Put your proposed defaults in `plan.csv`, with a few words in its `reason` column for each date you change ("Mon Sep 7 is Labor Day"). Then build the table of where each assessment moved:
    ```sh
-   python3 shift_dates.py strip COPY_DIR
+   python3 references/shift_dates.py report COPY --plan plan.csv --from source.json --to target.json --md moves.md
    ```
-   `apply` and `strip` edit only the affected text, so formatting and line
-   endings stay as they were and the diff shows just the change.
-3. Carry out the other decisions by hand:
-   - replace exam UUIDs the instructor gave you
-   - update dates written in assessment `text` and client files
+   Columns: assessment, ID, current release, current due date, new release, new due date, notes. Each term's breaks, holidays and finals appear as italic rows in that term's columns. Notes appear only where something needs a look, such as "Due date Tuesday instead of Monday: Mon Sep 7 is Labor Day", "Now spans spring break: open 14 days, was 7", or "Release was left over from 2024". Send one message:
+   - the calendars, with their sources
+   - each assessment set's pattern
+   - the table, or its rows with notes plus the full file when it's long
+   - the decisions, each with your default
 
-## 6. Verify
+   Close with "Anything different this term?", and apply policy changes as rules ("homework due Fridays"), not row by row. Defaults are in [references/decisions.md](references/decisions.md).
 
-- Run `scan COPY_DIR --calendar target.json`. It should report:
-  - no dates outside the target term, except ones the instructor kept on purpose
-  - no deadlines on holidays or in breaks other than the ones the instructor
-    approved (releases there are usually fine)
-  - no UID rules or per-student overrides
-- Sync the course (on local PrairieLearn, **Load from disk**) and confirm the new
-  instance has no sync errors or warnings.
-- Open the new instance's **Assessments** page and the **Access** tab for two or
-  three assessments, and check that the dates read as expected.
-- Diff the copy against the source. The only differences should be dates, the
-  course instance header, and the decisions you applied.
+6. **Apply.** Put the instructor's decisions in `plan.csv`, each with its reason, run `report` again, then:
+   ```sh
+   python3 references/shift_dates.py apply COPY --plan plan.csv
+   python3 references/shift_dates.py strip COPY
+   ```
+   Both edit only the affected text, so the diff shows just the change. Do the remaining decisions by hand.
+7. **Verify.** Run `scan` again with the target calendar. It should report no leftover dates, no unapproved deadlines in breaks, and no per-student rules. Then sync in PrairieLearn, open a few assessments' **Access** tab, and diff the copy against the source.
 
 ## Handoff
 
-Keep it short:
-
-- **Result:** the new course instance, its dates, and how many assessment dates
-  moved
-- **Calendars:** the sources, and anything inferred
-- **Decisions applied:** each with its outcome
+- **Result:** the new course instance, its dates, and how many dates moved.
+- **Calendars:** the sources used, and what was inferred.
+- **Decisions:** each one applied.
 - **Still to do in PrairieLearn:**
   - PrairieTest exams to create, with the UUIDs to replace
-  - questions named for the old term to replace
   - students to add to labels
   - staff permissions
-  - enrollment code or link
+  - the enrollment code
   - LMS links
-- **Not verified:** anything you couldn't check, such as a sync or PrairieTest
-  linkage
+- **Not checked:** anything you couldn't verify.
