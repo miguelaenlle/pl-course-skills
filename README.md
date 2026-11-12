@@ -30,6 +30,25 @@ frontmatter, usable by Claude Code and Codex.
   assessment locally. Copied unchanged from the course-agent worktree
   (`apps/course-agent/skills/improve-assessment`) as the starting point.
 
+## Workflow: build the next version of an assessment
+
+How the skills chain when an instructor says "Build a new Quiz 6 from past
+quizzes":
+
+1. **Diagnose** (`diagnose-assessment-issues`). The report covers past results
+   for every question, grouped by slot so alternatives sit side by side.
+2. **Decide.** The instructor sets the goals for the new version: what to keep,
+   targets, and allowed methods.
+3. **Find starting points and propose** (`author-questions`, step 1). Compare
+   existing questions in a table, then write a spec for each new question,
+   with a side-by-side table for alternatives. The instructor says yes or
+   adjusts.
+4. **Build one, review, then match** (`author-questions`, steps 3–4). Build the
+   first alternative, verify it in PrairieLearn, show it, then build the
+   matched one. Wording fixes go to every alternative.
+5. **Hand off** with the branch, how to preview locally, and the targets to
+   measure next term.
+
 ## Docs
 
 - [`docs/assessment-skill-plan.md`](docs/assessment-skill-plan.md): what CS 357's
