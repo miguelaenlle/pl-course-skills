@@ -228,9 +228,13 @@ and anything that changes how to read them (structure changes, manual grading,
 retakes). Then what was included and excluded, in a few bullets.>
 
 ## Results at a glance
-<A summary table with one row per question in the main offering analyzed:
-number, QID, points, number of students, mean score, full credit, no submission,
-median minutes. Group alternatives together. Follow it with a chart
+<For the main offering analyzed, one table per zone, headed with the zone's
+points. Give each slot a bold row: its number, what it tests, its points, and
+its combined students, mean score, full credit and median minutes. Under it,
+one row per alternative starting with "↳": what it asks (bold the part that
+differs), its QID, and the same numbers, plus its mean minus the slot's mean.
+Bold any alternative 10 or more points from its slot. Below the tables, a
+sentence on which questions overlap. Follow with a chart
 (references/plot_questions.py draws one from the starting query's output).>
 
 ## Findings
