@@ -19,6 +19,12 @@ frontmatter, usable by Claude Code and Codex.
   academic calendar (by week of instruction, skipping breaks), clears UID rules
   and per-student overrides, flags conflicts and leftover dates, and verifies
   the result.
+- [`share-course-content`](skills/share-course-content/SKILL.md): share
+  questions, assessments, or course instances with specific courses or
+  publicly, stop sharing, or use another course's shared questions. It picks
+  the mechanism from who the content is for, checks that everything needed is
+  shared, and warns before anything irreversible or before publishing exam
+  content.
 - [`improve-assessment`](skills/improve-assessment/SKILL.md): investigate past
   results, prototype question changes with instructor feedback, then finalize an
   assessment locally. Copied unchanged from the course-agent worktree
@@ -38,6 +44,9 @@ frontmatter, usable by Claude Code and Codex.
 - [`evals/migrate-test-log.md`](evals/migrate-test-log.md): replays of real
   CS 357 and TAM 212 term copies, three instructor-style migration runs, and
   fixes.
+- [`evals/share-test-cases.md`](evals/share-test-cases.md) and
+  [`evals/share-test-log.md`](evals/share-test-log.md): sharing-skill test
+  cases (written before the skill) and their results.
 - [`evals/case-studies/`](evals/case-studies/): evidence behind the deck's three
   case studies.
 - [`presentations/course-agent-skills/`](presentations/course-agent-skills/):
