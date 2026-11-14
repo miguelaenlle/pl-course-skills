@@ -1,0 +1,6 @@
+{
+  "cs357-fa26": {"source": "Spring2026", "from": "uiuc-spring-2026.json", "to": "uiuc-fall-2026.json", "actual": "pl-cs357/courseInstances/Fall2026"},
+  "tam212-fa26": {"source": "Spring2026", "from": "uiuc-spring-2026.json", "to": "uiuc-fall-2026.json", "actual": "pl-tam212/courseInstances/Fall2026"},
+  "zjui-sp26": {"source": "ZJUI-Spring2025", "from": "zjui-spring-2025.json", "to": "zjui-spring-2026.json", "actual": "pl-tam212/courseInstances/ZJUI-Spring2026"},
+  "cs357-sp27": {"source": "Fall2026", "from": "uiuc-fall-2026.json", "to": "uiuc-spring-2027.json", "actual": null}
+}

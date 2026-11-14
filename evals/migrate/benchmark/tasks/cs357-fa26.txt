@@ -1,0 +1,1 @@
+Set up Fall 2026 from Spring 2026. I can't answer questions today, so tell me what you propose and then go ahead with your recommended defaults. Leave the changes in the working tree and I'll review the diff.

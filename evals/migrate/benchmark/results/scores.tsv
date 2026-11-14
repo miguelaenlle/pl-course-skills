@@ -1,0 +1,44 @@
+task	arm	rep	finished	instance	week	slot	pairs	conflict	stale	order	uid	outside	invalid	actual_near	actual_pairs	minutes	input	output	commands	searches	used_script
+cs357-fa26	docs	1	True	Fall2026	173	172	179	0	0	0	0	0	0	154	163	2.1	414772	6143	8	1	False
+cs357-fa26	docs	2	True	Fall2026	173	171	179	0	0	0	0	0	0	154	163	2.6	662399	7899	11	2	False
+cs357-fa26	docs	3	True	Fall2026	179	179	179	0	0	0	0	0	0	154	163	5.8	919764	17184	15	1	False
+cs357-fa26	full	1	True	Fall2026	179	179	179	0	0	0	0	0	0	154	163	4.5	1166428	12261	20	2	True
+cs357-fa26	full	2	True	Fall2026	178	179	179	0	0	0	0	0	0	153	163	5.0	1720518	14720	28	2	True
+cs357-fa26	full	3	True	Fall2026	178	179	179	0	0	0	0	0	0	153	163	6.0	1320337	18117	21	2	True
+cs357-fa26	instructor	1	True	Fall2026	158	151	163	1	0	0	0	0	0	170	170	0.0	0	0	0	0	False
+cs357-fa26	none	1	True	Fall2026	116	179	179	7	0	0	89	0	0	101	163	1.1	242203	2659	8	0	False
+cs357-fa26	none	2	True	Fall2026	116	179	179	7	0	0	89	0	0	101	163	2.9	721760	8038	15	0	False
+cs357-fa26	none	3	True	Fall2026	116	179	179	7	0	0	0	0	0	101	163	1.7	315076	4165	10	0	False
+cs357-fa26	script	1	True	Fall2026	179	179	179	0	0	0	0	0	0	154	163	0.0	0	0	0	0	False
+cs357-sp27	docs	1	True	Spring2027	167	169	169	0	0	0	0	0	0			2.3	640841	6256	13	2	False
+cs357-sp27	docs	2	True	Spring2027	167	169	169	0	0	0	0	0	0			5.8	871050	16380	16	2	False
+cs357-sp27	docs	3	True	Spring2027	167	169	169	0	0	0	0	0	0			4.2	504492	12666	8	2	False
+cs357-sp27	full	1	True	Spring2027	167	169	169	0	0	0	0	0	0			4.8	1277050	13661	25	2	True
+cs357-sp27	full	2	True	Spring2027	166	169	169	0	0	0	0	0	0			2.8	853022	7661	18	2	True
+cs357-sp27	full	3	True	Spring2027	166	169	169	0	0	0	0	0	0			2.1	784117	5559	17	2	True
+cs357-sp27	none	1	True	Spring2027	108	169	169	5	0	0	0	0	0			1.8	322489	4651	9	0	False
+cs357-sp27	none	2	True	Spring2027	87	0	169	19	0	0	0	0	0			0.7	149397	1722	6	0	False
+cs357-sp27	none	3	True	Spring2027	108	169	169	5	0	0	0	0	0			1.2	267624	2326	8	1	False
+cs357-sp27	script	1	True	Spring2027	167	169	169	0	0	0	0	0	0			0.0	0	0	0	0	False
+tam212-fa26	docs	1	True	Fall2026	53	53	55	0	0	0	0	0	0	29	66	6.0	681443	17959	14	2	False
+tam212-fa26	docs	2	True	Fall2026	5	35	55	0	0	0	0	0	0	19	66	2.3	613062	5441	10	4	False
+tam212-fa26	docs	3	True	Fall2026	54	53	55	0	0	0	0	0	0	29	66	7.8	794126	23343	11	2	False
+tam212-fa26	full	1	True	Fall2026	55	52	55	0	0	0	0	0	0	29	66	5.4	1228332	15564	26	2	True
+tam212-fa26	full	2	True	Fall2026	3	50	55	1	0	0	0	0	0	13	66	7.0	2174482	19781	26	6	True
+tam212-fa26	full	3	True	Fall2026	55	54	55	0	0	0	0	0	0	29	66	5.2	989523	15757	21	1	True
+tam212-fa26	instructor	1	True	Fall2026	28	52	53	1	14	0	0	0	0	66	66	0.0	0	0	0	0	False
+tam212-fa26	none	1	True	Fall2026	36	55	55	4	0	0	0	0	0	27	66	1.6	298625	3451	11	0	False
+tam212-fa26	none	2	True	Fall2026	27	0	55	4	12	0	48	0	0	22	66	1.1	226367	2406	8	0	False
+tam212-fa26	none	3	True	Fall2026	36	55	55	4	0	0	49	0	0	27	66	1.9	310328	4652	10	1	False
+tam212-fa26	script	1	True	Fall2026	55	55	55	1	12	0	0	0	0	41	66	0.0	0	0	0	0	False
+zjui-sp26	docs	1	True	ZJUI-Spring2026	2	20	22	0	0	0	0	0	0	1	42	10.1	1400079	30680	16	3	False
+zjui-sp26	docs	2	True	ZJUI-Spring2026	6	21	22	0	0	0	0	0	0	5	42	4.7	998196	13452	17	5	False
+zjui-sp26	docs	3	True	ZJUI-Spring2026	2	21	22	0	0	0	0	0	0	1	42	7.2	886245	21759	17	1	False
+zjui-sp26	full	1	True	ZJUI-Spring2026	2	21	22	0	0	0	0	0	0	1	42	10.2	2389439	31359	31	5	True
+zjui-sp26	full	2	True	ZJUI-Spring2026	2	19	22	0	0	0	0	0	0	1	42	10.9	1918632	32455	22	4	True
+zjui-sp26	full	3	True	ZJUI-Spring2027	0	20	22	0	0	0	0	0	0	0	42	13.8	2518351	40846	29	3	True
+zjui-sp26	instructor	1	True	ZJUI-Spring2026	19	6	22	3	34	0	24	0	0	62	62	0.0	0	0	0	0	False
+zjui-sp26	none	1	True	ZJUI-Spring2026	18	22	22	0	0	0	0	0	0	16	42	1.5	304581	3263	10	0	False
+zjui-sp26	none	2	True	ZJUI-Spring2026	18	22	22	0	0	0	0	0	0	16	42	1.8	394514	3791	11	0	False
+zjui-sp26	none	3	True	ZJUI-Spring2026	18	0	22	0	0	0	0	0	0	17	42	1.9	317360	4318	10	0	False
+zjui-sp26	script	1	True	ZJUI-Spring2026	22	21	22	0	13	0	0	0	0	29	42	0.0	0	0	0	0	False

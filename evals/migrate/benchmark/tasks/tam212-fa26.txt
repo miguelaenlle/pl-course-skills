@@ -1,0 +1,1 @@
+Can you get Fall 2026 ready? Base it on this spring. I can't answer questions today, so tell me what you propose and then go ahead with your recommended defaults. Leave the changes in the working tree and I'll review the diff.

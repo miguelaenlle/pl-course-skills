@@ -1,0 +1,10 @@
+{
+  "term": "Spring 2027",
+  "institution": "University of Illinois Urbana-Champaign",
+  "source": "https://registrar.illinois.edu/faculty-staff/calendars/academic-calendars/academic-calendars-archive/spring-academic-calendar-27/",
+  "instructionBegins": "2027-01-19",
+  "instructionEnds": "2027-05-05",
+  "holidays": [{ "name": "Martin Luther King Jr. Day", "date": "2027-01-18" }],
+  "breaks": [{ "name": "Spring break", "start": "2027-03-13", "end": "2027-03-21" }],
+  "finals": { "start": "2027-05-07", "end": "2027-05-13" }
+}

@@ -1,0 +1,14 @@
+{
+  "term": "ZJUI Spring 2025",
+  "institution": "ZJU-UIUC Institute (Zhejiang University International Campus, Haining)",
+  "source": "https://www.intl.zju.edu.cn/en/academics/calendar (2024-2025 Spring-Summer calendar PDF, 国际校区日历2024-2025学年 春夏)",
+  "instructionBegins": "2025-02-17",
+  "instructionEnds": "2025-05-23",
+  "holidays": [
+    { "name": "Tomb-Sweeping Day", "date": "2025-04-04" },
+    { "name": "Labor Day", "date": "2025-05-01" },
+    { "name": "Dragon Boat Festival", "date": "2025-05-31" }
+  ],
+  "breaks": [],
+  "finals": { "start": "2025-05-24", "end": "2025-06-06" }
+}

@@ -1,0 +1,1 @@
+Please set up our ZJUI Spring 2026 course from last year's ZJUI course. I can't answer questions today, so tell me what you propose and then go ahead with your recommended defaults. Leave the changes in the working tree and I'll review the diff.

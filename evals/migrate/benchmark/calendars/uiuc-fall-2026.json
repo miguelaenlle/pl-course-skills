@@ -1,0 +1,10 @@
+{
+  "term": "Fall 2026",
+  "institution": "University of Illinois Urbana-Champaign",
+  "source": "https://registrar.illinois.edu/fall-2026-academic-calendar/",
+  "instructionBegins": "2026-08-24",
+  "instructionEnds": "2026-12-09",
+  "holidays": [{ "name": "Labor Day", "date": "2026-09-07" }],
+  "breaks": [{ "name": "Fall break", "start": "2026-11-21", "end": "2026-11-29" }],
+  "finals": { "start": "2026-12-11", "end": "2026-12-17" }
+}
