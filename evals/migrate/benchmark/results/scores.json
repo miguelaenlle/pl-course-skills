@@ -24,7 +24,11 @@
   "order": 0,
   "conflict": 0,
   "actual_pairs": 163,
-  "actual_near": 154
+  "actual_near": 154,
+  "own": 5,
+  "lines": 46,
+  "script_calls": 0,
+  "tracebacks": 0
  },
  {
   "task": "cs357-fa26",
@@ -51,7 +55,11 @@
   "order": 0,
   "conflict": 0,
   "actual_pairs": 163,
-  "actual_near": 154
+  "actual_near": 154,
+  "own": 6,
+  "lines": 86,
+  "script_calls": 0,
+  "tracebacks": 0
  },
  {
   "task": "cs357-fa26",
@@ -78,11 +86,15 @@
   "order": 0,
   "conflict": 0,
   "actual_pairs": 163,
-  "actual_near": 154
+  "actual_near": 154,
+  "own": 13,
+  "lines": 366,
+  "script_calls": 0,
+  "tracebacks": 1
  },
  {
   "task": "cs357-fa26",
-  "arm": "full",
+  "arm": "full-py39",
   "rep": "1",
   "finished": true,
   "input": 1166428,
@@ -105,11 +117,15 @@
   "order": 0,
   "conflict": 0,
   "actual_pairs": 163,
-  "actual_near": 154
+  "actual_near": 154,
+  "own": 6,
+  "lines": 57,
+  "script_calls": 12,
+  "tracebacks": 2
  },
  {
   "task": "cs357-fa26",
-  "arm": "full",
+  "arm": "full-py39",
   "rep": "2",
   "finished": true,
   "input": 1720518,
@@ -132,11 +148,15 @@
   "order": 0,
   "conflict": 0,
   "actual_pairs": 163,
-  "actual_near": 153
+  "actual_near": 153,
+  "own": 8,
+  "lines": 76,
+  "script_calls": 2,
+  "tracebacks": 6
  },
  {
   "task": "cs357-fa26",
-  "arm": "full",
+  "arm": "full-py39",
   "rep": "3",
   "finished": true,
   "input": 1320337,
@@ -159,7 +179,104 @@
   "order": 0,
   "conflict": 0,
   "actual_pairs": 163,
-  "actual_near": 153
+  "actual_near": 153,
+  "own": 10,
+  "lines": 73,
+  "script_calls": 2,
+  "tracebacks": 4
+ },
+ {
+  "task": "cs357-fa26",
+  "arm": "full",
+  "rep": "1",
+  "finished": true,
+  "input": 1401952,
+  "cached": 1334784,
+  "output": 17700,
+  "commands": 25,
+  "searches": 1,
+  "used_script": true,
+  "minutes": 6.4,
+  "instance": "Fall2026",
+  "outside": 0,
+  "invalid": 0,
+  "uid": 0,
+  "stale": 0,
+  "assessments": 100,
+  "source_assessments": 100,
+  "pairs": 179,
+  "week": 179,
+  "slot": 179,
+  "order": 0,
+  "conflict": 0,
+  "actual_pairs": 163,
+  "actual_near": 154,
+  "own": 10,
+  "lines": 91,
+  "script_calls": 10,
+  "tracebacks": 2
+ },
+ {
+  "task": "cs357-fa26",
+  "arm": "full",
+  "rep": "2",
+  "finished": true,
+  "input": 1807006,
+  "cached": 1727104,
+  "output": 18253,
+  "commands": 28,
+  "searches": 3,
+  "used_script": true,
+  "minutes": 6.3,
+  "instance": "Fall2026",
+  "outside": 0,
+  "invalid": 0,
+  "uid": 0,
+  "stale": 0,
+  "assessments": 100,
+  "source_assessments": 100,
+  "pairs": 179,
+  "week": 179,
+  "slot": 178,
+  "order": 0,
+  "conflict": 0,
+  "actual_pairs": 163,
+  "actual_near": 154,
+  "own": 16,
+  "lines": 128,
+  "script_calls": 12,
+  "tracebacks": 2
+ },
+ {
+  "task": "cs357-fa26",
+  "arm": "full",
+  "rep": "3",
+  "finished": true,
+  "input": 866359,
+  "cached": 798848,
+  "output": 10181,
+  "commands": 14,
+  "searches": 2,
+  "used_script": true,
+  "minutes": 3.6,
+  "instance": "Fall2026",
+  "outside": 0,
+  "invalid": 0,
+  "uid": 0,
+  "stale": 0,
+  "assessments": 100,
+  "source_assessments": 100,
+  "pairs": 179,
+  "week": 179,
+  "slot": 178,
+  "order": 0,
+  "conflict": 0,
+  "actual_pairs": 163,
+  "actual_near": 154,
+  "own": 5,
+  "lines": 29,
+  "script_calls": 0,
+  "tracebacks": 1
  },
  {
   "task": "cs357-fa26",
@@ -186,7 +303,11 @@
   "order": 0,
   "conflict": 1,
   "actual_pairs": 170,
-  "actual_near": 170
+  "actual_near": 170,
+  "own": 0,
+  "lines": 0,
+  "script_calls": 0,
+  "tracebacks": 0
  },
  {
   "task": "cs357-fa26",
@@ -213,7 +334,11 @@
   "order": 0,
   "conflict": 7,
   "actual_pairs": 163,
-  "actual_near": 101
+  "actual_near": 101,
+  "own": 3,
+  "lines": 28,
+  "script_calls": 0,
+  "tracebacks": 0
  },
  {
   "task": "cs357-fa26",
@@ -240,7 +365,11 @@
   "order": 0,
   "conflict": 7,
   "actual_pairs": 163,
-  "actual_near": 101
+  "actual_near": 101,
+  "own": 9,
+  "lines": 126,
+  "script_calls": 0,
+  "tracebacks": 0
  },
  {
   "task": "cs357-fa26",
@@ -267,7 +396,11 @@
   "order": 0,
   "conflict": 7,
   "actual_pairs": 163,
-  "actual_near": 101
+  "actual_near": 101,
+  "own": 4,
+  "lines": 57,
+  "script_calls": 0,
+  "tracebacks": 0
  },
  {
   "task": "cs357-fa26",
@@ -294,7 +427,11 @@
   "order": 0,
   "conflict": 0,
   "actual_pairs": 163,
-  "actual_near": 154
+  "actual_near": 154,
+  "own": 0,
+  "lines": 0,
+  "script_calls": 0,
+  "tracebacks": 0
  },
  {
   "task": "cs357-sp27",
@@ -319,7 +456,11 @@
   "week": 167,
   "slot": 169,
   "order": 0,
-  "conflict": 0
+  "conflict": 0,
+  "own": 9,
+  "lines": 68,
+  "script_calls": 0,
+  "tracebacks": 0
  },
  {
   "task": "cs357-sp27",
@@ -344,7 +485,11 @@
   "week": 167,
   "slot": 169,
   "order": 0,
-  "conflict": 0
+  "conflict": 0,
+  "own": 8,
+  "lines": 195,
+  "script_calls": 0,
+  "tracebacks": 0
  },
  {
   "task": "cs357-sp27",
@@ -369,11 +514,15 @@
   "week": 167,
   "slot": 169,
   "order": 0,
-  "conflict": 0
+  "conflict": 0,
+  "own": 3,
+  "lines": 129,
+  "script_calls": 0,
+  "tracebacks": 0
  },
  {
   "task": "cs357-sp27",
-  "arm": "full",
+  "arm": "full-py39",
   "rep": "1",
   "finished": true,
   "input": 1277050,
@@ -394,11 +543,15 @@
   "week": 167,
   "slot": 169,
   "order": 0,
-  "conflict": 0
+  "conflict": 0,
+  "own": 6,
+  "lines": 49,
+  "script_calls": 14,
+  "tracebacks": 4
  },
  {
   "task": "cs357-sp27",
-  "arm": "full",
+  "arm": "full-py39",
   "rep": "2",
   "finished": true,
   "input": 853022,
@@ -419,11 +572,15 @@
   "week": 166,
   "slot": 169,
   "order": 0,
-  "conflict": 0
+  "conflict": 0,
+  "own": 2,
+  "lines": 21,
+  "script_calls": 6,
+  "tracebacks": 1
  },
  {
   "task": "cs357-sp27",
-  "arm": "full",
+  "arm": "full-py39",
   "rep": "3",
   "finished": true,
   "input": 784117,
@@ -444,7 +601,98 @@
   "week": 166,
   "slot": 169,
   "order": 0,
-  "conflict": 0
+  "conflict": 0,
+  "own": 1,
+  "lines": 6,
+  "script_calls": 0,
+  "tracebacks": 1
+ },
+ {
+  "task": "cs357-sp27",
+  "arm": "full",
+  "rep": "1",
+  "finished": true,
+  "input": 1267942,
+  "cached": 1185664,
+  "output": 14449,
+  "commands": 18,
+  "searches": 2,
+  "used_script": true,
+  "minutes": 4.9,
+  "instance": "Spring2027",
+  "outside": 0,
+  "invalid": 0,
+  "uid": 0,
+  "stale": 0,
+  "assessments": 98,
+  "source_assessments": 98,
+  "pairs": 169,
+  "week": 166,
+  "slot": 169,
+  "order": 0,
+  "conflict": 0,
+  "own": 3,
+  "lines": 21,
+  "script_calls": 8,
+  "tracebacks": 0
+ },
+ {
+  "task": "cs357-sp27",
+  "arm": "full",
+  "rep": "2",
+  "finished": true,
+  "input": 1469143,
+  "cached": 1387392,
+  "output": 16690,
+  "commands": 20,
+  "searches": 2,
+  "used_script": true,
+  "minutes": 6.0,
+  "instance": "Spring2027",
+  "outside": 0,
+  "invalid": 0,
+  "uid": 0,
+  "stale": 0,
+  "assessments": 98,
+  "source_assessments": 98,
+  "pairs": 169,
+  "week": 166,
+  "slot": 169,
+  "order": 0,
+  "conflict": 0,
+  "own": 3,
+  "lines": 42,
+  "script_calls": 9,
+  "tracebacks": 1
+ },
+ {
+  "task": "cs357-sp27",
+  "arm": "full",
+  "rep": "3",
+  "finished": true,
+  "input": 970083,
+  "cached": 902016,
+  "output": 13417,
+  "commands": 15,
+  "searches": 2,
+  "used_script": true,
+  "minutes": 4.5,
+  "instance": "Spring2027",
+  "outside": 0,
+  "invalid": 0,
+  "uid": 0,
+  "stale": 0,
+  "assessments": 98,
+  "source_assessments": 98,
+  "pairs": 169,
+  "week": 166,
+  "slot": 169,
+  "order": 0,
+  "conflict": 0,
+  "own": 6,
+  "lines": 59,
+  "script_calls": 1,
+  "tracebacks": 0
  },
  {
   "task": "cs357-sp27",
@@ -469,7 +717,11 @@
   "week": 108,
   "slot": 169,
   "order": 0,
-  "conflict": 5
+  "conflict": 5,
+  "own": 4,
+  "lines": 63,
+  "script_calls": 0,
+  "tracebacks": 0
  },
  {
   "task": "cs357-sp27",
@@ -494,7 +746,11 @@
   "week": 87,
   "slot": 0,
   "order": 0,
-  "conflict": 19
+  "conflict": 19,
+  "own": 1,
+  "lines": 30,
+  "script_calls": 0,
+  "tracebacks": 0
  },
  {
   "task": "cs357-sp27",
@@ -519,7 +775,11 @@
   "week": 108,
   "slot": 169,
   "order": 0,
-  "conflict": 5
+  "conflict": 5,
+  "own": 3,
+  "lines": 45,
+  "script_calls": 0,
+  "tracebacks": 0
  },
  {
   "task": "cs357-sp27",
@@ -544,7 +804,11 @@
   "week": 167,
   "slot": 169,
   "order": 0,
-  "conflict": 0
+  "conflict": 0,
+  "own": 0,
+  "lines": 0,
+  "script_calls": 0,
+  "tracebacks": 0
  },
  {
   "task": "tam212-fa26",
@@ -571,7 +835,11 @@
   "order": 0,
   "conflict": 0,
   "actual_pairs": 66,
-  "actual_near": 29
+  "actual_near": 29,
+  "own": 8,
+  "lines": 173,
+  "script_calls": 0,
+  "tracebacks": 0
  },
  {
   "task": "tam212-fa26",
@@ -598,7 +866,11 @@
   "order": 0,
   "conflict": 0,
   "actual_pairs": 66,
-  "actual_near": 19
+  "actual_near": 19,
+  "own": 6,
+  "lines": 100,
+  "script_calls": 0,
+  "tracebacks": 0
  },
  {
   "task": "tam212-fa26",
@@ -625,11 +897,15 @@
   "order": 0,
   "conflict": 0,
   "actual_pairs": 66,
-  "actual_near": 29
+  "actual_near": 29,
+  "own": 9,
+  "lines": 297,
+  "script_calls": 0,
+  "tracebacks": 0
  },
  {
   "task": "tam212-fa26",
-  "arm": "full",
+  "arm": "full-py39",
   "rep": "1",
   "finished": true,
   "input": 1228332,
@@ -652,11 +928,15 @@
   "order": 0,
   "conflict": 0,
   "actual_pairs": 66,
-  "actual_near": 29
+  "actual_near": 29,
+  "own": 9,
+  "lines": 77,
+  "script_calls": 15,
+  "tracebacks": 4
  },
  {
   "task": "tam212-fa26",
-  "arm": "full",
+  "arm": "full-py39",
   "rep": "2",
   "finished": true,
   "input": 2174482,
@@ -679,11 +959,15 @@
   "order": 0,
   "conflict": 1,
   "actual_pairs": 66,
-  "actual_near": 13
+  "actual_near": 13,
+  "own": 18,
+  "lines": 100,
+  "script_calls": 2,
+  "tracebacks": 5
  },
  {
   "task": "tam212-fa26",
-  "arm": "full",
+  "arm": "full-py39",
   "rep": "3",
   "finished": true,
   "input": 989523,
@@ -706,7 +990,104 @@
   "order": 0,
   "conflict": 0,
   "actual_pairs": 66,
-  "actual_near": 29
+  "actual_near": 29,
+  "own": 8,
+  "lines": 103,
+  "script_calls": 0,
+  "tracebacks": 5
+ },
+ {
+  "task": "tam212-fa26",
+  "arm": "full",
+  "rep": "1",
+  "finished": true,
+  "input": 1554096,
+  "cached": 1458176,
+  "output": 24106,
+  "commands": 20,
+  "searches": 5,
+  "used_script": true,
+  "minutes": 8.1,
+  "instance": "Fall2026",
+  "outside": 0,
+  "invalid": 0,
+  "uid": 0,
+  "stale": 0,
+  "assessments": 50,
+  "source_assessments": 50,
+  "pairs": 55,
+  "week": 55,
+  "slot": 54,
+  "order": 0,
+  "conflict": 0,
+  "actual_pairs": 66,
+  "actual_near": 29,
+  "own": 10,
+  "lines": 92,
+  "script_calls": 9,
+  "tracebacks": 0
+ },
+ {
+  "task": "tam212-fa26",
+  "arm": "full",
+  "rep": "2",
+  "finished": true,
+  "input": 1990459,
+  "cached": 1880448,
+  "output": 34902,
+  "commands": 25,
+  "searches": 5,
+  "used_script": true,
+  "minutes": 11.4,
+  "instance": "Fall2026",
+  "outside": 0,
+  "invalid": 0,
+  "uid": 0,
+  "stale": 0,
+  "assessments": 50,
+  "source_assessments": 50,
+  "pairs": 55,
+  "week": 3,
+  "slot": 51,
+  "order": 0,
+  "conflict": 1,
+  "actual_pairs": 66,
+  "actual_near": 13,
+  "own": 15,
+  "lines": 133,
+  "script_calls": 7,
+  "tracebacks": 0
+ },
+ {
+  "task": "tam212-fa26",
+  "arm": "full",
+  "rep": "3",
+  "finished": true,
+  "input": 802855,
+  "cached": 726528,
+  "output": 23250,
+  "commands": 13,
+  "searches": 3,
+  "used_script": true,
+  "minutes": 7.5,
+  "instance": "Fall2026",
+  "outside": 0,
+  "invalid": 0,
+  "uid": 0,
+  "stale": 0,
+  "assessments": 50,
+  "source_assessments": 50,
+  "pairs": 55,
+  "week": 3,
+  "slot": 51,
+  "order": 0,
+  "conflict": 1,
+  "actual_pairs": 66,
+  "actual_near": 13,
+  "own": 7,
+  "lines": 100,
+  "script_calls": 10,
+  "tracebacks": 0
  },
  {
   "task": "tam212-fa26",
@@ -733,7 +1114,11 @@
   "order": 0,
   "conflict": 1,
   "actual_pairs": 66,
-  "actual_near": 66
+  "actual_near": 66,
+  "own": 0,
+  "lines": 0,
+  "script_calls": 0,
+  "tracebacks": 0
  },
  {
   "task": "tam212-fa26",
@@ -760,7 +1145,11 @@
   "order": 0,
   "conflict": 4,
   "actual_pairs": 66,
-  "actual_near": 27
+  "actual_near": 27,
+  "own": 5,
+  "lines": 80,
+  "script_calls": 0,
+  "tracebacks": 0
  },
  {
   "task": "tam212-fa26",
@@ -787,7 +1176,11 @@
   "order": 0,
   "conflict": 4,
   "actual_pairs": 66,
-  "actual_near": 22
+  "actual_near": 22,
+  "own": 4,
+  "lines": 47,
+  "script_calls": 0,
+  "tracebacks": 1
  },
  {
   "task": "tam212-fa26",
@@ -814,7 +1207,11 @@
   "order": 0,
   "conflict": 4,
   "actual_pairs": 66,
-  "actual_near": 27
+  "actual_near": 27,
+  "own": 5,
+  "lines": 83,
+  "script_calls": 0,
+  "tracebacks": 1
  },
  {
   "task": "tam212-fa26",
@@ -841,7 +1238,11 @@
   "order": 0,
   "conflict": 1,
   "actual_pairs": 66,
-  "actual_near": 41
+  "actual_near": 41,
+  "own": 0,
+  "lines": 0,
+  "script_calls": 0,
+  "tracebacks": 0
  },
  {
   "task": "zjui-sp26",
@@ -868,7 +1269,11 @@
   "order": 0,
   "conflict": 0,
   "actual_pairs": 42,
-  "actual_near": 1
+  "actual_near": 1,
+  "own": 13,
+  "lines": 166,
+  "script_calls": 0,
+  "tracebacks": 0
  },
  {
   "task": "zjui-sp26",
@@ -895,7 +1300,11 @@
   "order": 0,
   "conflict": 0,
   "actual_pairs": 42,
-  "actual_near": 5
+  "actual_near": 5,
+  "own": 13,
+  "lines": 243,
+  "script_calls": 0,
+  "tracebacks": 0
  },
  {
   "task": "zjui-sp26",
@@ -922,11 +1331,15 @@
   "order": 0,
   "conflict": 0,
   "actual_pairs": 42,
-  "actual_near": 1
+  "actual_near": 1,
+  "own": 12,
+  "lines": 226,
+  "script_calls": 0,
+  "tracebacks": 0
  },
  {
   "task": "zjui-sp26",
-  "arm": "full",
+  "arm": "full-py39",
   "rep": "1",
   "finished": true,
   "input": 2389439,
@@ -949,11 +1362,15 @@
   "order": 0,
   "conflict": 0,
   "actual_pairs": 42,
-  "actual_near": 1
+  "actual_near": 1,
+  "own": 15,
+  "lines": 167,
+  "script_calls": 17,
+  "tracebacks": 5
  },
  {
   "task": "zjui-sp26",
-  "arm": "full",
+  "arm": "full-py39",
   "rep": "2",
   "finished": true,
   "input": 1918632,
@@ -976,11 +1393,15 @@
   "order": 0,
   "conflict": 0,
   "actual_pairs": 42,
-  "actual_near": 1
+  "actual_near": 1,
+  "own": 7,
+  "lines": 71,
+  "script_calls": 11,
+  "tracebacks": 1
  },
  {
   "task": "zjui-sp26",
-  "arm": "full",
+  "arm": "full-py39",
   "rep": "3",
   "finished": true,
   "input": 2518351,
@@ -1003,7 +1424,91 @@
   "order": 0,
   "conflict": 0,
   "actual_pairs": 42,
-  "actual_near": 0
+  "actual_near": 0,
+  "own": 16,
+  "lines": 205,
+  "script_calls": 15,
+  "tracebacks": 2
+ },
+ {
+  "task": "zjui-sp26",
+  "arm": "full",
+  "rep": "1",
+  "finished": true,
+  "input": 1393393,
+  "cached": 1298048,
+  "output": 26732,
+  "commands": 18,
+  "searches": 5,
+  "used_script": true,
+  "minutes": 8.8,
+  "instance": "ZJUI-Spring2026",
+  "outside": 0,
+  "invalid": 0,
+  "uid": 0,
+  "stale": 0,
+  "assessments": 37,
+  "source_assessments": 37,
+  "pairs": 22,
+  "week": 4,
+  "slot": 21,
+  "order": 0,
+  "conflict": 0,
+  "actual_pairs": 42,
+  "actual_near": 3,
+  "own": 5,
+  "lines": 94,
+  "script_calls": 0,
+  "tracebacks": 1
+ },
+ {
+  "task": "zjui-sp26",
+  "arm": "full",
+  "rep": "2",
+  "finished": true,
+  "input": 1384437,
+  "cached": 1313024,
+  "output": 18339,
+  "commands": 24,
+  "searches": 3,
+  "used_script": true,
+  "minutes": 6.2,
+  "instance": null,
+  "own": 12,
+  "lines": 108,
+  "script_calls": 0,
+  "tracebacks": 0
+ },
+ {
+  "task": "zjui-sp26",
+  "arm": "full",
+  "rep": "3",
+  "finished": true,
+  "input": 1496450,
+  "cached": 1386624,
+  "output": 37053,
+  "commands": 18,
+  "searches": 6,
+  "used_script": true,
+  "minutes": 12.0,
+  "instance": "ZJUI-Spring2026",
+  "outside": 0,
+  "invalid": 0,
+  "uid": 0,
+  "stale": 0,
+  "assessments": 37,
+  "source_assessments": 37,
+  "pairs": 22,
+  "week": 2,
+  "slot": 21,
+  "order": 0,
+  "conflict": 0,
+  "actual_pairs": 42,
+  "actual_near": 1,
+  "own": 8,
+  "lines": 129,
+  "script_calls": 9,
+  "tracebacks": 0
  },
  {
   "task": "zjui-sp26",
@@ -1030,7 +1535,11 @@
   "order": 0,
   "conflict": 3,
   "actual_pairs": 62,
-  "actual_near": 62
+  "actual_near": 62,
+  "own": 0,
+  "lines": 0,
+  "script_calls": 0,
+  "tracebacks": 0
  },
  {
   "task": "zjui-sp26",
@@ -1057,7 +1566,11 @@
   "order": 0,
   "conflict": 0,
   "actual_pairs": 42,
-  "actual_near": 16
+  "actual_near": 16,
+  "own": 4,
+  "lines": 54,
+  "script_calls": 0,
+  "tracebacks": 0
  },
  {
   "task": "zjui-sp26",
@@ -1084,7 +1597,11 @@
   "order": 0,
   "conflict": 0,
   "actual_pairs": 42,
-  "actual_near": 16
+  "actual_near": 16,
+  "own": 4,
+  "lines": 79,
+  "script_calls": 0,
+  "tracebacks": 0
  },
  {
   "task": "zjui-sp26",
@@ -1111,7 +1628,11 @@
   "order": 0,
   "conflict": 0,
   "actual_pairs": 42,
-  "actual_near": 17
+  "actual_near": 17,
+  "own": 3,
+  "lines": 56,
+  "script_calls": 0,
+  "tracebacks": 0
  },
  {
   "task": "zjui-sp26",
@@ -1138,6 +1659,10 @@
   "order": 0,
   "conflict": 0,
   "actual_pairs": 42,
-  "actual_near": 29
+  "actual_near": 29,
+  "own": 0,
+  "lines": 0,
+  "script_calls": 0,
+  "tracebacks": 0
  }
 ]

@@ -26,7 +26,9 @@ if [ "$ARM" != none ]; then
   mkdir -p "$RUN/codex/skills"
   cp -R "$HERE/arms/$ARM/migrate-course-instance" "$RUN/codex/skills/"
   # The skill names the script by its path in the sandbox image.
-  sed -i '' "s|/etc/codex/skills|$RUN/codex/skills|g" "$RUN/codex/skills/migrate-course-instance/SKILL.md"
+  # The script needs Python 3.10+ (the image has 3.11); macOS's own python3 is 3.9.
+  sed -i '' "s|python3 /etc/codex/skills|${PYTHON:-python3} /etc/codex/skills|g; s|/etc/codex/skills|$RUN/codex/skills|g" \
+    "$RUN/codex/skills/migrate-course-instance/SKILL.md"
 fi
 
 START=$(date +%s)
